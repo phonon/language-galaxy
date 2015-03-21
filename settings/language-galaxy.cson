@@ -1,0 +1,15 @@
+'.source.galaxy':
+    'editor':
+        'commentStart': '// '
+        'increaseIndentPattern': '(?x)
+           ^ .* \\{ [^}"\']* $
+          |^ .* \\( [^\\)"\']* $
+          |^ \\s* \\{ \\} $
+          '
+        'decreaseIndentPattern': '(?x)
+           ^ \\s* (\\s* /[*] .* [*]/ \\s*)* \\}
+          |^ \\s* (\\s* /[*] .* [*]/ \\s*)* \\)
+          '
+'.source.galaxy':
+    'editor':
+        'foldEndPattern': '(?<!\\*)\\*\\*/|^\\s*\\}'

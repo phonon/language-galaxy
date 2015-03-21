@@ -1,0 +1,79 @@
+'scopeName': 'source.galaxy'
+'fileTypes': [
+    'galaxy'
+]
+'name': 'Galaxy'
+'patterns': [
+    {
+        'begin': '(^[ \\t]+)?(?=//)'
+        'beginCaptures':
+            '1':
+                'name': 'punctuation.whitespace.comment.leading.c++'
+        'end': '(?!\\G)'
+        'patterns': [
+            {
+                'begin': '//'
+                'beginCaptures':
+                    '0':
+                        'name': 'punctuation.definition.comment.c++'
+                'end': '\\n'
+                'name': 'comment.line.double-slash.c++'
+                'patterns': [
+                    {
+                        'match': '(?>\\\\\\s*\\n)'
+                        'name': 'punctuation.separator.continuation.c++'
+                    }
+                ]
+            }
+        ]
+    }
+    {
+        'match': '\\b(break|continue|else|if|return|while)\\b'
+        'name': 'keyword.control.galaxy'
+    }
+    {
+        'match': '\\b(byte|bool|char|fixed|int|struct|typedef|void|actor|abilcmd|bank|color|camerainfo|marker|order|playergroup|point|region|soundlink|string|text|timer|transmissionsource|unitfilter|unitgroup|unitref|waveinfo|wavetarget)\\b'
+        'name': 'storage.type.galaxy'
+    }
+    {
+        'match': '\\b(const|static|native)\\b'
+        'name': 'storage.modifier.galaxy'
+    }
+    {
+        'comment': 'common C constant naming idiom -- kConstantVariable'
+        'match': '\\bk[A-Z]\\w*\\b'
+        'name': 'constant.other.variable.mac-classic.galaxy'
+    }
+    {
+        'match': '\\bg[A-Z]\\w*\\b'
+        'name': 'variable.other.readwrite.global.mac-classic.galaxy'
+    }
+    {
+        'match': '\\bs[A-Z]\\w*\\b'
+        'name': 'variable.other.readwrite.static.mac-classic.galaxy'
+    }
+    {
+        'match': '\\b(null|true|false)\\b'
+        'name': 'constant.language.galaxy'
+    }
+    {
+        'match': '\\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)(L|l|UL|ul|u|U|F|f|ll|LL|ull|ULL)?\\b'
+        'name': 'constant.numeric.galaxy'
+    }
+    {
+        'match': '\\b(include)\\b'
+        'name': 'keyword.control.import.galaxy'
+    }
+    {
+        'begin': '"'
+        'beginCaptures':
+            '0':
+                'name': 'punctuation.definition.string.begin.galaxy'
+        'end': '"'
+        'endCaptures':
+            '0':
+                'name': 'punctuation.definition.string.end.galaxy'
+        'name': 'string.quoted.double.galaxy'
+    }
+
+]
