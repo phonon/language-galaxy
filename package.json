@@ -1,10 +1,10 @@
 {
-    "version": "0.0.0",
-    "name": "language-galaxy",
-    "description": "Support for Blizzard's StarCraft II engine galaxy scripting language",
-    "repository": "https://github.com/90-proof/atom-language-galaxy",
-    "license": "MIT",
-    "engines": {
-        "atom": "*"
-    }
+	"version": "0.1.0",
+	"name": "language-galaxy",
+	"description": "Support for Blizzard's StarCraft II engine galaxy scripting language",
+	"repository": "https://github.com/90-proof/atom-language-galaxy",
+	"license": "MIT",
+	"engines": {
+		"atom": ">0.50.0"
+	}
 }
