@@ -69,6 +69,13 @@
 			'0':
 				'name': 'punctuation.definition.string.end.galaxy'
 		'name': 'string.quoted.double.galaxy'
+		'patterns': [
+			{
+				'match': '\\\\[\'"?\\\\]'
+				'name': 'constant.character.escape.galaxy'
+			}
+		]
+
 	}
 	{
 		'comment': 'default Galaxy constants'
