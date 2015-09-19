@@ -28,7 +28,7 @@
 		]
 	}
 	{
-		'match': '\\b(break|continue|else|if|return|while)\\b'
+		'match': '\\b(break|continue|else|if|return|while|for)\\b'
 		'name': 'keyword.control.galaxy'
 	}
 	{
