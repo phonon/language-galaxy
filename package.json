@@ -1,13 +1,13 @@
 {
-	"name": "language-galaxy",
-	"version": "0.2.0",
-	"description": "Support for Blizzard's StarCraft II engine's Galaxy scripting language",
-	"repository": {
-			"type": "git",
-			"url": "https://github.com/nmosfet/language-galaxy"
-		},
-	"license": "MIT",
-	"engines": {
-		"atom": ">0.50.0"
-	}
+  "name": "language-galaxy",
+  "version": "0.2.0",
+  "description": "Support for Blizzard's StarCraft II engine's Galaxy scripting language",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nmosfet/language-galaxy"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
 }
