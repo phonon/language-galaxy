@@ -1,6 +1,6 @@
 {
   "name": "language-galaxy",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Support for Blizzard's StarCraft II engine's Galaxy scripting language",
   "repository": {
     "type": "git",
