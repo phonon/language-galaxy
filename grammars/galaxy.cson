@@ -8,20 +8,20 @@
 		'begin': '(^[ \\t]+)?(?=//)'
 		'beginCaptures':
 			'1':
-				'name': 'punctuation.whitespace.comment.leading.c++'
+				'name': 'punctuation.whitespace.comment.leading'
 		'end': '(?!\\G)'
 		'patterns': [
 			{
 				'begin': '//'
 				'beginCaptures':
 					'0':
-						'name': 'punctuation.definition.comment.c++'
+						'name': 'punctuation.definition.comment'
 				'end': '\\n'
-				'name': 'comment.line.double-slash.c++'
+				'name': 'comment.line.double-slash'
 				'patterns': [
 					{
 						'match': '(?>\\\\\\s*\\n)'
-						'name': 'punctuation.separator.continuation.c++'
+						'name': 'punctuation.separator.continuation'
 					}
 				]
 			}
@@ -32,8 +32,16 @@
 		'name': 'keyword.control.galaxy'
 	}
 	{
-		'match': '\\b(byte|bool|char|fixed|int|struct|typedef|void|actor|abilcmd|bank|color|camerainfo|marker|order|playergroup|point|revealer|region|soundlink|string|text|timer|transmissionsource|unit|unitfilter|unitgroup|unitref|waveinfo|wavetarget)\\b'
-		'name': 'storage.type.galaxy'
+		'match': '\\b(abilcmd|actor|actorscope|bank|bool|byte|camerainfo|char|
+					  color|fixed|int|marker|order|playergroup|
+					  point|revealer|region|soundlink|string|text|timer|
+					  transmissionsource|trigger|unit|unitfilter|unitgroup|
+					  unitref|void|waveinfo|wavetarget)\\b'
+		'name': 'storage.type.builtin.galaxy'
+	}
+	{
+		'match': '\\b(struct|typedef|arrayref|structref|funcref)\\b'
+		'name': 'storage.type.complex.galaxy'
 	}
 	{
 		'match': '\\b(const|static|native)\\b'
