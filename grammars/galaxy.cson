@@ -86,7 +86,7 @@
 
 	}
 	{
-		'comment': 'default Galaxy constants'
+		'comment': 'Galaxy constants'
 		'name': 'constant.language.native.galaxy'
 		'match': '\\b(?x)(
 						c_alignLeft|
@@ -103,10 +103,15 @@
 						c_anchorBottomLeft|
 						c_anchorBottom|
 						c_anchorBottomRight|
+						c_genderDefault|
+						c_genderMale|
+						c_genderFemale|
+						c_genderNeutral|
 						c_actorIntersectAgainstCenter|
 						c_actorIntersectAgainstRadiusContact|
 						c_actorIntersectAgainstRadiusGame|
 						c_actorIntersectAgainstRadiusVisual|
+						c_actorIntersectAgainstCenterGame|
 						c_animTimeVariantAsAutomatic|
 						c_animTimeVariantAsDuration|
 						c_animTimeVariantAsTimeScale|
@@ -116,6 +121,9 @@
 						c_animBracketStartFlagContentPlayOnce|
 						c_animBracketStartFlagOpeningPlayForever|
 						c_animBracketStartFlagInstant|
+						c_animBracketStartFlagFullMatch|
+						c_animBracketStartFlagNoMismatchQueryProps=|
+						c_animBracketStartFlagDontResetOnUnhide|
 						c_animGroupApplyFlagClosingFull|
 						c_animGroupApplyFlagInstant|
 						c_animFlagFullMatch|
@@ -123,6 +131,9 @@
 						c_animFlagNonLooping|
 						c_animFlagAssetDrivenLooping|
 						c_animFlagRandomStartOffset|
+						c_animFlagDontResetOnUnhide|
+						c_animFlagNoMismatchQueryProps|
+						c_animFlagVariationMatch|
 						c_actorRefSpaceGlobal|
 						c_actorRefSpaceScope|
 						c_actorRefSpaceActor|
@@ -150,6 +161,8 @@
 						c_textureSlotComponentSpecular|
 						c_animTimeDefault|
 						c_animNameDefault|
+						c_animationOffsetStart|
+						c_animationOffsetEnd|
 						c_bankOptionSignature|
 						c_bankTypeFixed|
 						c_bankTypeFlag|
@@ -192,6 +205,8 @@
 						c_cameraValueFocalDepth|
 						c_cameraValueFalloffStart|
 						c_cameraValueFalloffEnd|
+						c_cameraValueFalloffStartNear|
+						c_cameraValueFalloffEndNear|
 						c_cameraPositionEye|
 						c_cameraPositionTarget|
 						c_cameraPositionBoth|
@@ -262,6 +277,7 @@
 						c_dataTypeDialog|
 						c_dataTypeDoodad|
 						c_dataTypeFixed|
+						c_dataTypeGenericHandle|
 						c_dataTypeInt|
 						c_dataTypeMarker|
 						c_dataTypeObjective|
@@ -313,6 +329,11 @@
 						c_triggerControlTypeUnitStatusBar|
 						c_triggerControlTypeUnitStatusDurationBar|
 						c_triggerControlTypeCutscene|
+						c_triggerControlTypeCommandPanel|
+						c_triggerControlTypeHeroCutscene|
+						c_triggerControlTypeCountdownLabel|
+						c_triggerControlTypeUnitStatusLabel|
+						c_triggerControlTypeScoreValueFrame|
 						c_triggerControlPropertyInvalid|
 						c_triggerControlPropertyText|
 						c_triggerControlPropertyStyle|
@@ -380,12 +401,23 @@
 						c_triggerControlPropertyHotkey|
 						c_triggerControlPropertyAllowedButtons|
 						c_triggerControlPropertyAlphaMask|
+						c_triggerControlPropertyAnimIndex|
+						c_triggerControlPropertyUseAspectUncorrection|
+						c_triggerControlPropertyHandle|
+						c_triggerControlPropertyBorderColor|
+						c_triggerControlPropertyFillColor|
+						c_triggerControlPropertySubmenu|
+						c_triggerControlPropertyUnitGroup|
+						c_triggerControlPropertyPlayerId|
+						c_triggerControlPropertyScoreValueLink|
+						c_triggerControlPropertyStateIndex|
 						c_triggerImageTypeNone|
 						c_triggerImageTypeNormal|
 						c_triggerImageTypeBorder|
 						c_triggerImageTypeHorizontalBorder|
 						c_triggerImageTypeEndCap|
 						c_triggerImageTypeNineSlice|
+						c_triggerImageTypeCircular|
 						c_triggerRenderTypeHDR|
 						c_triggerRenderTypeLDR|
 						c_triggerBlendModeNormal|
@@ -413,6 +445,8 @@
 						c_triggerControlEventTypeMouseExit|
 						c_triggerControlEventTypeHotkeyPressed|
 						c_triggerControlEventTypeDoubleClick|
+						c_effectHistoryEffectRoot|
+						c_effectHistoryEffectCurrent|
 						c_creepSpeedGrowth|
 						c_creepSpeedDecay|
 						c_creepSpeedBlend|
@@ -465,6 +499,7 @@
 						c_gameCheatLast|
 						c_gameCheatCategoryPublic|
 						c_gameCheatCategoryDevelopment|
+						c_cmdNotEnoughFood|
 						c_gameOverVictory|
 						c_gameOverDefeat|
 						c_gameOverTie|
@@ -543,6 +578,8 @@
 						c_playerStatusUnused|
 						c_playerStatusActive|
 						c_playerStatusLeft|
+						c_playerTypeReferee|
+						c_playerTypeSpectator|
 						c_playerLicenseLibertyFull|
 						c_playerStateShowScore|
 						c_playerStateXPGain|
@@ -562,6 +599,7 @@
 						c_playerStateDisplayGameResult|
 						c_playerStateFoodIgnored|
 						c_playerStateStartingRallyEnabled|
+						c_playerStateCameraFollow|
 						c_buildMenuOpening|
 						c_buildMenuLateGame|
 						c_buildMenuBeacons|
@@ -569,16 +607,6 @@
 						c_gameResultVictory|
 						c_gameResultDefeat|
 						c_gameResultTie|
-						c_effectAmountAbsorbed|
-						c_effectAmountDamaged|
-						c_effectAmountDodged|
-						c_effectAmountFound|
-						c_effectAmountHealed|
-						c_effectAmountKilled|
-						c_effectAmountSplashed|
-						c_effectAmountLifeChanged|
-						c_effectAmountShieldsChanged|
-						c_effectAmountEnergyChanged|
 						c_playerGroupAlly|
 						c_playerGroupEnemy|
 						c_playerGroupAny|
@@ -619,12 +647,14 @@
 						c_stringEnd|
 						c_stringAnywhere|
 						c_stringReplaceAll|
+						c_textExpressionTokenMain|
 						c_techCountQueuedOnly|
 						c_techCountQueuedOrBetter|
 						c_techCountInProgressOnly|
 						c_techCountInProgressOrBetter|
 						c_techCountCompleteOnly|
 						c_techCountIncompleteOnly|
+						c_techCountRevivableOnly|
 						c_textTagNone|
 						c_textTagEdgeTop|
 						c_textTagEdgeLeft|
@@ -671,9 +701,12 @@
 						c_transmissionDurationSub|
 						c_transmissionDurationSet|
 						c_transmissionOptionHideAlertPanel|
+						c_triggerThreadFlagAI|
 						c_triggerQueueRetain|
 						c_triggerQueueRemove|
 						c_triggerQueueKill|
+						c_tdFilterFlagObservers|
+						c_tdFilterFlagParticipants|
 						c_spendLocationAll|
 						c_spendLocationAbility|
 						c_spendLocationBehavior|
@@ -720,6 +753,9 @@
 						c_unitStateRadarable|
 						c_unitStateStunned|
 						c_unitStateStoppable|
+						c_unitStateResistant|
+						c_unitStateSilenced|
+						c_unitStateDazed|
 						c_unitPropLife|
 						c_unitPropLifePercent|
 						c_unitPropLifeMax|
@@ -757,10 +793,16 @@
 						c_unitPropCarriedCustom|
 						c_unitPropLifeArmor|
 						c_unitPropShieldArmor|
+						c_unitPropEnergyArmor|
 						c_unitPropLifeExpected|
 						c_unitPropEnergyExpected|
 						c_unitPropShieldsExpected|
 						c_unitPropBaseMovementSpeed|
+						c_unitPropMovementSpeedCurrent|
+						c_unitPropLifeExpectedPercent|
+						c_unitPropEnergyExpectedPercent|
+						c_unitPropShieldsExpectedPercent|
+						c_unitPropAIEvaluationFactor|
 						c_unitPropCurrent|
 						c_unitPropNormal|
 						c_unitAIOptionUsable|
@@ -777,6 +819,7 @@
 						c_cmdStateHasCharges|
 						c_cmdStateDisabled|
 						c_cmdStateCooldown|
+						c_cmdStateRecharging|
 						c_cmdStateNoLife|
 						c_cmdStateNoShields|
 						c_cmdStateNoEnergy|
@@ -786,6 +829,8 @@
 						c_cmdStateNoCustom|
 						c_cmdStateNoFood|
 						c_cmdStateCantSpend|
+						c_cmdStateHideCharges|
+						c_cmdStateHighlighted|
 						c_unitCargoUnitCount|
 						c_unitCargoSpaceTotal|
 						c_unitCargoSpaceUsed|
@@ -818,6 +863,27 @@
 						c_unitBehaviorFlagPermanent|
 						c_unitBehaviorFlagRestorable|
 						c_unitBehaviorFlagTemporary|
+						c_unitBehaviorFlagCloak|
+						c_unitBehaviorFlagInvulnerable|
+						c_unitBehaviorFlagSlow|
+						c_unitBehaviorFlagFast|
+						c_unitBehaviorFlagStun|
+						c_unitBehaviorFlagReveal|
+						c_unitBehaviorFlagUser1|
+						c_unitBehaviorFlagUser2|
+						c_unitBehaviorFlagUser3|
+						c_unitBehaviorFlagUser4|
+						c_unitBehaviorFlagUser5|
+						c_unitBehaviorFlagUser6|
+						c_unitBehaviorFlagUser7|
+						c_unitBehaviorFlagUser8|
+						c_unitBehaviorFlagUser9|
+						c_unitBehaviorFlagUser10|
+						c_unitBehaviorFlagUser11|
+						c_unitBehaviorFlagUser12|
+						c_unitBehaviorFlagUser13|
+						c_unitBehaviorFlagUser14|
+						c_unitBehaviorFlagUser15|
 						c_unitBehaviorFlagChanneled|
 						c_unitBehaviorFlagChanneling|
 						c_unitBehaviorFlagCountdown|
@@ -834,6 +900,7 @@
 						c_unitInventoryCountCarried|
 						c_unitInventoryCountEmpty|
 						c_unitInventoryCountTotal|
+						c_unitInventorySlotContainer|
 						c_unitCostMinerals|
 						c_unitCostVespene|
 						c_unitCostTerrazine|
@@ -855,6 +922,7 @@
 						c_unitDamageTypeMelee|
 						c_unitDamageTypeRanged|
 						c_unitDamageTypeSplash|
+						c_unitVitalAny|
 						c_unitInventoryChangeUses|
 						c_unitInventoryChangeExhausts|
 						c_unitInventoryChangeGains|
@@ -928,6 +996,7 @@
 						c_scaleStretch|
 						c_achievementToastStyleTerran|
 						c_achievementToastStyleZerg|
+						c_achievementToastStyleProtoss|
 						c_keyNone|
 						c_keyShift|
 						c_keyControl|
@@ -1073,6 +1142,8 @@
 						c_syncFrameTypeLeaderPanel|
 						c_syncFrameTypeStatusUI|
 						c_syncFrameTypeArmyButton|
+						c_syncFrameTypeTextTag|
+						c_syncFrameTypePingPanel|
 						c_syncFrameTypeFirst|
 						c_syncFrameTypeLast|
 						c_gameMenuDialogItemAny|
@@ -1102,6 +1173,7 @@
 						c_gameMenuDialogEndGameButton|
 						c_gameMenuDialogAchievementsButton|
 						c_gameMenuDialogMessageLogButton|
+						c_gameMenuDialogExitButton|
 						c_uiCommandAllowButtons|
 						c_uiCommandAllowHotkeys|
 						c_uiCommandAllowSmartClick|
@@ -1120,27 +1192,93 @@
 						c_localSelectionTypeInfoPanel|
 						c_localSelectionTypeWorldPanel|
 						c_localSelectionTypeArmyButton|
-						c_nydusLinkBreakingNews|
-						c_nydusLinkAccountManagement|
-						c_nydusLinkAccountPurchase|
-						c_nydusLinkAccountTrialUpgrade|
-						c_nydusLinkAccountNew|
-						c_nydusLinkAccountTrial|
-						c_nydusLinkSecurityPassword|
-						c_nydusLinkForum|
-						c_nydusLinkCommunity|
-						c_nydusLinkFeedHomepage|
-						c_nydusLinkFeedCommunity|
-						c_nydusLinkStore|
-						c_nydusLinkSecurityHelp|
-						c_nydusLinkSupport|
-						c_nydusLinkOnlineGuide|
-						c_nydusLinkCopyright|
 						c_targetModeStateAny|
 						c_targetModeStateOff|
 						c_targetModeStateOn|
 						c_visTypeMask|
 						c_visTypeFog|
+						c_fillTypeFogged|
+						c_fillTypeMasked|
+						c_fillTypeHidden|
+						c_fillTypeUnexplored|
+						libNtve_ge_CinematicTransitionStyle_Mission|
+						libNtve_ge_CinematicTransitionStyle_Story|
+						libNtve_ge_ExplosionSize_Large|
+						libNtve_ge_ExplosionSize_Small|
+						libNtve_ge_ExplosionType_Terran|
+						libNtve_ge_ExplosionType_Protoss|
+						libNtve_ge_ExplosionType_Zerg|
+						libNtve_ge_AllianceSetting_Ally|
+						libNtve_ge_AllianceSetting_AllyWithSharedVision|
+						libNtve_ge_AllianceSetting_AllyWithSharedVisionAndPushable|
+						libNtve_ge_AllianceSetting_AllyWithSharedVisionAndControl|
+						libNtve_ge_AllianceSetting_AllyWithSharedVisionControlAndSpending|
+						libNtve_ge_AllianceSetting_Enemy|
+						libNtve_ge_AllianceSetting_EnemyWithSharedVision|
+						libNtve_ge_AllianceSetting_Neutral|
+						libNtve_ge_AllianceSetting_NeutralWithSharedVision|
+						libNtve_ge_AllianceSetting_NeutralWithSharedVisionAndPushable|
+						libNtve_ge_PlayerRelation_Ally|
+						libNtve_ge_PlayerRelation_AllyMutual|
+						libNtve_ge_PlayerRelation_Neutral|
+						libNtve_ge_PlayerRelation_NeutralMutual|
+						libNtve_ge_PlayerRelation_Enemy|
+						libNtve_ge_PlayerRelation_EnemyMutual|
+						libNtve_ge_CinematicPortraitIndex_CinematicPortraitTopLeft|
+						libNtve_ge_CinematicPortraitIndex_CinematicPortraitTopRight|
+						libNtve_ge_CinematicPortraitIndex_CinematicPortraitBottomLeft|
+						libNtve_ge_CinematicPortraitIndex_CinematicPortraitBottomRight|
+						libNtve_ge_CinematicPortraitIndex_CinematicPortraitCenterLeft|
+						libNtve_ge_CinematicPortraitIndex_CinematicPortraitCenterRight|
+						libNtve_ge_CinematicPortraitIndex_FullscreenPortrait|
+						libNtve_ge_CinematicPortraitPosition_TopLeft|
+						libNtve_ge_CinematicPortraitPosition_TopRight|
+						libNtve_ge_CinematicPortraitPosition_BottomLeft|
+						libNtve_ge_CinematicPortraitPosition_BottomRight|
+						libNtve_ge_CinematicPortraitPosition_CenterLeft|
+						libNtve_ge_CinematicPortraitPosition_CenterRight|
+						libNtve_ge_UnitSelectionStoreOption_ClearUnitSelection|
+						libNtve_ge_UnitSelectionStoreOption_DoNotClearUnitSelection|
+						libNtve_ge_VolumeChannelMode_Cinematic|
+						libNtve_ge_VolumeChannelMode_Speech|
+						libNtve_ge_VolumeChannelMode_Game|
+						libNtve_ge_VolumeChannelMode_Victory|
+						libNtve_ge_BossBarRace_Terran|
+						libNtve_ge_BossBarRace_Protoss|
+						libNtve_ge_BossBarRace_Zerg|
+						libNtve_ge_GameUIStoreIndex_GameUI|
+						libNtve_ge_GameUIStoreIndex_CinematicMode|
+						libNtve_ge_GameUIStoreIndex_StoryMode|
+						libNtve_ge_UIFrameFlag_StoryModeFrame|
+						libNtve_ge_TipType_NormalTip|
+						libNtve_ge_TipType_NewUnit|
+						libNtve_ge_TipType_NewStructure|
+						libNtve_ge_TipType_NewAbility|
+						libNtve_ge_TipType_MissionStrategy|
+						libNtve_ge_CustomDialogResult_c_customDialogResultAny|
+						libNtve_ge_CustomDialogResult_c_customDialogResultYes|
+						libNtve_ge_CustomDialogResult_c_customDialogResultNo|
+						libNtve_ge_CustomDialogType_c_customDialogTypeMessage|
+						libNtve_ge_CustomDialogType_c_customDialogTypeQuery|
+						libNtve_ge_FlyerHelperDisplay_c_flyerDisplayNone|
+						libNtve_ge_FlyerHelperDisplay_c_flyerDisplaySelected|
+						libNtve_ge_FlyerHelperDisplay_c_flyerDisplayAll|
+						libNtve_ge_ReplaceUnitOptions_OldUnits|
+						libNtve_ge_ReplaceUnitOptions_OldUnitsRelative|
+						libNtve_ge_ReplaceUnitOptions_NewUnitsDefault|
+						libNtve_ge_ReplaceUnitOptions_NewUnitssMax|
+						libNtve_ge_UnitDamageTakenDealt_Damage_Take|
+						libNtve_ge_UnitDamageTakenDealt_Damage_Deal|
+						libNtve_ge_UnitDamageChangeOption_Full|
+						libNtve_ge_UnitDamageChangeOption_No|
+						libNtve_ge_UnitDamageChangeOption_Minimal|
+						libNtve_ge_UnitDamageChangeOption_Mega|
+						libNtve_ge_UnitDamageChangeOption_Mega2|
+						libNtve_gv_c_ScreenButtonMaxCount|
+						libNtve_gv_c_ScreenImageMaxCount|
+						libNtve_gv_c_ScreenLabelMaxCount|
+						libNtve_gv_pLAYERMAX|
+						libNtve_gv__BBC_BossBarMaxCount|
 						c_ScoutStartLocations|
 						c_ScoutBlockedPath|
 						c_ScoutMinerals|
@@ -1293,7 +1431,9 @@
 						c_diffTargetSpawners|
 						c_diffDelayAdvTargetting|
 						c_diffAutoTransport|
-						c_skirAuto|
+						c_diffSplitAttacking|
+						c_diffAllowTransportGather|
+						c_diffAvoidMindControlled|
 						c_skirVeryEasy|
 						c_skirEasy|
 						c_skirMedium|
@@ -1332,11 +1472,15 @@
 						c_combatFlagDisable|
 						c_combatFlagEnable|
 						c_combatFlagRead|
-						c_difficultyAll
+						c_difficultyAll|
+						libLbty_gv_c_PINGMAXCOUNT|
+						libLbty_gv_c_PINGRESETTIME|
+						libLbty_gv_c_PINGSUPPRESSIONTIME|
+						libLbty_gv_c_PINGLOCKOUTTIME
 					)\\b'
 	}
 	{
-		'comment': 'default Galaxy native functions'
+		'comment': 'Galaxy native functions'
 		'name': 'entity.name.function.native.galaxy'
 		'match': '\\b(?x)(
 						AchievementAward|
@@ -1345,6 +1489,7 @@
 						AchievementPanelSetVisible|
 						AchievementPercentText|
 						AchievementTermQuantitySet|
+						AchievementTermQuantityAdd|
 						AchievementsDisable|
 						AchievementsDisabled|
 						ActorScopeCreate|
@@ -1412,9 +1557,18 @@
 						ModelAnimationLoad|
 						ModelAnimationLoadOverriding|
 						ModelAnimationUnload|
+						AnimLengthQueryByName|
+						AnimLengthQueryByProps|
+						AnimLengthQueryLastCreated|
+						AnimLengthQueryWait|
+						AnimLengthSync|
+						AnimLengthRemainingSync|
+						AnimWait|
+						AutomationLuaGlobalGetAsString|
 						BankConditionEvaluate|
 						BankDeleteCampaignBanks|
 						BankExists|
+						BankSizeAsText|
 						BankLastCreated|
 						BankLoad|
 						BankName|
@@ -1429,10 +1583,12 @@
 						BankSectionCount|
 						BankSectionCreate|
 						BankSectionExists|
+						BankSectionSizeAsText|
 						BankSectionName|
 						BankSectionRemove|
 						BankKeyCount|
 						BankKeyExists|
+						BankKeySizeAsText|
 						BankKeyName|
 						BankKeyRemove|
 						BankValueIsType|
@@ -1565,9 +1721,12 @@
 						CameraGetTarget|
 						CameraGetPitch|
 						CameraGetYaw|
+						CameraGetDistance|
 						CameraSetData|
 						CameraSetBounds|
 						CameraFollowUnitGroup|
+						CameraFollowUnitGroupGet|
+						CameraForceFollowUnitGroup|
 						CameraLookAt|
 						CameraLookAtActor|
 						CameraLookAtUnit|
@@ -1579,6 +1738,7 @@
 						CampaignProgressSetTutorialFinished|
 						CampaignProgressSetCampaignFinished|
 						CampaignProgressDeleteCampaignSave|
+						CampaignProgressEnableCampaignSaves|
 						CampaignProgressEnableCampaignCompletedSaves|
 						AbilityClass|
 						CatalogEntryCount|
@@ -1598,10 +1758,13 @@
 						CatalogFieldValueCount|
 						CatalogFieldValueGet|
 						CatalogFieldValueGetAsInt|
+						CatalogFieldValueGetFlagsAsInt|
+						CatalogFieldValueModify|
 						CatalogFieldValueSet|
 						CatalogReferenceCount|
 						CatalogReferenceGet|
 						CatalogReferenceGetAsInt|
+						CatalogReferenceModify|
 						CatalogReferenceSet|
 						CatalogLinkReplace|
 						CatalogLinkReplacement|
@@ -1678,6 +1841,10 @@
 						ConversationDataLineId|
 						ConversationDataLineSetPickedCount|
 						ConversationDataLineGetPickedCount|
+						ConversationDataLineSetPlayers|
+						ConversationDataLineResetPlayers|
+						ConversationDataLineHideForObservers|
+						ConversationDataSetListenerGender|
 						ConversationDataSaveStateValues|
 						ConversationDataLoadStateValues|
 						ConversationDataSaveStateValue|
@@ -1690,6 +1857,7 @@
 						ConversationDataPreloadLinesQueue|
 						ConversationDataSimulateRun|
 						ConversationDataGetSound|
+						ConversationDataGetSpeaker|
 						ConversationDataCanRun|
 						ConversationDataRun|
 						ConversationDataStop|
@@ -1753,6 +1921,8 @@
 						DataTableGetDoodad|
 						DataTableSetFixed|
 						DataTableGetFixed|
+						DataTableSetGenericHandle|
+						DataTableGetGenericHandle|
 						DataTableSetInt|
 						DataTableGetInt|
 						DataTableSetMarker|
@@ -1820,6 +1990,7 @@
 						DialogSetPosition|
 						DialogSetPositionRelative|
 						DialogSetPositionRelativeToUnit|
+						DialogSetPositionRelativeToUnitWithAnchor|
 						DialogSetVisible|
 						DialogSetTransparency|
 						DialogSetImage|
@@ -1828,6 +1999,7 @@
 						DialogSetFullscreen|
 						DialogSetEnabled|
 						DialogSetChannel|
+						DialogSetRenderPriority|
 						DialogSetObservedType|
 						DialogIsModal|
 						DialogGetTitle|
@@ -1846,6 +2018,7 @@
 						DialogIsFullscreen|
 						DialogIsEnabled|
 						DialogGetChannel|
+						DialogGetRenderPriority|
 						DialogControlCreate|
 						DialogControlCreateInPanel|
 						DialogControlCreateFromTemplate|
@@ -1883,6 +2056,7 @@
 						DialogControlSetPropertyAsColor|
 						DialogControlSetPropertyAsControl|
 						DialogControlSetPropertyAsUnit|
+						DialogControlSetPropertyAsUnitGroup|
 						DialogControlGetPropertyAsText|
 						DialogControlGetPropertyAsString|
 						DialogControlGetPropertyAsInt|
@@ -1891,6 +2065,7 @@
 						DialogControlGetPropertyAsColor|
 						DialogControlGetPropertyAsControl|
 						DialogControlGetPropertyAsUnit|
+						DialogControlGetPropertyAsUnitGroup|
 						DialogControlAddItem|
 						DialogControlRemoveItem|
 						DialogControlRemoveAllItems|
@@ -1900,12 +2075,26 @@
 						DialogControlGetSelectedItem|
 						DialogControlInvokeAsText|
 						DialogControlInvokeAsString|
+						DialogControlSendAnimationEvent|
+						DialogControlSetAnimationSpeed|
+						DialogControlSetAnimationTime|
+						DialogControlAdvanceAnimation|
 						DialogControlForceTransition|
+						DialogControlRequestFocus|
 						DialogControlSetObservedType|
 						TriggerAddEventDialogControl|
 						EventDialogControl|
 						EventDialogControlEventType|
 						EventDialogControlMouseButton|
+						EffectHistoryCount|
+						EffectHistoryGetAbil|
+						EffectHistoryGetAmountFixed|
+						EffectHistoryGetAmountInt|
+						EffectHistoryGetEffect|
+						EffectHistoryGetTime|
+						EffectHistoryGetType|
+						EffectHistoryGetUnitByLocation|
+						EffectHistoryGetWeapon|
 						GameTimeOfDayGet|
 						GameTimeOfDaySet|
 						GameTimeOfDayGetLength|
@@ -1925,6 +2114,7 @@
 						CrossCliff|
 						CliffLevel|
 						WorldHeight|
+						InShrub|
 						GameSetLighting|
 						GameSetToDLighting|
 						SelectMainShadowLight|
@@ -1951,6 +2141,7 @@
 						GameMapName|
 						GameMapDescription|
 						GameMapIsBlizzard|
+						GameMapPath|
 						GameSetMissionTimePaused|
 						GameIsMissionTimePaused|
 						GameGetMissionTime|
@@ -1976,14 +2167,23 @@
 						GamePauseAllCharges|
 						GamePauseAllCooldowns|
 						GameAddChargeRegen|
+						GameAddChargeRegenRemaining|
 						GameGetChargeRegen|
+						GameAddChargeRegenFull|
+						GameGetChargeRegenFull|
 						GameAddChargeUsed|
 						GameGetChargeUsed|
 						GameAddCooldown|
 						GameGetCooldown|
 						GameIsTestMap|
 						GameIsExaminable|
+						GameTestConfigType|
 						GameIsOnline|
+						GameIsMatchmade|
+						GameIsCompetitive|
+						GameIsPractice|
+						GameIsCooperative|
+						GameAreHeroDuplicatesAllowed|
 						GameSetNextMap|
 						SetNextMissionDifficulty|
 						GameIsTransitionMap|
@@ -1992,10 +2192,12 @@
 						GameWaitForResourcesToComplete|
 						GameOver|
 						RestartGame|
+						KickFromGame|
 						GameCheatAllow|
 						GameCheatIsAllowed|
 						GameCheatsEnabled|
 						GameDataIsFullyDownloaded|
+						GameSetPauseable|
 						TriggerAddEventMapInit|
 						TriggerAddEventSaveGame|
 						TriggerAddEventSaveGameDone|
@@ -2004,6 +2206,11 @@
 						TriggerAddEventCheatUsed|
 						EventChatMessage|
 						EventCheatUsed|
+						GameUserName|
+						GameUserHandle|
+						GameUserDisplayMessage|
+						GameUserClearMessages|
+						EventGameUser|
 						IntLoopBegin|
 						IntLoopStep|
 						IntLoopDone|
@@ -2098,12 +2305,16 @@
 						TriggerAddEventMercenaryPanelPurchase|
 						TriggerAddEventMercenaryPanelSelectionChanged|
 						MinimapPing|
+						MinimapPingPossibleEnemyStartLocations|
 						PerfTestStart|
 						PerfTestStop|
 						PerfTestGetFPS|
 						UnitStatsStart|
 						UnitStatsStop|
 						EngineReset|
+						StartProfileRun|
+						StopProfileRun|
+						WaitForProfilerLoggingToEnd|
 						MoviePlayAfterGame|
 						MovieStartRecording|
 						MovieStopRecording|
@@ -2174,12 +2385,20 @@
 						PathGetDestinationUnit|
 						PathSetSourcePoint|
 						PathGetSourcePoint|
+						PathSetSourceUnit|
+						PathGetSourceUnit|
 						PathSetLineTexture|
 						PathGetLineTexture|
 						PathSetLineTileLength|
 						PathGetLineTileLength|
 						PathSetLineWidth|
 						PathGetLineWidth|
+						PathSetStepModel|
+						PathGetStepModel|
+						PathSetStepModelScale|
+						PathGetStepModelScale|
+						PathSetStepMidpoint|
+						PathGetStepMidpoint|
 						PathSetColor|
 						PathGetColor|
 						PathSetVisible|
@@ -2187,7 +2406,19 @@
 						PathGetUnit|
 						PathGetUnitType|
 						PathSetAbilClassFilter|
+						PathClearWayPoints|
+						PathAddWayPoint|
+						PathSetMinimumLinearDistance|
+						PathGetMinimumLinearDistance|
+						PathSetMinimumTravelDistance|
+						PathGetMinimumTravelDistance|
+						PathSetMinimumStepCount|
+						PathGetMinimumStepCount|
+						PathAddNoFlyZone|
+						PathRemoveNoFlyZonesInRegion|
 						PingCreate|
+						PingCreateWithPlayerId|
+						PingCreateFromData|
 						PingLastCreated|
 						PingDestroy|
 						PingDestroyAll|
@@ -2197,6 +2428,8 @@
 						PingSetModel|
 						PingSetPosition|
 						PingGetPosition|
+						PingSetDepth|
+						PingGetDepth|
 						PingSetScale|
 						PingGetScale|
 						PingSetRotation|
@@ -2213,10 +2446,17 @@
 						PingIsVisible|
 						PingSetUseUnitTeamColor|
 						PingSetUseUnitVisibility|
+						PingSetObserver|
 						TriggerAddEventPing|
 						EventPingUnit|
+						EventPingUnitType|
+						EventPingUnitControlPlayer|
+						EventPingUnitUpkeepPlayer|
+						EventPingUnitPosition|
+						EventPingUnitIsUnderConstruction|
 						EventPingPoint|
 						EventPingedMinimap|
+						EventPingOption|
 						PlanetCreate|
 						PlanetLastCreated|
 						PlanetDestroy|
@@ -2250,6 +2490,7 @@
 						PlanetSetContactTitle|
 						PlanetSetContactName|
 						PlanetSetContactModelLink|
+						PlanetSetContactActorLink|
 						PlanetSetBackgroundModelLink|
 						PlanetSetPlanetModelLink|
 						PlanetSetTechnologyIconFilePath|
@@ -2270,6 +2511,23 @@
 						TriggerAddEventPlanetPanelDeathComplete|
 						EventPlanetPanelMissionSelected|
 						EventPlanetPanelDifficultySelected|
+						TalentTreeGetHeroTalentLink|
+						TalentTreeCanSelectHeroTalentTree|
+						TalentTreeSetSelectedHeroTalentTree|
+						TalentTreeGetSelectedHeroTalentTree|
+						TalentTreeGetSelectedHeroTalentTreeColumn|
+						TalentTreeClearTier|
+						TalentTreeAllowed|
+						SetTalentTierEnabled|
+						SetTalentUpgradeRequired|
+						SetTalentTreeHeroLevel|
+						SetTalentsEnabled|
+						SetTalentTreeSelectionPanelDismissAllowed|
+						SetTalentTreeSelectionPanelAutoShow|
+						SetTalentTreePauseGameWhenSelectionPanelShown|
+						TriggerAddEventHeroTalentTreeSelected|
+						TriggerAddEventHeroTalentTreeSelectionPanelShown|
+						TriggerAddEventHeroTalentTreeSelectionPanelHidden|
 						VictoryPanelSetVictoryText|
 						VictoryPanelSetMissionTitle|
 						VictoryPanelSetMissionText|
@@ -2297,6 +2555,7 @@
 						HelpPanelAddTip|
 						HelpPanelAddHint|
 						HelpPanelAddTutorial|
+						HelpPanelAddMessage|
 						HelpPanelDisplayPage|
 						HelpPanelEnableTechTreeButton|
 						HelpPanelEnableTechGlossaryButton|
@@ -2305,6 +2564,7 @@
 						HelpPanelDestroyAllTutorials|
 						HelpPanelDestroyHelpItem|
 						TipAlertPanelClear|
+						SetHeroLeaderPanelEnabled|
 						PlayerModifyPropertyInt|
 						PlayerModifyPropertyFixed|
 						PlayerGetPropertyInt|
@@ -2314,13 +2574,30 @@
 						PlayerName|
 						PlayerHandle|
 						PlayerRace|
+						PlayerHero|
+						PlayerSkin|
+						PlayerMount|
+						PlayerArtifact|
+						PlayerArtifactRank|
+						PlayerCommander|
+						PlayerCommanderLevel|
 						PlayerDifficulty|
 						PlayerSetDifficulty|
 						PlayerSetLighting|
+						PlayerSetToDLighting|
 						PlayerStartLocation|
 						PlayerAIBuildNumber|
+						PlayerAIControlAllowed|
+						PlayerSetAllowAIControl|
+						PlayerIsUnderAIControl|
+						PlayerSetUnderAIControl|
 						PlayerHasLicense|
 						PlayerHasAccessTo|
+						PlayerHasReward|
+						PlayerAddTalent|
+						PlayerRemoveTalent|
+						PlayerHasTalent|
+						PlayerSetBounds|
 						PlayerSetColorIndex|
 						PlayerGetColorIndex|
 						PlayerColorName|
@@ -2328,6 +2605,19 @@
 						PlayerGetAlliance|
 						PlayerSetState|
 						PlayerGetState|
+						PlayerSetRace|
+						PlayerSetHero|
+						PlayerSetSkin|
+						PlayerSetMount|
+						PlayerSetCommander|
+						PlayerSetCommanderLevel|
+						PlayerAddLabel|
+						PlayerRemoveLabel|
+						PlayerRemoveAllLabels|
+						PlayerHasLabel|
+						PlayerSetDeathTimer|
+						PlayerApplySkin|
+						PlayerGetHotkeyProfile|
 						PlayerBeaconClearTarget|
 						PlayerBeaconIsAutoCast|
 						PlayerBeaconIsFromUser|
@@ -2352,7 +2642,10 @@
 						PlayerPauseAllCharges|
 						PlayerPauseAllCooldowns|
 						PlayerAddChargeRegen|
+						PlayerAddChargeRegenRemaining|
 						PlayerGetChargeRegen|
+						PlayerAddChargeRegenFull|
+						PlayerGetChargeRegenFull|
 						PlayerAddChargeUsed|
 						PlayerGetChargeUsed|
 						PlayerAddCooldown|
@@ -2368,10 +2661,12 @@
 						PlayerScoreValueSetFromFixed|
 						PlayerScoreValueSetFromInt|
 						TriggerAddEventPlayerAllianceChange|
+						TriggerAddEventPlayerJoin|
 						TriggerAddEventPlayerLeft|
 						TriggerAddEventPlayerPropChange|
 						TriggerAddEventPlayerAIWave|
 						TriggerAddEventPlayerEffectUsed|
+						TriggerAddEventPlayerEffectUsedFromScope|
 						EventPlayer|
 						EventPlayerProperty|
 						EventPlayerPropertyChangeInt|
@@ -2383,11 +2678,13 @@
 						EventPlayerEffectUsedUnitType|
 						EventPlayerEffectUsedAmountInt|
 						EventPlayerEffectUsedAmountFixed|
+						EventPlayerEffectUsedSourceBehavior|
 						EventPlayerWave|
 						DifficultyName|
 						DifficultyNameCampaign|
 						DifficultyEnabled|
 						DifficultyAPM|
+						SetScoreTimer|
 						PlayerGroupEmpty|
 						PlayerGroupCopy|
 						PlayerGroupAll|
@@ -2415,11 +2712,14 @@
 						PointsInRange|
 						AngleBetweenPoints|
 						DistanceBetweenPoints|
+						DistanceSquaredBetweenPoints|
 						PointPathingCost|
 						PointPathingCliffLevel|
 						PointPathingPassable|
 						PointPathingIsConnected|
 						PointReflect|
+						PointInterpolate|
+						MidPoint|
 						PortraitCreate|
 						PortraitLastCreated|
 						PortraitDestroy|
@@ -2568,11 +2868,10 @@
 						SoundLink|
 						SoundLinkId|
 						SoundLinkAsset|
-						SoundPlay|
-						SoundPlayAtPoint|
-						SoundPlayOnUnit|
-						SoundPlayScene|
-						SoundPlaySceneFile|
+						SoundPlayForPlayer|
+						SoundPlayAtPointForPlayer|
+						SoundPlayOnUnitForPlayer|
+						SoundPlaySceneForPlayer|
 						SoundLastPlayed|
 						SoundPause|
 						SoundStop|
@@ -2593,9 +2892,12 @@
 						SoundChannelDSPInsert|
 						SoundChannelDSPRemove|
 						SoundSetReverb|
+						SoundSetReverbForPlayers|
 						SoundSetFactors|
 						SoundSubtitleText|
 						SoundPortraitModel|
+						SoundSetListenerGender|
+						SoundPlaySceneFile|
 						SoundtrackDefault|
 						SoundtrackPlay|
 						SoundtrackPause|
@@ -2613,6 +2915,7 @@
 						TextCase|
 						StringSub|
 						StringEqual|
+						StringCompare|
 						StringFind|
 						StringContains|
 						StringWord|
@@ -2670,6 +2973,7 @@
 						TextTagAttachToUnit|
 						TextTagAttachToUnitPoint|
 						TextTagSetVelocity|
+						TextTagSetGravity|
 						TextTagSetAlignment|
 						TextTagSetTextAlignment|
 						TextTagSetMaxSize|
@@ -2728,11 +3032,13 @@
 						TransmissionSourceFromMovie|
 						TransmissionSourceSetPauseAllowed|
 						TransmissionSourceSetStreamingAllowed|
-						TransmissionSend|
-						TransmissionSendAdvanced|
+						TransmissionSourceSetBypassMessageLog|
+						TransmissionSendForPlayer|
 						TransmissionLastSent|
 						TransmissionClear|
+						TransmissionPlayerHasActiveTransmission|
 						TransmissionClearAll|
+						TransmissionClearGroup|
 						TransmissionSetOption|
 						TransmissionWait|
 						TransmissionIsComplete|
@@ -2751,6 +3057,7 @@
 						TriggerActiveCount|
 						TriggerStop|
 						TriggerWaitForTrigger|
+						TriggerCurrentTriggerThreadSetFlags|
 						TriggerQueueEnter|
 						TriggerQueueExit|
 						TriggerQueueIsEmpty|
@@ -2760,15 +3067,18 @@
 						TriggerSkippableEnd|
 						TriggerAddEventTriggerSkipped|
 						EventTrigger|
+						TriggerEventParamName|
 						TriggerSendEvent|
 						TriggerAddEventGeneric|
 						EventGenericName|
 						TriggerDebugWindowOpen|
 						TriggerDebugOutput|
+						TriggerDebugOutputEnable|
 						TriggerDebugEnableType|
 						TriggerDebugSetTypeName|
 						TriggerDebugSetTypeColor|
 						TriggerDebugSetTypeFile|
+						TriggerDebugSetTypeFilter|
 						UnitCreate|
 						UnitLastCreated|
 						UnitLastCreatedGroup|
@@ -2781,6 +3091,7 @@
 						UnitIsAlive|
 						UnitIsValid|
 						UnitWaitUntilIdle|
+						UnitGetName|
 						UnitGetTag|
 						UnitGetType|
 						UnitShowKillDisplay|
@@ -2789,6 +3100,7 @@
 						UnitSetTeamColorIndex|
 						UnitResetTeamColorIndex|
 						UnitGetPosition|
+						UnitGetGoalPosition|
 						UnitSetPosition|
 						UnitGetHeight|
 						UnitSetHeight|
@@ -2817,19 +3129,26 @@
 						UnitSetCustomValue|
 						UnitGetCustomValue|
 						UnitAddChargeRegen|
+						UnitAddChargeRegenRemaining|
 						UnitGetChargeRegen|
+						UnitAddChargeRegenFull|
+						UnitGetChargeRegenFull|
 						UnitAddChargeUsed|
 						UnitGetChargeUsed|
 						UnitAddCooldown|
+						UnitModifyCooldown|
+						UnitClearCooldowns|
 						UnitGetCooldown|
 						UnitCreateEffectPoint|
 						UnitCreateEffectUnit|
 						UnitValidateEffectPoint|
 						UnitValidateEffectUnit|
 						UnitDamage|
+						UnitEffectHistory|
 						UnitSetAIOption|
 						UnitGetAIOption|
 						UnitAbilitySpend|
+						UnitAbilitySpendExplicit|
 						UnitAbilityReset|
 						UnitAbilityChargeInfo|
 						UnitAbilityCount|
@@ -2842,7 +3161,10 @@
 						UnitAbilityGetLevel|
 						UnitAbilityMaxLevel|
 						UnitAbilityAddChargeRegen|
+						UnitAbilityAddChargeRegenRemaining|
 						UnitAbilityGetChargeRegen|
+						UnitAbilityAddChargeRegenFull|
+						UnitAbilityGetChargeRegenFull|
 						UnitAbilityAddChargeUsed|
 						UnitAbilityGetChargeUsed|
 						UnitAbilityAddCooldown|
@@ -2858,6 +3180,7 @@
 						UnitCargoGroup|
 						UnitCargoValue|
 						UnitTransport|
+						UnitConjoinedGroup|
 						UnitAgent|
 						UnitMagazineArm|
 						UnitMagazineLastCreated|
@@ -2870,6 +3193,8 @@
 						UnitQueueGetProperty|
 						UnitMoverExists|
 						UnitTestPlane|
+						UnitGetDamageDealtTime|
+						UnitGetDamageTakenTime|
 						UnitGetProgressComplete|
 						UnitSetProgressComplete|
 						UnitSetProgressStage|
@@ -2884,6 +3209,7 @@
 						UnitBehaviorEnabled|
 						UnitBehaviorGet|
 						UnitHasBehavior|
+						UnitHasBehavior2|
 						UnitBehaviorRemove|
 						UnitBehaviorRemovePlayer|
 						UnitBehaviorTransfer|
@@ -2892,12 +3218,17 @@
 						UnitBehaviorEffectPlayer|
 						UnitBehaviorEffectUnit|
 						UnitBehaviorAddChargeRegen|
+						UnitBehaviorAddChargeRegenRemaining|
 						UnitBehaviorGetChargeRegen|
+						UnitBehaviorAddChargeRegenFull|
+						UnitBehaviorGetChargeRegenFull|
 						UnitBehaviorAddChargeUsed|
 						UnitBehaviorGetChargeUsed|
 						UnitBehaviorAddCooldown|
 						UnitBehaviorGetCooldown|
 						UnitBehaviorSpawn|
+						UnitBehaviorDamageModifyRemaining|
+						UnitBehaviorDamageModifyLimit|
 						UnitXPGainEnable|
 						UnitMarker|
 						UnitMarkerAdd|
@@ -2906,6 +3237,7 @@
 						UnitOrder|
 						UnitOrderCount|
 						UnitOrderHasAbil|
+						UnitOrderIsAcquired|
 						UnitOrderIsValid|
 						UnitIsHarvesting|
 						UnitIssueOrder|
@@ -2937,15 +3269,26 @@
 						UnitWeaponPeriod|
 						UnitWeaponRange|
 						UnitWeaponPeriodRemaining|
+						UnitWeaponSetPeriodRemaining|
 						UnitWeaponRemove|
 						UnitWeaponsPlaneTest|
 						UnitWeaponDamage|
 						UnitWeaponSpeedMultiplier|
 						UnitCanAttackTarget|
+						UnitInRangeAndAbleToAttackTarget|
 						UnitXPTotal|
 						UnitLevel|
+						UnitXPGetCurrentXP|
+						UnitXPAddXP|
+						UnitXPSetCurrentXP|
+						UnitXPGetXPForLevel|
+						UnitXPSetXPForLevel|
+						UnitXPGetCurrentLevel|
+						UnitXPSetCurrentLevel|
+						UnitXPGetNumLevels|
 						UnitTypeFromString|
 						UnitTypeGetName|
+						UnitTypeGetGenderCode|
 						UnitTypeGetProperty|
 						UnitTypeGetCost|
 						UnitTypeTestFlag|
@@ -2960,6 +3303,8 @@
 						UnitTypePlacementFromUnit|
 						UnitTypePlacementTestsFromPoint|
 						UnitTypePlacementTestsFromUnit|
+						UnitPathableToPoint|
+						UnitPathableToUnit|
 						UnitEventSetNullVariableInvalid|
 						TriggerAddEventUnitCreated|
 						TriggerAddEventUnitRemoved|
@@ -2970,7 +3315,9 @@
 						TriggerAddEventUnitStartedAttack2|
 						TriggerAddEventUnitAttacked2|
 						TriggerAddEventUnitAttributeChange|
+						TriggerAddEventUnitDamageAbsorbed|
 						TriggerAddEventUnitDamaged|
+						TriggerAddEventUnitHealed|
 						TriggerAddEventUnitBecomesIdle|
 						TriggerAddEventUnitInventoryChange|
 						EventUnit|
@@ -2979,8 +3326,13 @@
 						EventUnitCreatedUnit|
 						EventUnitCreatedAbil|
 						EventUnitCreatedBehavior|
+						EventUnitDamageAttempted|
+						EventUnitDamageAttemptedVitals|
 						EventUnitDamageAmount|
 						EventUnitDamageAbsorbed|
+						EventUnitDamageBehaviorShield|
+						EventUnitDamageVitalsLeeched|
+						EventUnitDamageKillXP|
 						EventUnitDamageSourceUnit|
 						EventUnitDamageSourcePlayer|
 						EventUnitDamageSourcePoint|
@@ -2988,6 +3340,11 @@
 						EventUnitDamageEffect|
 						EventUnitGetItem|
 						EventUnitGetItemType|
+						EventUnitHealLaunchUnit|
+						EventUnitHealLaunchPlayer|
+						EventUnitHealVital|
+						EventUnitHealAmount|
+						EventUnitHealEffect|
 						EventUnitInventoryChange|
 						EventUnitInventoryItem|
 						EventUnitInventoryItemContainer|
@@ -3019,12 +3376,17 @@
 						EventUnitAbilityStage|
 						EventUnitTargetPoint|
 						EventUnitTargetUnit|
+						EventUnitAbilityOtherUnit|
 						TriggerAddEventUnitBehaviorChange|
+						TriggerAddEventUnitBehaviorChangeFromCategory|
 						TriggerAddEventUnitGainExperience|
 						TriggerAddEventUnitGainLevel|
 						EventUnitBehavior|
 						EventUnitBehaviorChange|
 						EventUnitXPDelta|
+						EventUnitVictimUnit|
+						EventUnitItemUsed|
+						EventUnitEffectUsed|
 						EventUnitAttributePoints|
 						TriggerAddEventUnitArmMagazineProgress|
 						TriggerAddEventUnitConstructProgress|
@@ -3038,6 +3400,7 @@
 						TriggerAddEventUnitPowerup|
 						EventUnitPowerupUnit|
 						TriggerAddEventUnitRevive|
+						PickedExclusiveMapTag|
 						UnitFilter|
 						UnitFilterStr|
 						UnitFilterSetState|
@@ -3073,6 +3436,7 @@
 						UnitGroupHasUnit|
 						UnitGroupTestPlane|
 						UnitGroupNearestUnit|
+						UnitGroupPauseAll|
 						UnitRefFromUnit|
 						UnitRefFromVariable|
 						UnitRefToUnit|
@@ -3146,6 +3510,8 @@
 						UISetWorldVisible|
 						UISetCursorVisible|
 						UISetCursorAutoHide|
+						UISetHotkeyProfile|
+						UIHotKeyString|
 						UIDisplayMessage|
 						UIClearMessages|
 						UIShowCinematicText|
@@ -3173,11 +3539,13 @@
 						UISetGameMenuItemVisible|
 						UIGameMenuItemVisible|
 						UISetGameMenuItemText|
+						UISetGameMenuItemShortcut|
 						UIClearCustomMenuItemList|
 						UISetCustomMenuItemVisible|
 						UICustomMenuItemVisible|
 						UISetCustomMenuItemShortcut|
 						UISetCustomMenuItemText|
+						UIShowStandardMenu|
 						UIShowCustomMenu|
 						UIShowCustomDialog|
 						UISetResourceTradeCountdownTime|
@@ -3190,6 +3558,7 @@
 						UISetMiniMapCameraFoVVisible|
 						UISetCommandAllowed|
 						UISetCommandDisallowedMessage|
+						UISetHotkeyAllowed|
 						UISetDragSelectEnabled|
 						UISetChallengeMode|
 						UISetChallengeScoreText|
@@ -3201,15 +3570,23 @@
 						UISetResourceVisible|
 						UISetSelectionTypeEnabled|
 						UILaunchNydusLink|
+						UIMessageLogPanelSetVisible|
+						UISetTargetingOrder|
 						TriggerAddEventAbortMission|
 						TriggerAddEventCustomDialogDismissed|
 						TriggerAddEventGameMenuItemSelected|
 						TriggerAddEventMouseClicked|
 						TriggerAddEventMouseMoved|
+						TriggerAddEventMouseWheel|
 						TriggerAddEventKeyPressed|
+						TriggerAddEventHotkeyPressed|
 						TriggerAddEventButtonPressed|
 						TriggerAddEventGameCreditsFinished|
 						TriggerAddEventTargetModeUpdate|
+						TriggerAddEventResourceRequest|
+						TriggerAddEventResourceTrade|
+						TriggerAddEventCommandError|
+						TriggerAddEventAlert|
 						EventCustomDialogResult|
 						EventGameMenuItemSelected|
 						EventMouseClickedButton|
@@ -3223,6 +3600,7 @@
 						EventMouseMovedPosXWorld|
 						EventMouseMovedPosYWorld|
 						EventMouseMovedPosZWorld|
+						EventMouseWheelSpin|
 						EventKeyPressed|
 						EventKeyShift|
 						EventKeyControl|
@@ -3230,10 +3608,20 @@
 						EventButtonPressed|
 						EventTargetModeAbilCmd|
 						EventTargetModeState|
+						EventResourceRequestAmount|
+						EventResourceTradeRecipient|
+						EventResourceTradeAmount|
+						EventCommandErrorValue|
+						EventCommandErrorAbilCmd|
+						EventAlert|
 						VisEnable|
 						VisIsEnabled|
 						VisIsVisibleForPlayer|
+						VisGetFoWAlpha|
+						VisSetFoWAlpha|
+						VisResetFoWAlpha|
 						VisExploreArea|
+						VisFillArea|
 						VisRevealArea|
 						VisRevealerCreate|
 						VisRevealerLastCreated|
@@ -3247,7 +3635,7 @@
 						DebugFixed|
 						DebugPoint|
 						AIStart|
-						AISetCompNameToDiff|
+						AIForceActive|
 						AIDisableAllScouting|
 						AIGivingUp|
 						AIGoodGame|
@@ -3277,6 +3665,9 @@
 						AIPathDistToNearestKnownEnemyStructure|
 						AIPathDistToNearestFriendlyStructure|
 						AICanPathToAnyKnownEnemyStructure|
+						AIAddTeamRepresentative|
+						AITrackUnitDanger|
+						AIPositionAlongPath|
 						AIGetTotalStartLocs|
 						AIGetGroundStartLocs|
 						AIGetAirStartLocs|
@@ -3317,6 +3708,7 @@
 						AIHasNearbyAttackers|
 						AIHasNearbyAlliedAttackers|
 						AIHasNearbyAlliedDetector|
+						AIGetDirection|
 						AISetCoopFlag|
 						AIGetCoopFlag|
 						AIGetBuildingPlacement|
@@ -3348,6 +3740,7 @@
 						AISetUnitNotUsableInWaves|
 						AISetGroupNotUsableInWaves|
 						AISetWantsToUpgrade|
+						AISetUnitAvoidEnemyGates|
 						AISetUnitForceMover|
 						AISetGroupForceMover|
 						AIInitCampaignTowns|
@@ -3539,6 +3932,7 @@
 						AIWaveTargetGatherD|
 						AIWaveTargetRegion|
 						AIWaveTargetGuardHomeUnit|
+						AIWaveTargetGatherMelee|
 						AIWaveTargetGatherOPoint|
 						AIWaveTargetGatherDPoint|
 						AIWaveTargetGetUnit|
@@ -3582,6 +3976,7 @@
 						AISetNextDropTimeCheck|
 						AILastAttackRatio|
 						AILastAttackStartEval|
+						AIDefaultMeleeSplitArmyToDefend|
 						AIAttackWaveAddUnits|
 						AIAttackWaveCancel|
 						AIAttackWaveSetGatherPoint|
@@ -3612,6 +4007,7 @@
 						AISetMinimumBullyCount|
 						AISetGeneralRebuildCount|
 						AISetSpecificRebuildCount|
+						AISetBullyRebuildDelay|
 						AISetBullyAttackWavePercent|
 						AINearestTownLimitWaveGather|
 						AINearestTownBullyRebuild|
@@ -3619,7 +4015,500 @@
 						AIResetBullyRebuildCountsInRegion|
 						AIClearAllBullies|
 						AIAddBully|
-						AIGetBullyType
+						AIGetBullyType|
+						AILaneWaypointClearAll|
+						AILaneWaypointAdd|
+						AILaneWaypointGetClosestLane|
+						AILaneWaypointGetWaypointPosWithOffset|
+						AILaneWaypointConvertPointToWaydist|
+						AILaneWaypointConvertWaydistOffsetToPoint|
+						AILaneWaypointCalcClosestDataForLane|
+						AILaneWaypointGetCalcDataClosestWaypointIndex|
+						AILaneWaypointGetCalcDataSecondWaypointIndex|
+						AILaneWaypointGetCalcDataClosestPoint|
+						AILaneWaypointGetCalcDataClosestDist
+					)\\b'
+	}
+	{
+		'comment': 'Galaxy builtin functions'
+		'name': 'entity.name.function.builtin.galaxy'
+		'match': '\\b(?x)(
+						libNtve_gf_AttachModelToActor|
+						libNtve_gf_LastCreatedActorScope|
+						libNtve_gf_LastCreatedActor|
+						libNtve_gf_AttachModelToUnit|
+						libNtve_gf_AttachModelToUnitInheritVisibility|
+						libNtve_gf_AttachModelToActor2|
+						libNtve_gf_ActorScopeLastCreated|
+						libNtve_gf_ActorScopeLastCreatedSend|
+						libNtve_gf_ActorLastCreated|
+						libNtve_gf_ActorLastCreatedSend|
+						libNtve_gf_AttachActorToUnit|
+						libNtve_gf_AttachActorToActor|
+						libNtve_gf_CreateActorAtPoint|
+						libNtve_gf_CreateModelAtPoint|
+						libNtve_gf_CreateModelWithPointFacing|
+						libNtve_gf_SendActorMessageToUnit|
+						libNtve_gf_ActorRegionSendSimple|
+						libNtve_gf_SendActorMessageToGameRegion|
+						libNtve_gf_SendActorMessageToGameRegionWithFilters|
+						libNtve_gf_ActorMsg1|
+						libNtve_gf_ActorMsg2|
+						libNtve_gf_ActorMsg3|
+						libNtve_gf_ActorMsg4|
+						libNtve_gf_ActionDamage|
+						libNtve_gf_ActionImpact|
+						libNtve_gf_AliasAdd|
+						libNtve_gf_AliasRemove|
+						libNtve_gf_AnimBaselineStart|
+						libNtve_gf_AnimBaselineStop|
+						libNtve_gf_AnimBlendTimeApply|
+						libNtve_gf_AnimBlendTimeRemove|
+						libNtve_gf_AnimClear|
+						libNtve_gf_AnimClearAllBut|
+						libNtve_gf_AnimDumpDB|
+						libNtve_gf_AnimGroupRemoveAll|
+						libNtve_gf_AnimPlaySequence|
+						libNtve_gf_AnimSetCompletion|
+						libNtve_gf_AnimSetDuration|
+						libNtve_gf_AnimSetPaused|
+						libNtve_gf_AnimSetTime|
+						libNtve_gf_AnimSetTimeScale|
+						libNtve_gf_AnimSetTimeScaleGlobal|
+						libNtve_gf_AttachSetBearings|
+						libNtve_gf_AttachSetBearingsFrom|
+						libNtve_gf_AttachSetPosition|
+						libNtve_gf_AttachSetPositionFrom|
+						libNtve_gf_AttachSetRotation|
+						libNtve_gf_AttachSetRotationFrom|
+						libNtve_gf_Create|
+						libNtve_gf_CreateCopy|
+						libNtve_gf_DeathCustomize|
+						libNtve_gf_Destroy|
+						libNtve_gf_HostSiteOpsSet|
+						libNtve_gf_ListAdd|
+						libNtve_gf_ListRemove|
+						libNtve_gf_MissileTentacleReturn|
+						libNtve_gf_ModelEventSuppress|
+						libNtve_gf_ModelSwap|
+						libNtve_gf_MoverSetAcceleration|
+						libNtve_gf_MoverSetDeceleration|
+						libNtve_gf_MoverSetDestination2D|
+						libNtve_gf_MoverSetDestinationFrom|
+						libNtve_gf_MoverSetDestinationH|
+						libNtve_gf_MoverSetDestinationZ|
+						libNtve_gf_MoverSetSpeed|
+						libNtve_gf_MoverSetSpeedMax|
+						libNtve_gf_MoverSetSpeedFromDuration|
+						libNtve_gf_MoverMove|
+						libNtve_gf_MoverStop|
+						libNtve_gf_MoverStopNow|
+						libNtve_gf_MultiplyScale|
+						libNtve_gf_Print|
+						libNtve_gf_QueryPersistent|
+						libNtve_gf_QueryRadius|
+						libNtve_gf_QueryRegion|
+						libNtve_gf_RefClear|
+						libNtve_gf_RefDestroy|
+						libNtve_gf_RefDump|
+						libNtve_gf_RefNotify|
+						libNtve_gf_RefSet|
+						libNtve_gf_RefSetFromMsg|
+						libNtve_gf_RefSetFromActor|
+						libNtve_gf_RefSetRefreshName|
+						libNtve_gf_SetBearings|
+						libNtve_gf_SetBearingsFrom|
+						libNtve_gf_SetBearingsH|
+						libNtve_gf_SetFacing|
+						libNtve_gf_SetHeight|
+						libNtve_gf_SetOpacity|
+						libNtve_gf_SetPosition|
+						libNtve_gf_SetPosition2D|
+						libNtve_gf_SetPosition2DH|
+						libNtve_gf_SetPositionFrom|
+						libNtve_gf_SetPositionH|
+						libNtve_gf_SetRenderToTextureEnabled|
+						libNtve_gf_SetRotation|
+						libNtve_gf_SetRotationFrom|
+						libNtve_gf_SetScale|
+						libNtve_gf_SetScaleAbsolute|
+						libNtve_gf_SetTeamColor|
+						libNtve_gf_SetLocalTintColor|
+						libNtve_gf_SetTintColor|
+						libNtve_gf_SetVisibility|
+						libNtve_gf_SetWalkAnimMoveSpeed|
+						libNtve_gf_SetZ|
+						libNtve_gf_Signal|
+						libNtve_gf_SoundAddDSP|
+						libNtve_gf_SoundSetMuted|
+						libNtve_gf_SoundSetOffset|
+						libNtve_gf_SoundSetPaused|
+						libNtve_gf_StatusDecrement|
+						libNtve_gf_StatusIncrement|
+						libNtve_gf_TextureDump|
+						libNtve_gf_TextureDumpDB|
+						libNtve_gf_TextureGroupApply|
+						libNtve_gf_TextureGroupRemove|
+						libNtve_gf_TextureSelectByID|
+						libNtve_gf_MakeMsgTextureVideoPlay|
+						libNtve_gf_TextureVideoSetFrame|
+						libNtve_gf_TextureVideoSetPaused|
+						libNtve_gf_TextureVideoSetTime|
+						libNtve_gf_TextureVideoStop|
+						libNtve_gf_TextureVideoStopAll|
+						libNtve_gf_TimerSet|
+						libNtve_gf_TimerKill|
+						libNtve_gf_KillModel|
+						libNtve_gf_RemoveDoodadsinRegion|
+						libNtve_gf_RemoveDeathModelsinRegion|
+						libNtve_gf_RemoveDeathModelsinRegionImmediately|
+						libNtve_gf_LookAtTargetFromPointWithZOffset|
+						libNtve_gf_LookAtTargetFromUnitAttachPoint|
+						libNtve_gf_CreateLookAtTargetAtPoint|
+						libNtve_gf_CreateLookAtTargetAtUnitAttachPoint|
+						libNtve_gf_SimpleLookAtStart|
+						libNtve_gf_MakeUnitLookAtPoint|
+						libNtve_gf_MakeUnitLookAtUnit|
+						libNtve_gf_SimpleLookAtStop|
+						libNtve_gf_MainActorofUnit|
+						libNtve_gf_MakeModelFaceAngle|
+						libNtve_gf_PlayMovieTextureOnUnitActor|
+						libNtve_gf_StopAllVideoTexturesOnUnit|
+						libNtve_gf_ShowHideDoodadsInRegion|
+						libNtve_gf_DifficultyValueInt|
+						libNtve_gf_DifficultyValueFixed|
+						libNtve_gf_DifficultyValueUnitType|
+						libNtve_gf_AICast|
+						libNtve_gf_DeclareNextTown|
+						libNtve_gf_SetTacticalAIRange|
+						libNtve_gf_SetTacticalAIThink|
+						libNtve_gf_PlayAnimation|
+						libNtve_gf_PlayAnimationOnDoodadsInRegion|
+						libNtve_gf_KillDoodadsInRegion|
+						libNtve_gf_ClearAnimation|
+						libNtve_gf_ClearAnimationOnDoodadsInRegion|
+						libNtve_gf_TurnAnimationPropertiesOn|
+						libNtve_gf_TurnAnimationPropertiesOnWithBlendInOut|
+						libNtve_gf_TurnAnimationPropertiesOff|
+						libNtve_gf_TurnAllAnimationPropertiesOff|
+						libNtve_gf_SetAnimationTime|
+						libNtve_gf_SetAnimationTimeScale|
+						libNtve_gf_SetAnimationCompletion|
+						libNtve_gf_SetAnimationDuration|
+						libNtve_gf_SwooshCamera|
+						libNtve_gf_CopyOfCameraObject|
+						libNtve_gf_CostOfAbility|
+						libNtve_gf__CineModeTurnOnOffForPlayer|
+						libNtve_gf__CineModeTurnOnOffForPlayerGroup|
+						libNtve_gf__CineModeFogSetting|
+						libNtve_gf__CineModeChangeFogSettingForPlayer|
+						libNtve_gf__CineModeChangeFogSettingForPlayerGroup|
+						libNtve_gf__CineModeMaskSetting|
+						libNtve_gf__CineModeChangeMaskSettingForPlayer|
+						libNtve_gf__CineModeChangeMaskSettingForPlayerGroup|
+						libNtve_gf__CineModeHideUI|
+						libNtve_gf__CineModeRestoreUI|
+						libNtve_gf__CineModeStoreCheatStatus|
+						libNtve_gf__CineModeRestoreCheatStatus|
+						libNtve_gf_CinematicMode|
+						libNtve_gf_GlobalCinematicSetting|
+						libNtve_gf_SetCinematicTransitionStyle|
+						libNtve_gf_PlayerInCinematicMode|
+						libNtve_gf_MovieDynamicSubtitlesandDuration|
+						libNtve_gf_ConvertBooleanToText|
+						libNtve_gf_ConvertBooleanToString|
+						libNtve_gf_ConvertStringToBoolean|
+						libNtve_gf_ConvertPointToString|
+						libNtve_gf_ConvertStringToPoint|
+						libNtve_gf_ConvertPlayerColorToColor|
+						libNtve_gf_ConvertColorToString|
+						libNtve_gf_ConvertBearingsToString|
+						libNtve_gf_ConvertXYToString|
+						libNtve_gf_Convert3DVectorToString|
+						libNtve_gf_Convert3DRotationToString|
+						libNtve_gf_ConvertStringToUILayoutFrameName|
+						libNtve_gf_SaveDataTableValueDialogItem|
+						libNtve_gf_SaveDataTableValueDifficultyLevel|
+						libNtve_gf_SaveDataTableValuePlayerColor|
+						libNtve_gf_SaveDataTableValueTextTag|
+						libNtve_gf_ValueFromDataTableDialogItem|
+						libNtve_gf_ValueFromDataTableDifficultyLevel|
+						libNtve_gf_ValueFromDataTablePlayerColor|
+						libNtve_gf_ValueFromDataTableTextTag|
+						libNtve_gf_ConvertIntegerToDebugMessageType|
+						libNtve_gf_SetDialogItemText|
+						libNtve_gf_DialogItemText|
+						libNtve_gf_CreateDialogItemAchievement|
+						libNtve_gf_CreateDialogItemButton|
+						libNtve_gf_CreateDialogItemCheckBox|
+						libNtve_gf_CreateDialogItemImage|
+						libNtve_gf_CreateDialogItemLabel|
+						libNtve_gf_SetDialogItemRotation|
+						libNtve_gf_SetDialogItemtoUseAspectUncorrection|
+						libNtve_gf_SetDialogItemCurrentValue|
+						libNtve_gf_SetDialogItemMinimumValue|
+						libNtve_gf_SetDialogItemMaximumValue|
+						libNtve_gf_SetDialogItemChecked|
+						libNtve_gf_SetDialogItemEditorValue|
+						libNtve_gf_DialogItemValue|
+						libNtve_gf_DialogItemMaximumValue|
+						libNtve_gf_DialogItemMinimumValue|
+						libNtve_gf_DialogItemIsChecked|
+						libNtve_gf_DialogItemEditValue|
+						libNtve_gf_SetDialogItemColor|
+						libNtve_gf_SetDialogItemStyle|
+						libNtve_gf_SetDialogItemTextWriteout|
+						libNtve_gf_SetDialogItemTextWriteoutDuration|
+						libNtve_gf_SetDialogItemTooltip|
+						libNtve_gf_DialogItemColor|
+						libNtve_gf_DialogItemStyle|
+						libNtve_gf_DialogItemTooltip|
+						libNtve_gf_SetDialogItemImage|
+						libNtve_gf_SetDialogItemImage2|
+						libNtve_gf_SetDialogItemImageType|
+						libNtve_gf_SetDialogItemBlendMode|
+						libNtve_gf_SetDialogItemImageType2|
+						libNtve_gf_DialogItemImage|
+						libNtve_gf_DialogItemImageType|
+						libNtve_gf_SetDialogItemFlash|
+						libNtve_gf_SetDialogItemCutscene|
+						libNtve_gf_SetDialogItemAchievement|
+						libNtve_gf_SetDialogItemRenderPriority|
+						libNtve_gf_SetDialogItemClickOnDown|
+						libNtve_gf_SetDialogItemToggled|
+						libNtve_gf_SetDialogItemMovie|
+						libNtve_gf_SetDialogItemDesaturated|
+						libNtve_gf_SetDialogItemDesaturationColor|
+						libNtve_gf_SetDialogItemCustomTooltip|
+						libNtve_gf_SetDialogItemUnit|
+						libNtve_gf_SetDialogItemModel|
+						libNtve_gf_SetDialogItemAnimation|
+						libNtve_gf_SetDialogItemCamera|
+						libNtve_gf_SetDialogItemBorderVisible|
+						libNtve_gf_SetDialogItemBorderImage|
+						libNtve_gf_SetDialogItemBackgroundVisible|
+						libNtve_gf_SetDialogItemUseTransition|
+						libNtve_gf_SetDialogItemMuted|
+						libNtve_gf_SetDialogItemPaused|
+						libNtve_gf_SetDialogItemAcceptMouse|
+						libNtve_gf_SetDialogItemTintColor|
+						libNtve_gf_SetDialogItemTeamColor|
+						libNtve_gf_SetDialogItemLight|
+						libNtve_gf_SetDialogItemTransitionModel|
+						libNtve_gf_SetDialogItemForceVisible|
+						libNtve_gf_SetDialogItemRenderType|
+						libNtve_gf_SetDialogItemUnitLink|
+						libNtve_gf_SetDialogItemTeamColorIndex|
+						libNtve_gf_SetDialogItemAnimationDuration|
+						libNtve_gf_SetDialogItemAnimationTime|
+						libNtve_gf_SetDialogItemActor|
+						libNtve_gf_SetDialogItemBehavior|
+						libNtve_gf_SetDialogItemHotkey|
+						libNtve_gf_SetDialogItemAllowedMouseButtons|
+						libNtve_gf_SetDialogItemAlphaMask|
+						libNtve_gf_SetDialogItemAnimationIndex|
+						libNtve_gf_SetDialogItemHandle|
+						libNtve_gf_SetDialogItemBorderColor|
+						libNtve_gf_SetDialogItemFillColor|
+						libNtve_gf_SetDialogItemSubmenu|
+						libNtve_gf_SetDialogItemUnitGroup|
+						libNtve_gf_SetDialogItemPlayerId|
+						libNtve_gf_SetDialogItemScoreValueLink|
+						libNtve_gf_SetDialogItemStateIndex|
+						libNtve_gf_DisplayScreenButton|
+						libNtve_gf_HideScreenButton|
+						libNtve_gf_FlashScreenButton|
+						libNtve_gf_StopFlashingScreenButton|
+						libNtve_gf_SetScreenButtonBorderImage|
+						libNtve_gf_SetScreenButtonFlashingBorderImage|
+						libNtve_gf_ScreenButtonDialog|
+						libNtve_gf_ScreenButton|
+						libNtve_gf_DisplayScreenImage|
+						libNtve_gf_HideScreenImage|
+						libNtve_gf_PulseScreenImage|
+						libNtve_gf_StopPulsingScreenImage|
+						libNtve_gf_ScreenImageDialog|
+						libNtve_gf_ScreenImageDialogItem|
+						libNtve_gf_DisplayScreenLabel|
+						libNtve_gf_HideScreenImage2|
+						libNtve_gf_ScreenLabelDialog|
+						libNtve_gf_ScreenLabelDialogItem|
+						libNtve_gf_CreateExplosionAtPoint|
+						libNtve_gf_PlayerCanCreateEffectAtPoint|
+						libNtve_gf_PlayerCanCreateEffectOnUnit|
+						libNtve_gf_UnitCanCreateEffectAtPoint|
+						libNtve_gf_UnitCanCreateEffectOnUnit|
+						libNtve_gf_GamePlayTime|
+						libNtve_gf_GameRemoveChargeRegen|
+						libNtve_gf_GameRemoveChargeUsed|
+						libNtve_gf_GameRemoveCooldown|
+						libNtve_gf_PreloadModelAnimation|
+						libNtve_gf_PreloadModelObject|
+						libNtve_gf_PreloadSoundObject|
+						libNtve_gf_PreloadSoundtrack|
+						libNtve_gf_PreloadUnit|
+						libNtve_gf_WaitForTimer|
+						libNtve_gf_ShowHideLeaderboard|
+						libNtve_gf_ArithmeticIntClamp|
+						libNtve_gf_ArithmeticRealClamp|
+						libNtve_gf_RandomPercent|
+						libNtve_gf_RandomAngle|
+						libNtve_gf_ReviveOrderTargetingPoint|
+						libNtve_gf_ReviveOrderWithNoTarget|
+						libNtve_gf_CreatePingFacingAngle|
+						libNtve_gf_ClearAlliance|
+						libNtve_gf_MakeAlly|
+						libNtve_gf_SetAlliance|
+						libNtve_gf_SetAllianceOneWay|
+						libNtve_gf_SetPlayerGroupAlliance|
+						libNtve_gf_PlayerIsEnemy|
+						libNtve_gf_PlayerRemoveChargeRegen|
+						libNtve_gf_PlayerRemoveChargeUsed|
+						libNtve_gf_PlayerRemoveCooldown|
+						libNtve_gf_AddPlayerGroupToPlayerGroup|
+						libNtve_gf_RemovePlayerGroupFromPlayerGroup|
+						libNtve_gf_PointFromPositionAndAngle|
+						libNtve_gf_PointFromXYZ|
+						libNtve_gf_PointFacingAngle|
+						libNtve_gf_PointWithZOffset|
+						libNtve_gf_PointOffsetTowardsPoint|
+						libNtve_gf_RandomPointBetweenPoints|
+						libNtve_gf_CinematicPortrait|
+						libNtve_gf_HideAllCinematicPortraits|
+						libNtve_gf_FullscreenPortrait|
+						libNtve_gf_PortraitSetAnim|
+						libNtve_gf_ClearPortraitAnimation|
+						libNtve_gf_WidthOfRegion|
+						libNtve_gf_HeightOfRegion|
+						libNtve_gf_UnitTypeIsSelected|
+						libNtve_gf_StoreUnitSelection|
+						libNtve_gf_RestoreUnitSelection|
+						libNtve_gf_SetAllSoundChannelVolumes|
+						libNtve_gf__StoryModeOnOffForPlayer|
+						libNtve_gf__StoryModeOnOffForPlayerGroup|
+						libNtve_gf__StoryModeHideUI|
+						libNtve_gf__StoryModeRestoreUI|
+						libNtve_gf_StoryMode|
+						libNtve_gf_PlayerInStoryMode|
+						libNtve_gf_SetUpgradeLevelForPlayer|
+						libNtve_gf_StopTimer|
+						libNtve_gf_SendTransmissionSimple|
+						libNtve_gf_UIErrorMessage|
+						libNtve_gf__BB_PortraitBorderWidth|
+						libNtve_gf__BB_PortraitBorderHeight|
+						libNtve_gf__BB_PortraitWidth|
+						libNtve_gf__BB_PortraitHeight|
+						libNtve_gf__BB_TitleBarWidth|
+						libNtve_gf__BB_TitleBarHeight|
+						libNtve_gf__BB_HPBorderWidth|
+						libNtve_gf__BB_HPBorderHeight|
+						libNtve_gf__BB_HPBarWidth|
+						libNtve_gf__BB_HPBarHeight|
+						libNtve_gf__BB_HPBarCurrentWidth|
+						libNtve_gf__BB_HPBarFormatLabel|
+						libNtve_gf__BB_HPBarChange|
+						libNtve_gf_DisplayBossBar|
+						libNtve_gf_SetBossBarMaximumValue|
+						libNtve_gf_SetBossBarCurrentValue|
+						libNtve_gf_SetBossBarBoss|
+						libNtve_gf_SetBossBarRace|
+						libNtve_gf_MoveBossBar|
+						libNtve_gf_ShowHideBossBar|
+						libNtve_gf_RefreshBossBar|
+						libNtve_gf__StoreGameUIVisibleStates|
+						libNtve_gf_HideGameUI|
+						libNtve_gf_AddRemoveUIFrameTypeForGlobalFilterList|
+						libNtve_gf_UIFrameFlagCheck|
+						libNtve_gf_FormatTipTitle|
+						libNtve_gf_CreateUnitsWithDefaultFacing|
+						libNtve_gf_CreateUnitsAtPoint2|
+						libNtve_gf_UnitCreateFacingPoint|
+						libNtve_gf_ReplaceUnit|
+						libNtve_gf_LastReplacedUnit|
+						libNtve_gf_RescueUnit|
+						libNtve_gf_RescueUnit2|
+						libNtve_gf_UnitGroupIsDead|
+						libNtve_gf_MakeUnitFacePoint|
+						libNtve_gf_PauseUnit|
+						libNtve_gf_ShowHideUnit|
+						libNtve_gf_ShareVisionofUnit|
+						libNtve_gf_UnitIsPaused|
+						libNtve_gf_UnitIsHidden|
+						libNtve_gf_UnitIsVisibleToPlayer|
+						libNtve_gf_UnitInRegion|
+						libNtve_gf_KillingUnit|
+						libNtve_gf_KillingPlayer|
+						libNtve_gf_AcquiredTarget|
+						libNtve_gf_MakeUnitInvulnerable|
+						libNtve_gf_MakeUnitUncommandable|
+						libNtve_gf_UnitIsInvulnerable|
+						libNtve_gf_UnitGetPropertyKills|
+						libNtve_gf_UnitGetPropertyResources|
+						libNtve_gf_UnitMoverExists|
+						libNtve_gf_UnitSetVariation|
+						libNtve_gf_ChangeUnitDamage|
+						libNtve_gf_ConvertTargetFilterStringToUnitFilter|
+						libNtve_gf_UnitIsInsideTransport|
+						libNtve_gf_EventItemAbilityOrUnitAbility|
+						libNtve_gf_UnitCanAttackUnit|
+						libNtve_gf_UnitIsUnderConstruction|
+						libNtve_gf_TriggeringProgressAbility|
+						libNtve_gf_TriggeringProgressEffect|
+						libNtve_gf_TriggeringProgressUnitType|
+						libNtve_gf_TriggeringProgressUpgrade|
+						libNtve_gf_QueuedBehaviorTypeInTrainingQueueSlot|
+						libNtve_gf_QueuedUnitTypeInTrainingQueueSlot|
+						libNtve_gf_QueuedUpgradeTypeInTrainingQueueSlot|
+						libNtve_gf_UnitBehaviorRemoveChargeRegen|
+						libNtve_gf_UnitAbilityRemoveChargeRegen|
+						libNtve_gf_UnitRemoveChargeRegen|
+						libNtve_gf_UnitBehaviorRemoveChargeUsed|
+						libNtve_gf_UnitAbilityRemoveChargeUsed|
+						libNtve_gf_UnitRemoveChargeUsed|
+						libNtve_gf_UnitBehaviorRemoveCooldown|
+						libNtve_gf_UnitAbilityRemoveCooldown|
+						libNtve_gf_UnitRemoveCooldown|
+						libNtve_gf_ConvertUnitToUnitGroup|
+						libNtve_gf_UnitsInRegionWithAllianceToPlayerMatchingCondition|
+						libNtve_gf_UnitsInUnitGroupWithCustomValue|
+						libNtve_gf_AddUnitGroupToUnitGroup|
+						libNtve_gf_RemoveUnitGroupFromUnitGroup|
+						libNtve_gf_ClosestUnitToPoint|
+						libNtve_gf_CenterOfUnitGroup|
+						libNtve_gf_ShowHidePlacementModels|
+						libLbty_gf_PingPlay|
+						libLbty_gf_PingPlayUnit|
+						libLbty_gf_PingBeaconAdd|
+						libLbty_gf_PingMinimapButtonUpdate|
+						libLbty_gf_EnableDisablePingPanel|
+						libLbty_gf_MeleeSurrender_AIWantToSurrender|
+						libLbty_gf_MeleeSurrender_UpdateDialogs|
+						libLbty_gf_ValidatedPoint|
+						libLbty_gf_PlayAnnouncerNumberSound|
+						libLbty_gf_PlayTransmissionCueSound|
+						libLbty_gf_SetAllSoundChannelVolumesStandardTiming|
+						libLbty_gf_OrderWorkerstoGatherNearbyResources|
+						libLbty_gf_OrderTransporttoUnloadAllthenDespawn|
+						libLbty_gf_AutoRevealRegion|
+						libHots_gf_DifficultyValueInt2|
+						libHots_gf_DifficultyValueFixed2|
+						libHots_gf_DifficultyValueSwarmUnitType|
+						libHots_gf_DifficultyValueSwarmBoolean|
+						libHots_gf__UnitDataName|
+						libHots_gf_StoreActorForUnit|
+						libHots_gf_ActorForUnit|
+						libHots_gf_StoreTextTagForUnit|
+						libHots_gf_TextTagForUnit|
+						libHots_gf_StorePointForUnit|
+						libHots_gf_PointStoredForUnit|
+						libHots_gf_StorePingForUnit|
+						libHots_gf_PingStoredForUnit|
+						libHots_gf_PlaySoundLinkasMusic|
+						libHots_gf_StopSoundLinkCurrentlyPlayingasMusic|
+						libLotv_gf_DifficultyValueInt2|
+						libLotv_gf_DifficultyValueFixed2|
+						libLotv_gf_DifficultyValueVoidUnitType|
+						libLotv_gf_DifficultyValueVoidBoolean
 					)\\b'
 	}
 ]

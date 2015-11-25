@@ -41,6 +41,18 @@
 	'int c_anchorBottomRight':
 		prefix: 'c_anchorBottomRight'
 		body: 'c_anchorBottomRight'
+	'int c_genderDefault':
+		prefix: 'c_genderDefault'
+		body: 'c_genderDefault'
+	'int c_genderMale':
+		prefix: 'c_genderMale'
+		body: 'c_genderMale'
+	'int c_genderFemale':
+		prefix: 'c_genderFemale'
+		body: 'c_genderFemale'
+	'int c_genderNeutral':
+		prefix: 'c_genderNeutral'
+		body: 'c_genderNeutral'
 	'int c_actorIntersectAgainstCenter':
 		prefix: 'c_actorIntersectAgainstCenter'
 		body: 'c_actorIntersectAgainstCenter'
@@ -53,6 +65,9 @@
 	'int c_actorIntersectAgainstRadiusVisual':
 		prefix: 'c_actorIntersectAgainstRadiusVisual'
 		body: 'c_actorIntersectAgainstRadiusVisual'
+	'int c_actorIntersectAgainstCenterGame':
+		prefix: 'c_actorIntersectAgainstCenterGame'
+		body: 'c_actorIntersectAgainstCenterGame'
 	'int c_animTimeVariantAsAutomatic':
 		prefix: 'c_animTimeVariantAsAutomatic'
 		body: 'c_animTimeVariantAsAutomatic'
@@ -80,6 +95,15 @@
 	'int c_animBracketStartFlagInstant':
 		prefix: 'c_animBracketStartFlagInstant'
 		body: 'c_animBracketStartFlagInstant'
+	'int c_animBracketStartFlagFullMatch':
+		prefix: 'c_animBracketStartFlagFullMatch'
+		body: 'c_animBracketStartFlagFullMatch'
+	'int c_animBracketStartFlagNoMismatchQueryProps=':
+		prefix: 'c_animBracketStartFlagNoMismatchQueryProps='
+		body: 'c_animBracketStartFlagNoMismatchQueryProps='
+	'int c_animBracketStartFlagDontResetOnUnhide':
+		prefix: 'c_animBracketStartFlagDontResetOnUnhide'
+		body: 'c_animBracketStartFlagDontResetOnUnhide'
 	'int c_animGroupApplyFlagClosingFull':
 		prefix: 'c_animGroupApplyFlagClosingFull'
 		body: 'c_animGroupApplyFlagClosingFull'
@@ -101,6 +125,15 @@
 	'int c_animFlagRandomStartOffset':
 		prefix: 'c_animFlagRandomStartOffset'
 		body: 'c_animFlagRandomStartOffset'
+	'int c_animFlagDontResetOnUnhide':
+		prefix: 'c_animFlagDontResetOnUnhide'
+		body: 'c_animFlagDontResetOnUnhide'
+	'int c_animFlagNoMismatchQueryProps':
+		prefix: 'c_animFlagNoMismatchQueryProps'
+		body: 'c_animFlagNoMismatchQueryProps'
+	'int c_animFlagVariationMatch':
+		prefix: 'c_animFlagVariationMatch'
+		body: 'c_animFlagVariationMatch'
 	'int c_actorRefSpaceGlobal':
 		prefix: 'c_actorRefSpaceGlobal'
 		body: 'c_actorRefSpaceGlobal'
@@ -182,6 +215,12 @@
 	'string c_animNameDefault':
 		prefix: 'c_animNameDefault'
 		body: 'c_animNameDefault'
+	'int c_animationOffsetStart':
+		prefix: 'c_animationOffsetStart'
+		body: 'c_animationOffsetStart'
+	'int c_animationOffsetEnd':
+		prefix: 'c_animationOffsetEnd'
+		body: 'c_animationOffsetEnd'
 	'int c_bankOptionSignature':
 		prefix: 'c_bankOptionSignature'
 		body: 'c_bankOptionSignature'
@@ -308,6 +347,12 @@
 	'int c_cameraValueFalloffEnd':
 		prefix: 'c_cameraValueFalloffEnd'
 		body: 'c_cameraValueFalloffEnd'
+	'int c_cameraValueFalloffStartNear':
+		prefix: 'c_cameraValueFalloffStartNear'
+		body: 'c_cameraValueFalloffStartNear'
+	'int c_cameraValueFalloffEndNear':
+		prefix: 'c_cameraValueFalloffEndNear'
+		body: 'c_cameraValueFalloffEndNear'
 	'int c_cameraPositionEye':
 		prefix: 'c_cameraPositionEye'
 		body: 'c_cameraPositionEye'
@@ -518,6 +563,9 @@
 	'int c_dataTypeFixed':
 		prefix: 'c_dataTypeFixed'
 		body: 'c_dataTypeFixed'
+	'int c_dataTypeGenericHandle':
+		prefix: 'c_dataTypeGenericHandle'
+		body: 'c_dataTypeGenericHandle'
 	'int c_dataTypeInt':
 		prefix: 'c_dataTypeInt'
 		body: 'c_dataTypeInt'
@@ -671,6 +719,21 @@
 	'int c_triggerControlTypeCutscene':
 		prefix: 'c_triggerControlTypeCutscene'
 		body: 'c_triggerControlTypeCutscene'
+	'int c_triggerControlTypeCommandPanel':
+		prefix: 'c_triggerControlTypeCommandPanel'
+		body: 'c_triggerControlTypeCommandPanel'
+	'int c_triggerControlTypeHeroCutscene':
+		prefix: 'c_triggerControlTypeHeroCutscene'
+		body: 'c_triggerControlTypeHeroCutscene'
+	'int c_triggerControlTypeCountdownLabel':
+		prefix: 'c_triggerControlTypeCountdownLabel'
+		body: 'c_triggerControlTypeCountdownLabel'
+	'int c_triggerControlTypeUnitStatusLabel':
+		prefix: 'c_triggerControlTypeUnitStatusLabel'
+		body: 'c_triggerControlTypeUnitStatusLabel'
+	'int c_triggerControlTypeScoreValueFrame':
+		prefix: 'c_triggerControlTypeScoreValueFrame'
+		body: 'c_triggerControlTypeScoreValueFrame'
 	'int c_triggerControlPropertyInvalid':
 		prefix: 'c_triggerControlPropertyInvalid'
 		body: 'c_triggerControlPropertyInvalid'
@@ -872,6 +935,36 @@
 	'int c_triggerControlPropertyAlphaMask':
 		prefix: 'c_triggerControlPropertyAlphaMask'
 		body: 'c_triggerControlPropertyAlphaMask'
+	'int c_triggerControlPropertyAnimIndex':
+		prefix: 'c_triggerControlPropertyAnimIndex'
+		body: 'c_triggerControlPropertyAnimIndex'
+	'int c_triggerControlPropertyUseAspectUncorrection':
+		prefix: 'c_triggerControlPropertyUseAspectUncorrection'
+		body: 'c_triggerControlPropertyUseAspectUncorrection'
+	'int c_triggerControlPropertyHandle':
+		prefix: 'c_triggerControlPropertyHandle'
+		body: 'c_triggerControlPropertyHandle'
+	'int c_triggerControlPropertyBorderColor':
+		prefix: 'c_triggerControlPropertyBorderColor'
+		body: 'c_triggerControlPropertyBorderColor'
+	'int c_triggerControlPropertyFillColor':
+		prefix: 'c_triggerControlPropertyFillColor'
+		body: 'c_triggerControlPropertyFillColor'
+	'int c_triggerControlPropertySubmenu':
+		prefix: 'c_triggerControlPropertySubmenu'
+		body: 'c_triggerControlPropertySubmenu'
+	'int c_triggerControlPropertyUnitGroup':
+		prefix: 'c_triggerControlPropertyUnitGroup'
+		body: 'c_triggerControlPropertyUnitGroup'
+	'int c_triggerControlPropertyPlayerId':
+		prefix: 'c_triggerControlPropertyPlayerId'
+		body: 'c_triggerControlPropertyPlayerId'
+	'int c_triggerControlPropertyScoreValueLink':
+		prefix: 'c_triggerControlPropertyScoreValueLink'
+		body: 'c_triggerControlPropertyScoreValueLink'
+	'int c_triggerControlPropertyStateIndex':
+		prefix: 'c_triggerControlPropertyStateIndex'
+		body: 'c_triggerControlPropertyStateIndex'
 	'int c_triggerImageTypeNone':
 		prefix: 'c_triggerImageTypeNone'
 		body: 'c_triggerImageTypeNone'
@@ -890,6 +983,9 @@
 	'int c_triggerImageTypeNineSlice':
 		prefix: 'c_triggerImageTypeNineSlice'
 		body: 'c_triggerImageTypeNineSlice'
+	'int c_triggerImageTypeCircular':
+		prefix: 'c_triggerImageTypeCircular'
+		body: 'c_triggerImageTypeCircular'
 	'int c_triggerRenderTypeHDR':
 		prefix: 'c_triggerRenderTypeHDR'
 		body: 'c_triggerRenderTypeHDR'
@@ -971,6 +1067,12 @@
 	'int c_triggerControlEventTypeDoubleClick':
 		prefix: 'c_triggerControlEventTypeDoubleClick'
 		body: 'c_triggerControlEventTypeDoubleClick'
+	'int c_effectHistoryEffectRoot':
+		prefix: 'c_effectHistoryEffectRoot'
+		body: 'c_effectHistoryEffectRoot'
+	'int c_effectHistoryEffectCurrent':
+		prefix: 'c_effectHistoryEffectCurrent'
+		body: 'c_effectHistoryEffectCurrent'
 	'int c_creepSpeedGrowth':
 		prefix: 'c_creepSpeedGrowth'
 		body: 'c_creepSpeedGrowth'
@@ -1127,6 +1229,9 @@
 	'int c_gameCheatCategoryDevelopment':
 		prefix: 'c_gameCheatCategoryDevelopment'
 		body: 'c_gameCheatCategoryDevelopment'
+	'int c_cmdNotEnoughFood':
+		prefix: 'c_cmdNotEnoughFood'
+		body: 'c_cmdNotEnoughFood'
 	'int c_gameOverVictory':
 		prefix: 'c_gameOverVictory'
 		body: 'c_gameOverVictory'
@@ -1361,6 +1466,12 @@
 	'int c_playerStatusLeft':
 		prefix: 'c_playerStatusLeft'
 		body: 'c_playerStatusLeft'
+	'int c_playerTypeReferee':
+		prefix: 'c_playerTypeReferee'
+		body: 'c_playerTypeReferee'
+	'int c_playerTypeSpectator':
+		prefix: 'c_playerTypeSpectator'
+		body: 'c_playerTypeSpectator'
 	'int c_playerLicenseLibertyFull':
 		prefix: 'c_playerLicenseLibertyFull'
 		body: 'c_playerLicenseLibertyFull'
@@ -1418,6 +1529,9 @@
 	'int c_playerStateStartingRallyEnabled':
 		prefix: 'c_playerStateStartingRallyEnabled'
 		body: 'c_playerStateStartingRallyEnabled'
+	'int c_playerStateCameraFollow':
+		prefix: 'c_playerStateCameraFollow'
+		body: 'c_playerStateCameraFollow'
 	'int c_buildMenuOpening':
 		prefix: 'c_buildMenuOpening'
 		body: 'c_buildMenuOpening'
@@ -1439,36 +1553,6 @@
 	'int c_gameResultTie':
 		prefix: 'c_gameResultTie'
 		body: 'c_gameResultTie'
-	'int c_effectAmountAbsorbed':
-		prefix: 'c_effectAmountAbsorbed'
-		body: 'c_effectAmountAbsorbed'
-	'int c_effectAmountDamaged':
-		prefix: 'c_effectAmountDamaged'
-		body: 'c_effectAmountDamaged'
-	'int c_effectAmountDodged':
-		prefix: 'c_effectAmountDodged'
-		body: 'c_effectAmountDodged'
-	'int c_effectAmountFound':
-		prefix: 'c_effectAmountFound'
-		body: 'c_effectAmountFound'
-	'int c_effectAmountHealed':
-		prefix: 'c_effectAmountHealed'
-		body: 'c_effectAmountHealed'
-	'int c_effectAmountKilled':
-		prefix: 'c_effectAmountKilled'
-		body: 'c_effectAmountKilled'
-	'int c_effectAmountSplashed':
-		prefix: 'c_effectAmountSplashed'
-		body: 'c_effectAmountSplashed'
-	'int c_effectAmountLifeChanged':
-		prefix: 'c_effectAmountLifeChanged'
-		body: 'c_effectAmountLifeChanged'
-	'int c_effectAmountShieldsChanged':
-		prefix: 'c_effectAmountShieldsChanged'
-		body: 'c_effectAmountShieldsChanged'
-	'int c_effectAmountEnergyChanged':
-		prefix: 'c_effectAmountEnergyChanged'
-		body: 'c_effectAmountEnergyChanged'
 	'int c_playerGroupAlly':
 		prefix: 'c_playerGroupAlly'
 		body: 'c_playerGroupAlly'
@@ -1589,6 +1673,9 @@
 	'int c_stringReplaceAll':
 		prefix: 'c_stringReplaceAll'
 		body: 'c_stringReplaceAll'
+	'string c_textExpressionTokenMain':
+		prefix: 'c_textExpressionTokenMain'
+		body: 'c_textExpressionTokenMain'
 	'int c_techCountQueuedOnly':
 		prefix: 'c_techCountQueuedOnly'
 		body: 'c_techCountQueuedOnly'
@@ -1607,6 +1694,9 @@
 	'int c_techCountIncompleteOnly':
 		prefix: 'c_techCountIncompleteOnly'
 		body: 'c_techCountIncompleteOnly'
+	'int c_techCountRevivableOnly':
+		prefix: 'c_techCountRevivableOnly'
+		body: 'c_techCountRevivableOnly'
 	'int c_textTagNone':
 		prefix: 'c_textTagNone'
 		body: 'c_textTagNone'
@@ -1745,6 +1835,9 @@
 	'int c_transmissionOptionHideAlertPanel':
 		prefix: 'c_transmissionOptionHideAlertPanel'
 		body: 'c_transmissionOptionHideAlertPanel'
+	'int c_triggerThreadFlagAI':
+		prefix: 'c_triggerThreadFlagAI'
+		body: 'c_triggerThreadFlagAI'
 	'int c_triggerQueueRetain':
 		prefix: 'c_triggerQueueRetain'
 		body: 'c_triggerQueueRetain'
@@ -1754,6 +1847,12 @@
 	'int c_triggerQueueKill':
 		prefix: 'c_triggerQueueKill'
 		body: 'c_triggerQueueKill'
+	'int c_tdFilterFlagObservers':
+		prefix: 'c_tdFilterFlagObservers'
+		body: 'c_tdFilterFlagObservers'
+	'int c_tdFilterFlagParticipants':
+		prefix: 'c_tdFilterFlagParticipants'
+		body: 'c_tdFilterFlagParticipants'
 	'int c_spendLocationAll':
 		prefix: 'c_spendLocationAll'
 		body: 'c_spendLocationAll'
@@ -1892,6 +1991,15 @@
 	'int c_unitStateStoppable':
 		prefix: 'c_unitStateStoppable'
 		body: 'c_unitStateStoppable'
+	'int c_unitStateResistant':
+		prefix: 'c_unitStateResistant'
+		body: 'c_unitStateResistant'
+	'int c_unitStateSilenced':
+		prefix: 'c_unitStateSilenced'
+		body: 'c_unitStateSilenced'
+	'int c_unitStateDazed':
+		prefix: 'c_unitStateDazed'
+		body: 'c_unitStateDazed'
 	'int c_unitPropLife':
 		prefix: 'c_unitPropLife'
 		body: 'c_unitPropLife'
@@ -2003,6 +2111,9 @@
 	'int c_unitPropShieldArmor':
 		prefix: 'c_unitPropShieldArmor'
 		body: 'c_unitPropShieldArmor'
+	'int c_unitPropEnergyArmor':
+		prefix: 'c_unitPropEnergyArmor'
+		body: 'c_unitPropEnergyArmor'
 	'int c_unitPropLifeExpected':
 		prefix: 'c_unitPropLifeExpected'
 		body: 'c_unitPropLifeExpected'
@@ -2015,6 +2126,21 @@
 	'int c_unitPropBaseMovementSpeed':
 		prefix: 'c_unitPropBaseMovementSpeed'
 		body: 'c_unitPropBaseMovementSpeed'
+	'int c_unitPropMovementSpeedCurrent':
+		prefix: 'c_unitPropMovementSpeedCurrent'
+		body: 'c_unitPropMovementSpeedCurrent'
+	'int c_unitPropLifeExpectedPercent':
+		prefix: 'c_unitPropLifeExpectedPercent'
+		body: 'c_unitPropLifeExpectedPercent'
+	'int c_unitPropEnergyExpectedPercent':
+		prefix: 'c_unitPropEnergyExpectedPercent'
+		body: 'c_unitPropEnergyExpectedPercent'
+	'int c_unitPropShieldsExpectedPercent':
+		prefix: 'c_unitPropShieldsExpectedPercent'
+		body: 'c_unitPropShieldsExpectedPercent'
+	'int c_unitPropAIEvaluationFactor':
+		prefix: 'c_unitPropAIEvaluationFactor'
+		body: 'c_unitPropAIEvaluationFactor'
 	'bool c_unitPropCurrent':
 		prefix: 'c_unitPropCurrent'
 		body: 'c_unitPropCurrent'
@@ -2063,6 +2189,9 @@
 	'int c_cmdStateCooldown':
 		prefix: 'c_cmdStateCooldown'
 		body: 'c_cmdStateCooldown'
+	'int c_cmdStateRecharging':
+		prefix: 'c_cmdStateRecharging'
+		body: 'c_cmdStateRecharging'
 	'int c_cmdStateNoLife':
 		prefix: 'c_cmdStateNoLife'
 		body: 'c_cmdStateNoLife'
@@ -2090,6 +2219,12 @@
 	'int c_cmdStateCantSpend':
 		prefix: 'c_cmdStateCantSpend'
 		body: 'c_cmdStateCantSpend'
+	'int c_cmdStateHideCharges':
+		prefix: 'c_cmdStateHideCharges'
+		body: 'c_cmdStateHideCharges'
+	'int c_cmdStateHighlighted':
+		prefix: 'c_cmdStateHighlighted'
+		body: 'c_cmdStateHighlighted'
 	'int c_unitCargoUnitCount':
 		prefix: 'c_unitCargoUnitCount'
 		body: 'c_unitCargoUnitCount'
@@ -2186,6 +2321,69 @@
 	'int c_unitBehaviorFlagTemporary':
 		prefix: 'c_unitBehaviorFlagTemporary'
 		body: 'c_unitBehaviorFlagTemporary'
+	'int c_unitBehaviorFlagCloak':
+		prefix: 'c_unitBehaviorFlagCloak'
+		body: 'c_unitBehaviorFlagCloak'
+	'int c_unitBehaviorFlagInvulnerable':
+		prefix: 'c_unitBehaviorFlagInvulnerable'
+		body: 'c_unitBehaviorFlagInvulnerable'
+	'int c_unitBehaviorFlagSlow':
+		prefix: 'c_unitBehaviorFlagSlow'
+		body: 'c_unitBehaviorFlagSlow'
+	'int c_unitBehaviorFlagFast':
+		prefix: 'c_unitBehaviorFlagFast'
+		body: 'c_unitBehaviorFlagFast'
+	'int c_unitBehaviorFlagStun':
+		prefix: 'c_unitBehaviorFlagStun'
+		body: 'c_unitBehaviorFlagStun'
+	'int c_unitBehaviorFlagReveal':
+		prefix: 'c_unitBehaviorFlagReveal'
+		body: 'c_unitBehaviorFlagReveal'
+	'int c_unitBehaviorFlagUser1':
+		prefix: 'c_unitBehaviorFlagUser1'
+		body: 'c_unitBehaviorFlagUser1'
+	'int c_unitBehaviorFlagUser2':
+		prefix: 'c_unitBehaviorFlagUser2'
+		body: 'c_unitBehaviorFlagUser2'
+	'int c_unitBehaviorFlagUser3':
+		prefix: 'c_unitBehaviorFlagUser3'
+		body: 'c_unitBehaviorFlagUser3'
+	'int c_unitBehaviorFlagUser4':
+		prefix: 'c_unitBehaviorFlagUser4'
+		body: 'c_unitBehaviorFlagUser4'
+	'int c_unitBehaviorFlagUser5':
+		prefix: 'c_unitBehaviorFlagUser5'
+		body: 'c_unitBehaviorFlagUser5'
+	'int c_unitBehaviorFlagUser6':
+		prefix: 'c_unitBehaviorFlagUser6'
+		body: 'c_unitBehaviorFlagUser6'
+	'int c_unitBehaviorFlagUser7':
+		prefix: 'c_unitBehaviorFlagUser7'
+		body: 'c_unitBehaviorFlagUser7'
+	'int c_unitBehaviorFlagUser8':
+		prefix: 'c_unitBehaviorFlagUser8'
+		body: 'c_unitBehaviorFlagUser8'
+	'int c_unitBehaviorFlagUser9':
+		prefix: 'c_unitBehaviorFlagUser9'
+		body: 'c_unitBehaviorFlagUser9'
+	'int c_unitBehaviorFlagUser10':
+		prefix: 'c_unitBehaviorFlagUser10'
+		body: 'c_unitBehaviorFlagUser10'
+	'int c_unitBehaviorFlagUser11':
+		prefix: 'c_unitBehaviorFlagUser11'
+		body: 'c_unitBehaviorFlagUser11'
+	'int c_unitBehaviorFlagUser12':
+		prefix: 'c_unitBehaviorFlagUser12'
+		body: 'c_unitBehaviorFlagUser12'
+	'int c_unitBehaviorFlagUser13':
+		prefix: 'c_unitBehaviorFlagUser13'
+		body: 'c_unitBehaviorFlagUser13'
+	'int c_unitBehaviorFlagUser14':
+		prefix: 'c_unitBehaviorFlagUser14'
+		body: 'c_unitBehaviorFlagUser14'
+	'int c_unitBehaviorFlagUser15':
+		prefix: 'c_unitBehaviorFlagUser15'
+		body: 'c_unitBehaviorFlagUser15'
 	'int c_unitBehaviorFlagChanneled':
 		prefix: 'c_unitBehaviorFlagChanneled'
 		body: 'c_unitBehaviorFlagChanneled'
@@ -2234,6 +2432,9 @@
 	'int c_unitInventoryCountTotal':
 		prefix: 'c_unitInventoryCountTotal'
 		body: 'c_unitInventoryCountTotal'
+	'int c_unitInventorySlotContainer':
+		prefix: 'c_unitInventorySlotContainer'
+		body: 'c_unitInventorySlotContainer'
 	'int c_unitCostMinerals':
 		prefix: 'c_unitCostMinerals'
 		body: 'c_unitCostMinerals'
@@ -2297,6 +2498,9 @@
 	'int c_unitDamageTypeSplash':
 		prefix: 'c_unitDamageTypeSplash'
 		body: 'c_unitDamageTypeSplash'
+	'int c_unitVitalAny':
+		prefix: 'c_unitVitalAny'
+		body: 'c_unitVitalAny'
 	'int c_unitInventoryChangeUses':
 		prefix: 'c_unitInventoryChangeUses'
 		body: 'c_unitInventoryChangeUses'
@@ -2516,6 +2720,9 @@
 	'int c_achievementToastStyleZerg':
 		prefix: 'c_achievementToastStyleZerg'
 		body: 'c_achievementToastStyleZerg'
+	'int c_achievementToastStyleProtoss':
+		prefix: 'c_achievementToastStyleProtoss'
+		body: 'c_achievementToastStyleProtoss'
 	'int c_keyNone':
 		prefix: 'c_keyNone'
 		body: 'c_keyNone'
@@ -2951,6 +3158,12 @@
 	'int c_syncFrameTypeArmyButton':
 		prefix: 'c_syncFrameTypeArmyButton'
 		body: 'c_syncFrameTypeArmyButton'
+	'int c_syncFrameTypeTextTag':
+		prefix: 'c_syncFrameTypeTextTag'
+		body: 'c_syncFrameTypeTextTag'
+	'int c_syncFrameTypePingPanel':
+		prefix: 'c_syncFrameTypePingPanel'
+		body: 'c_syncFrameTypePingPanel'
 	'int c_syncFrameTypeFirst':
 		prefix: 'c_syncFrameTypeFirst'
 		body: 'c_syncFrameTypeFirst'
@@ -3038,6 +3251,9 @@
 	'int c_gameMenuDialogMessageLogButton':
 		prefix: 'c_gameMenuDialogMessageLogButton'
 		body: 'c_gameMenuDialogMessageLogButton'
+	'int c_gameMenuDialogExitButton':
+		prefix: 'c_gameMenuDialogExitButton'
+		body: 'c_gameMenuDialogExitButton'
 	'int c_uiCommandAllowButtons':
 		prefix: 'c_uiCommandAllowButtons'
 		body: 'c_uiCommandAllowButtons'
@@ -3092,54 +3308,6 @@
 	'int c_localSelectionTypeArmyButton':
 		prefix: 'c_localSelectionTypeArmyButton'
 		body: 'c_localSelectionTypeArmyButton'
-	'int c_nydusLinkBreakingNews':
-		prefix: 'c_nydusLinkBreakingNews'
-		body: 'c_nydusLinkBreakingNews'
-	'int c_nydusLinkAccountManagement':
-		prefix: 'c_nydusLinkAccountManagement'
-		body: 'c_nydusLinkAccountManagement'
-	'int c_nydusLinkAccountPurchase':
-		prefix: 'c_nydusLinkAccountPurchase'
-		body: 'c_nydusLinkAccountPurchase'
-	'int c_nydusLinkAccountTrialUpgrade':
-		prefix: 'c_nydusLinkAccountTrialUpgrade'
-		body: 'c_nydusLinkAccountTrialUpgrade'
-	'int c_nydusLinkAccountNew':
-		prefix: 'c_nydusLinkAccountNew'
-		body: 'c_nydusLinkAccountNew'
-	'int c_nydusLinkAccountTrial':
-		prefix: 'c_nydusLinkAccountTrial'
-		body: 'c_nydusLinkAccountTrial'
-	'int c_nydusLinkSecurityPassword':
-		prefix: 'c_nydusLinkSecurityPassword'
-		body: 'c_nydusLinkSecurityPassword'
-	'int c_nydusLinkForum':
-		prefix: 'c_nydusLinkForum'
-		body: 'c_nydusLinkForum'
-	'int c_nydusLinkCommunity':
-		prefix: 'c_nydusLinkCommunity'
-		body: 'c_nydusLinkCommunity'
-	'int c_nydusLinkFeedHomepage':
-		prefix: 'c_nydusLinkFeedHomepage'
-		body: 'c_nydusLinkFeedHomepage'
-	'int c_nydusLinkFeedCommunity':
-		prefix: 'c_nydusLinkFeedCommunity'
-		body: 'c_nydusLinkFeedCommunity'
-	'int c_nydusLinkStore':
-		prefix: 'c_nydusLinkStore'
-		body: 'c_nydusLinkStore'
-	'int c_nydusLinkSecurityHelp':
-		prefix: 'c_nydusLinkSecurityHelp'
-		body: 'c_nydusLinkSecurityHelp'
-	'int c_nydusLinkSupport':
-		prefix: 'c_nydusLinkSupport'
-		body: 'c_nydusLinkSupport'
-	'int c_nydusLinkOnlineGuide':
-		prefix: 'c_nydusLinkOnlineGuide'
-		body: 'c_nydusLinkOnlineGuide'
-	'int c_nydusLinkCopyright':
-		prefix: 'c_nydusLinkCopyright'
-		body: 'c_nydusLinkCopyright'
 	'int c_targetModeStateAny':
 		prefix: 'c_targetModeStateAny'
 		body: 'c_targetModeStateAny'
@@ -3155,6 +3323,252 @@
 	'int c_visTypeFog':
 		prefix: 'c_visTypeFog'
 		body: 'c_visTypeFog'
+	'int c_fillTypeFogged':
+		prefix: 'c_fillTypeFogged'
+		body: 'c_fillTypeFogged'
+	'int c_fillTypeMasked':
+		prefix: 'c_fillTypeMasked'
+		body: 'c_fillTypeMasked'
+	'int c_fillTypeHidden':
+		prefix: 'c_fillTypeHidden'
+		body: 'c_fillTypeHidden'
+	'int c_fillTypeUnexplored':
+		prefix: 'c_fillTypeUnexplored'
+		body: 'c_fillTypeUnexplored'
+	'int libNtve_ge_CinematicTransitionStyle_Mission':
+		prefix: 'libNtve_ge_CinematicTransitionStyle_Mission'
+		body: 'libNtve_ge_CinematicTransitionStyle_Mission'
+	'int libNtve_ge_CinematicTransitionStyle_Story':
+		prefix: 'libNtve_ge_CinematicTransitionStyle_Story'
+		body: 'libNtve_ge_CinematicTransitionStyle_Story'
+	'int libNtve_ge_ExplosionSize_Large':
+		prefix: 'libNtve_ge_ExplosionSize_Large'
+		body: 'libNtve_ge_ExplosionSize_Large'
+	'int libNtve_ge_ExplosionSize_Small':
+		prefix: 'libNtve_ge_ExplosionSize_Small'
+		body: 'libNtve_ge_ExplosionSize_Small'
+	'int libNtve_ge_ExplosionType_Terran':
+		prefix: 'libNtve_ge_ExplosionType_Terran'
+		body: 'libNtve_ge_ExplosionType_Terran'
+	'int libNtve_ge_ExplosionType_Protoss':
+		prefix: 'libNtve_ge_ExplosionType_Protoss'
+		body: 'libNtve_ge_ExplosionType_Protoss'
+	'int libNtve_ge_ExplosionType_Zerg':
+		prefix: 'libNtve_ge_ExplosionType_Zerg'
+		body: 'libNtve_ge_ExplosionType_Zerg'
+	'int libNtve_ge_AllianceSetting_Ally':
+		prefix: 'libNtve_ge_AllianceSetting_Ally'
+		body: 'libNtve_ge_AllianceSetting_Ally'
+	'int libNtve_ge_AllianceSetting_AllyWithSharedVision':
+		prefix: 'libNtve_ge_AllianceSetting_AllyWithSharedVision'
+		body: 'libNtve_ge_AllianceSetting_AllyWithSharedVision'
+	'int libNtve_ge_AllianceSetting_AllyWithSharedVisionAndPushable':
+		prefix: 'libNtve_ge_AllianceSetting_AllyWithSharedVisionAndPushable'
+		body: 'libNtve_ge_AllianceSetting_AllyWithSharedVisionAndPushable'
+	'int libNtve_ge_AllianceSetting_AllyWithSharedVisionAndControl':
+		prefix: 'libNtve_ge_AllianceSetting_AllyWithSharedVisionAndControl'
+		body: 'libNtve_ge_AllianceSetting_AllyWithSharedVisionAndControl'
+	'int libNtve_ge_AllianceSetting_AllyWithSharedVisionControlAndSpending':
+		prefix: 'libNtve_ge_AllianceSetting_AllyWithSharedVisionControlAndSpending'
+		body: 'libNtve_ge_AllianceSetting_AllyWithSharedVisionControlAndSpending'
+	'int libNtve_ge_AllianceSetting_Enemy':
+		prefix: 'libNtve_ge_AllianceSetting_Enemy'
+		body: 'libNtve_ge_AllianceSetting_Enemy'
+	'int libNtve_ge_AllianceSetting_EnemyWithSharedVision':
+		prefix: 'libNtve_ge_AllianceSetting_EnemyWithSharedVision'
+		body: 'libNtve_ge_AllianceSetting_EnemyWithSharedVision'
+	'int libNtve_ge_AllianceSetting_Neutral':
+		prefix: 'libNtve_ge_AllianceSetting_Neutral'
+		body: 'libNtve_ge_AllianceSetting_Neutral'
+	'int libNtve_ge_AllianceSetting_NeutralWithSharedVision':
+		prefix: 'libNtve_ge_AllianceSetting_NeutralWithSharedVision'
+		body: 'libNtve_ge_AllianceSetting_NeutralWithSharedVision'
+	'int libNtve_ge_AllianceSetting_NeutralWithSharedVisionAndPushable':
+		prefix: 'libNtve_ge_AllianceSetting_NeutralWithSharedVisionAndPushable'
+		body: 'libNtve_ge_AllianceSetting_NeutralWithSharedVisionAndPushable'
+	'int libNtve_ge_PlayerRelation_Ally':
+		prefix: 'libNtve_ge_PlayerRelation_Ally'
+		body: 'libNtve_ge_PlayerRelation_Ally'
+	'int libNtve_ge_PlayerRelation_AllyMutual':
+		prefix: 'libNtve_ge_PlayerRelation_AllyMutual'
+		body: 'libNtve_ge_PlayerRelation_AllyMutual'
+	'int libNtve_ge_PlayerRelation_Neutral':
+		prefix: 'libNtve_ge_PlayerRelation_Neutral'
+		body: 'libNtve_ge_PlayerRelation_Neutral'
+	'int libNtve_ge_PlayerRelation_NeutralMutual':
+		prefix: 'libNtve_ge_PlayerRelation_NeutralMutual'
+		body: 'libNtve_ge_PlayerRelation_NeutralMutual'
+	'int libNtve_ge_PlayerRelation_Enemy':
+		prefix: 'libNtve_ge_PlayerRelation_Enemy'
+		body: 'libNtve_ge_PlayerRelation_Enemy'
+	'int libNtve_ge_PlayerRelation_EnemyMutual':
+		prefix: 'libNtve_ge_PlayerRelation_EnemyMutual'
+		body: 'libNtve_ge_PlayerRelation_EnemyMutual'
+	'int libNtve_ge_CinematicPortraitIndex_CinematicPortraitTopLeft':
+		prefix: 'libNtve_ge_CinematicPortraitIndex_CinematicPortraitTopLeft'
+		body: 'libNtve_ge_CinematicPortraitIndex_CinematicPortraitTopLeft'
+	'int libNtve_ge_CinematicPortraitIndex_CinematicPortraitTopRight':
+		prefix: 'libNtve_ge_CinematicPortraitIndex_CinematicPortraitTopRight'
+		body: 'libNtve_ge_CinematicPortraitIndex_CinematicPortraitTopRight'
+	'int libNtve_ge_CinematicPortraitIndex_CinematicPortraitBottomLeft':
+		prefix: 'libNtve_ge_CinematicPortraitIndex_CinematicPortraitBottomLeft'
+		body: 'libNtve_ge_CinematicPortraitIndex_CinematicPortraitBottomLeft'
+	'int libNtve_ge_CinematicPortraitIndex_CinematicPortraitBottomRight':
+		prefix: 'libNtve_ge_CinematicPortraitIndex_CinematicPortraitBottomRight'
+		body: 'libNtve_ge_CinematicPortraitIndex_CinematicPortraitBottomRight'
+	'int libNtve_ge_CinematicPortraitIndex_CinematicPortraitCenterLeft':
+		prefix: 'libNtve_ge_CinematicPortraitIndex_CinematicPortraitCenterLeft'
+		body: 'libNtve_ge_CinematicPortraitIndex_CinematicPortraitCenterLeft'
+	'int libNtve_ge_CinematicPortraitIndex_CinematicPortraitCenterRight':
+		prefix: 'libNtve_ge_CinematicPortraitIndex_CinematicPortraitCenterRight'
+		body: 'libNtve_ge_CinematicPortraitIndex_CinematicPortraitCenterRight'
+	'int libNtve_ge_CinematicPortraitIndex_FullscreenPortrait':
+		prefix: 'libNtve_ge_CinematicPortraitIndex_FullscreenPortrait'
+		body: 'libNtve_ge_CinematicPortraitIndex_FullscreenPortrait'
+	'int libNtve_ge_CinematicPortraitPosition_TopLeft':
+		prefix: 'libNtve_ge_CinematicPortraitPosition_TopLeft'
+		body: 'libNtve_ge_CinematicPortraitPosition_TopLeft'
+	'int libNtve_ge_CinematicPortraitPosition_TopRight':
+		prefix: 'libNtve_ge_CinematicPortraitPosition_TopRight'
+		body: 'libNtve_ge_CinematicPortraitPosition_TopRight'
+	'int libNtve_ge_CinematicPortraitPosition_BottomLeft':
+		prefix: 'libNtve_ge_CinematicPortraitPosition_BottomLeft'
+		body: 'libNtve_ge_CinematicPortraitPosition_BottomLeft'
+	'int libNtve_ge_CinematicPortraitPosition_BottomRight':
+		prefix: 'libNtve_ge_CinematicPortraitPosition_BottomRight'
+		body: 'libNtve_ge_CinematicPortraitPosition_BottomRight'
+	'int libNtve_ge_CinematicPortraitPosition_CenterLeft':
+		prefix: 'libNtve_ge_CinematicPortraitPosition_CenterLeft'
+		body: 'libNtve_ge_CinematicPortraitPosition_CenterLeft'
+	'int libNtve_ge_CinematicPortraitPosition_CenterRight':
+		prefix: 'libNtve_ge_CinematicPortraitPosition_CenterRight'
+		body: 'libNtve_ge_CinematicPortraitPosition_CenterRight'
+	'int libNtve_ge_UnitSelectionStoreOption_ClearUnitSelection':
+		prefix: 'libNtve_ge_UnitSelectionStoreOption_ClearUnitSelection'
+		body: 'libNtve_ge_UnitSelectionStoreOption_ClearUnitSelection'
+	'int libNtve_ge_UnitSelectionStoreOption_DoNotClearUnitSelection':
+		prefix: 'libNtve_ge_UnitSelectionStoreOption_DoNotClearUnitSelection'
+		body: 'libNtve_ge_UnitSelectionStoreOption_DoNotClearUnitSelection'
+	'int libNtve_ge_VolumeChannelMode_Cinematic':
+		prefix: 'libNtve_ge_VolumeChannelMode_Cinematic'
+		body: 'libNtve_ge_VolumeChannelMode_Cinematic'
+	'int libNtve_ge_VolumeChannelMode_Speech':
+		prefix: 'libNtve_ge_VolumeChannelMode_Speech'
+		body: 'libNtve_ge_VolumeChannelMode_Speech'
+	'int libNtve_ge_VolumeChannelMode_Game':
+		prefix: 'libNtve_ge_VolumeChannelMode_Game'
+		body: 'libNtve_ge_VolumeChannelMode_Game'
+	'int libNtve_ge_VolumeChannelMode_Victory':
+		prefix: 'libNtve_ge_VolumeChannelMode_Victory'
+		body: 'libNtve_ge_VolumeChannelMode_Victory'
+	'int libNtve_ge_BossBarRace_Terran':
+		prefix: 'libNtve_ge_BossBarRace_Terran'
+		body: 'libNtve_ge_BossBarRace_Terran'
+	'int libNtve_ge_BossBarRace_Protoss':
+		prefix: 'libNtve_ge_BossBarRace_Protoss'
+		body: 'libNtve_ge_BossBarRace_Protoss'
+	'int libNtve_ge_BossBarRace_Zerg':
+		prefix: 'libNtve_ge_BossBarRace_Zerg'
+		body: 'libNtve_ge_BossBarRace_Zerg'
+	'int libNtve_ge_GameUIStoreIndex_GameUI':
+		prefix: 'libNtve_ge_GameUIStoreIndex_GameUI'
+		body: 'libNtve_ge_GameUIStoreIndex_GameUI'
+	'int libNtve_ge_GameUIStoreIndex_CinematicMode':
+		prefix: 'libNtve_ge_GameUIStoreIndex_CinematicMode'
+		body: 'libNtve_ge_GameUIStoreIndex_CinematicMode'
+	'int libNtve_ge_GameUIStoreIndex_StoryMode':
+		prefix: 'libNtve_ge_GameUIStoreIndex_StoryMode'
+		body: 'libNtve_ge_GameUIStoreIndex_StoryMode'
+	'int libNtve_ge_UIFrameFlag_StoryModeFrame':
+		prefix: 'libNtve_ge_UIFrameFlag_StoryModeFrame'
+		body: 'libNtve_ge_UIFrameFlag_StoryModeFrame'
+	'int libNtve_ge_TipType_NormalTip':
+		prefix: 'libNtve_ge_TipType_NormalTip'
+		body: 'libNtve_ge_TipType_NormalTip'
+	'int libNtve_ge_TipType_NewUnit':
+		prefix: 'libNtve_ge_TipType_NewUnit'
+		body: 'libNtve_ge_TipType_NewUnit'
+	'int libNtve_ge_TipType_NewStructure':
+		prefix: 'libNtve_ge_TipType_NewStructure'
+		body: 'libNtve_ge_TipType_NewStructure'
+	'int libNtve_ge_TipType_NewAbility':
+		prefix: 'libNtve_ge_TipType_NewAbility'
+		body: 'libNtve_ge_TipType_NewAbility'
+	'int libNtve_ge_TipType_MissionStrategy':
+		prefix: 'libNtve_ge_TipType_MissionStrategy'
+		body: 'libNtve_ge_TipType_MissionStrategy'
+	'int libNtve_ge_CustomDialogResult_c_customDialogResultAny':
+		prefix: 'libNtve_ge_CustomDialogResult_c_customDialogResultAny'
+		body: 'libNtve_ge_CustomDialogResult_c_customDialogResultAny'
+	'int libNtve_ge_CustomDialogResult_c_customDialogResultYes':
+		prefix: 'libNtve_ge_CustomDialogResult_c_customDialogResultYes'
+		body: 'libNtve_ge_CustomDialogResult_c_customDialogResultYes'
+	'int libNtve_ge_CustomDialogResult_c_customDialogResultNo':
+		prefix: 'libNtve_ge_CustomDialogResult_c_customDialogResultNo'
+		body: 'libNtve_ge_CustomDialogResult_c_customDialogResultNo'
+	'int libNtve_ge_CustomDialogType_c_customDialogTypeMessage':
+		prefix: 'libNtve_ge_CustomDialogType_c_customDialogTypeMessage'
+		body: 'libNtve_ge_CustomDialogType_c_customDialogTypeMessage'
+	'int libNtve_ge_CustomDialogType_c_customDialogTypeQuery':
+		prefix: 'libNtve_ge_CustomDialogType_c_customDialogTypeQuery'
+		body: 'libNtve_ge_CustomDialogType_c_customDialogTypeQuery'
+	'int libNtve_ge_FlyerHelperDisplay_c_flyerDisplayNone':
+		prefix: 'libNtve_ge_FlyerHelperDisplay_c_flyerDisplayNone'
+		body: 'libNtve_ge_FlyerHelperDisplay_c_flyerDisplayNone'
+	'int libNtve_ge_FlyerHelperDisplay_c_flyerDisplaySelected':
+		prefix: 'libNtve_ge_FlyerHelperDisplay_c_flyerDisplaySelected'
+		body: 'libNtve_ge_FlyerHelperDisplay_c_flyerDisplaySelected'
+	'int libNtve_ge_FlyerHelperDisplay_c_flyerDisplayAll':
+		prefix: 'libNtve_ge_FlyerHelperDisplay_c_flyerDisplayAll'
+		body: 'libNtve_ge_FlyerHelperDisplay_c_flyerDisplayAll'
+	'int libNtve_ge_ReplaceUnitOptions_OldUnits':
+		prefix: 'libNtve_ge_ReplaceUnitOptions_OldUnits'
+		body: 'libNtve_ge_ReplaceUnitOptions_OldUnits'
+	'int libNtve_ge_ReplaceUnitOptions_OldUnitsRelative':
+		prefix: 'libNtve_ge_ReplaceUnitOptions_OldUnitsRelative'
+		body: 'libNtve_ge_ReplaceUnitOptions_OldUnitsRelative'
+	'int libNtve_ge_ReplaceUnitOptions_NewUnitsDefault':
+		prefix: 'libNtve_ge_ReplaceUnitOptions_NewUnitsDefault'
+		body: 'libNtve_ge_ReplaceUnitOptions_NewUnitsDefault'
+	'int libNtve_ge_ReplaceUnitOptions_NewUnitssMax':
+		prefix: 'libNtve_ge_ReplaceUnitOptions_NewUnitssMax'
+		body: 'libNtve_ge_ReplaceUnitOptions_NewUnitssMax'
+	'int libNtve_ge_UnitDamageTakenDealt_Damage_Take':
+		prefix: 'libNtve_ge_UnitDamageTakenDealt_Damage_Take'
+		body: 'libNtve_ge_UnitDamageTakenDealt_Damage_Take'
+	'int libNtve_ge_UnitDamageTakenDealt_Damage_Deal':
+		prefix: 'libNtve_ge_UnitDamageTakenDealt_Damage_Deal'
+		body: 'libNtve_ge_UnitDamageTakenDealt_Damage_Deal'
+	'int libNtve_ge_UnitDamageChangeOption_Full':
+		prefix: 'libNtve_ge_UnitDamageChangeOption_Full'
+		body: 'libNtve_ge_UnitDamageChangeOption_Full'
+	'int libNtve_ge_UnitDamageChangeOption_No':
+		prefix: 'libNtve_ge_UnitDamageChangeOption_No'
+		body: 'libNtve_ge_UnitDamageChangeOption_No'
+	'int libNtve_ge_UnitDamageChangeOption_Minimal':
+		prefix: 'libNtve_ge_UnitDamageChangeOption_Minimal'
+		body: 'libNtve_ge_UnitDamageChangeOption_Minimal'
+	'int libNtve_ge_UnitDamageChangeOption_Mega':
+		prefix: 'libNtve_ge_UnitDamageChangeOption_Mega'
+		body: 'libNtve_ge_UnitDamageChangeOption_Mega'
+	'int libNtve_ge_UnitDamageChangeOption_Mega2':
+		prefix: 'libNtve_ge_UnitDamageChangeOption_Mega2'
+		body: 'libNtve_ge_UnitDamageChangeOption_Mega2'
+	'int libNtve_gv_c_ScreenButtonMaxCount':
+		prefix: 'libNtve_gv_c_ScreenButtonMaxCount'
+		body: 'libNtve_gv_c_ScreenButtonMaxCount'
+	'int libNtve_gv_c_ScreenImageMaxCount':
+		prefix: 'libNtve_gv_c_ScreenImageMaxCount'
+		body: 'libNtve_gv_c_ScreenImageMaxCount'
+	'int libNtve_gv_c_ScreenLabelMaxCount':
+		prefix: 'libNtve_gv_c_ScreenLabelMaxCount'
+		body: 'libNtve_gv_c_ScreenLabelMaxCount'
+	'int libNtve_gv_pLAYERMAX':
+		prefix: 'libNtve_gv_pLAYERMAX'
+		body: 'libNtve_gv_pLAYERMAX'
+	'int libNtve_gv__BBC_BossBarMaxCount':
+		prefix: 'libNtve_gv__BBC_BossBarMaxCount'
+		body: 'libNtve_gv__BBC_BossBarMaxCount'
 	'int c_ScoutStartLocations':
 		prefix: 'c_ScoutStartLocations'
 		body: 'c_ScoutStartLocations'
@@ -3611,9 +4025,15 @@
 	'int c_diffAutoTransport':
 		prefix: 'c_diffAutoTransport'
 		body: 'c_diffAutoTransport'
-	'int c_skirAuto':
-		prefix: 'c_skirAuto'
-		body: 'c_skirAuto'
+	'int c_diffSplitAttacking':
+		prefix: 'c_diffSplitAttacking'
+		body: 'c_diffSplitAttacking'
+	'int c_diffAllowTransportGather':
+		prefix: 'c_diffAllowTransportGather'
+		body: 'c_diffAllowTransportGather'
+	'int c_diffAvoidMindControlled':
+		prefix: 'c_diffAvoidMindControlled'
+		body: 'c_diffAvoidMindControlled'
 	'int c_skirVeryEasy':
 		prefix: 'c_skirVeryEasy'
 		body: 'c_skirVeryEasy'
@@ -3731,6 +4151,18 @@
 	'int c_difficultyAll':
 		prefix: 'c_difficultyAll'
 		body: 'c_difficultyAll'
+	'int libLbty_gv_c_PINGMAXCOUNT':
+		prefix: 'libLbty_gv_c_PINGMAXCOUNT'
+		body: 'libLbty_gv_c_PINGMAXCOUNT'
+	'fixed libLbty_gv_c_PINGRESETTIME':
+		prefix: 'libLbty_gv_c_PINGRESETTIME'
+		body: 'libLbty_gv_c_PINGRESETTIME'
+	'fixed libLbty_gv_c_PINGSUPPRESSIONTIME':
+		prefix: 'libLbty_gv_c_PINGSUPPRESSIONTIME'
+		body: 'libLbty_gv_c_PINGSUPPRESSIONTIME'
+	'fixed libLbty_gv_c_PINGLOCKOUTTIME':
+		prefix: 'libLbty_gv_c_PINGLOCKOUTTIME'
+		body: 'libLbty_gv_c_PINGLOCKOUTTIME'
 	'void AchievementAward':
 		prefix: 'AchievementAward'
 		body: 'AchievementAward(${1:int player}, ${2:string name})'
@@ -3749,6 +4181,9 @@
 	'void AchievementTermQuantitySet':
 		prefix: 'AchievementTermQuantitySet'
 		body: 'AchievementTermQuantitySet(${1:int player}, ${2:string term}, ${3:int quantity})'
+	'void AchievementTermQuantityAdd':
+		prefix: 'AchievementTermQuantityAdd'
+		body: 'AchievementTermQuantityAdd(${1:int player}, ${2:string term}, ${3:int quantity})'
 	'void AchievementsDisable':
 		prefix: 'AchievementsDisable'
 		body: 'AchievementsDisable(${1:int player})'
@@ -3950,6 +4385,30 @@
 	'void ModelAnimationUnload':
 		prefix: 'ModelAnimationUnload'
 		body: 'ModelAnimationUnload(${1:string modelPath}, ${2:string animPath})'
+	'void AnimLengthQueryByName':
+		prefix: 'AnimLengthQueryByName'
+		body: 'AnimLengthQueryByName(${1:actor a}, ${2:string animName}, ${3:bool scaledTime})'
+	'void AnimLengthQueryByProps':
+		prefix: 'AnimLengthQueryByProps'
+		body: 'AnimLengthQueryByProps(${1:actor a}, ${2:string animProps})'
+	'generichandle AnimLengthQueryLastCreated':
+		prefix: 'AnimLengthQueryLastCreated'
+		body: 'AnimLengthQueryLastCreated()'
+	'void AnimLengthQueryWait':
+		prefix: 'AnimLengthQueryWait'
+		body: 'AnimLengthQueryWait()'
+	'fixed AnimLengthSync':
+		prefix: 'AnimLengthSync'
+		body: 'AnimLengthSync(${1:generichandle h})'
+	'fixed AnimLengthRemainingSync':
+		prefix: 'AnimLengthRemainingSync'
+		body: 'AnimLengthRemainingSync(${1:generichandle h})'
+	'void AnimWait':
+		prefix: 'AnimWait'
+		body: 'AnimWait(${1:actor a}, ${2:string animName}, ${3:fixed offset}, ${4:int offsetType})'
+	'string AutomationLuaGlobalGetAsString':
+		prefix: 'AutomationLuaGlobalGetAsString'
+		body: 'AutomationLuaGlobalGetAsString(${1:string name})'
 	'bool BankConditionEvaluate':
 		prefix: 'BankConditionEvaluate'
 		body: 'BankConditionEvaluate(${1:int player}, ${2:string bankCondition})'
@@ -3959,6 +4418,9 @@
 	'bool BankExists':
 		prefix: 'BankExists'
 		body: 'BankExists(${1:string name}, ${2:int player})'
+	'text BankSizeAsText':
+		prefix: 'BankSizeAsText'
+		body: 'BankSizeAsText(${1:string name}, ${2:int player})'
 	'bank BankLastCreated':
 		prefix: 'BankLastCreated'
 		body: 'BankLastCreated()'
@@ -4001,6 +4463,9 @@
 	'bool BankSectionExists':
 		prefix: 'BankSectionExists'
 		body: 'BankSectionExists(${1:bank b}, ${2:string section})'
+	'text BankSectionSizeAsText':
+		prefix: 'BankSectionSizeAsText'
+		body: 'BankSectionSizeAsText(${1:bank b}, ${2:string section})'
 	'string BankSectionName':
 		prefix: 'BankSectionName'
 		body: 'BankSectionName(${1:bank b}, ${2:int index})'
@@ -4013,6 +4478,9 @@
 	'bool BankKeyExists':
 		prefix: 'BankKeyExists'
 		body: 'BankKeyExists(${1:bank b}, ${2:string section}, ${3:string key})'
+	'text BankKeySizeAsText':
+		prefix: 'BankKeySizeAsText'
+		body: 'BankKeySizeAsText(${1:bank b}, ${2:string section}, ${3:string key})'
 	'string BankKeyName':
 		prefix: 'BankKeyName'
 		body: 'BankKeyName(${1:bank b}, ${2:string section}, ${3:int index})'
@@ -4409,6 +4877,9 @@
 	'fixed CameraGetYaw':
 		prefix: 'CameraGetYaw'
 		body: 'CameraGetYaw(${1:int player})'
+	'fixed CameraGetDistance':
+		prefix: 'CameraGetDistance'
+		body: 'CameraGetDistance(${1:int player})'
 	'void CameraSetData':
 		prefix: 'CameraSetData'
 		body: 'CameraSetData(${1:playergroup players}, ${2:string cameraId})'
@@ -4418,6 +4889,12 @@
 	'void CameraFollowUnitGroup':
 		prefix: 'CameraFollowUnitGroup'
 		body: 'CameraFollowUnitGroup(${1:int player}, ${2:unitgroup group}, ${3:bool follow}, ${4:bool isOffset})'
+	'unitgroup CameraFollowUnitGroupGet':
+		prefix: 'CameraFollowUnitGroupGet'
+		body: 'CameraFollowUnitGroupGet(${1:int player})'
+	'void CameraForceFollowUnitGroup':
+		prefix: 'CameraForceFollowUnitGroup'
+		body: 'CameraForceFollowUnitGroup(${1:int player}, ${2:bool forced})'
 	'void CameraLookAt':
 		prefix: 'CameraLookAt'
 		body: 'CameraLookAt(${1:int player}, ${2:point p}, ${3:fixed duration}, ${4:fixed velocity}, ${5:fixed decelerate})'
@@ -4451,6 +4928,9 @@
 	'void CampaignProgressDeleteCampaignSave':
 		prefix: 'CampaignProgressDeleteCampaignSave'
 		body: 'CampaignProgressDeleteCampaignSave(${1:playergroup players})'
+	'void CampaignProgressEnableCampaignSaves':
+		prefix: 'CampaignProgressEnableCampaignSaves'
+		body: 'CampaignProgressEnableCampaignSaves(${1:playergroup players}, ${2:bool inDisable})'
 	'void CampaignProgressEnableCampaignCompletedSaves':
 		prefix: 'CampaignProgressEnableCampaignCompletedSaves'
 		body: 'CampaignProgressEnableCampaignCompletedSaves(${1:playergroup players}, ${2:bool inDisable})'
@@ -4508,6 +4988,12 @@
 	'int CatalogFieldValueGetAsInt':
 		prefix: 'CatalogFieldValueGetAsInt'
 		body: 'CatalogFieldValueGetAsInt(${1:int catalog}, ${2:string entry}, ${3:string fieldPath}, ${4:int player})'
+	'int CatalogFieldValueGetFlagsAsInt':
+		prefix: 'CatalogFieldValueGetFlagsAsInt'
+		body: 'CatalogFieldValueGetFlagsAsInt(${1:int catalog}, ${2:string entry}, ${3:string fieldPath}, ${4:int player})'
+	'bool CatalogFieldValueModify':
+		prefix: 'CatalogFieldValueModify'
+		body: 'CatalogFieldValueModify(${1:int catalog}, ${2:string entry}, ${3:string fieldPath}, ${4:int player}, ${5:string value}, ${6:int operation})'
 	'bool CatalogFieldValueSet':
 		prefix: 'CatalogFieldValueSet'
 		body: 'CatalogFieldValueSet(${1:int catalog}, ${2:string entry}, ${3:string fieldPath}, ${4:int player}, ${5:string value})'
@@ -4520,6 +5006,9 @@
 	'int CatalogReferenceGetAsInt':
 		prefix: 'CatalogReferenceGetAsInt'
 		body: 'CatalogReferenceGetAsInt(${1:string reference}, ${2:int player})'
+	'bool CatalogReferenceModify':
+		prefix: 'CatalogReferenceModify'
+		body: 'CatalogReferenceModify(${1:string reference}, ${2:int player}, ${3:string value}, ${4:int operation})'
 	'bool CatalogReferenceSet':
 		prefix: 'CatalogReferenceSet'
 		body: 'CatalogReferenceSet(${1:string reference}, ${2:int player}, ${3:string value})'
@@ -4748,6 +5237,18 @@
 	'int ConversationDataLineGetPickedCount':
 		prefix: 'ConversationDataLineGetPickedCount'
 		body: 'ConversationDataLineGetPickedCount(${1:string convId}, ${2:string lineId})'
+	'void ConversationDataLineSetPlayers':
+		prefix: 'ConversationDataLineSetPlayers'
+		body: 'ConversationDataLineSetPlayers(${1:string convId}, ${2:string lineId}, ${3:playergroup players})'
+	'void ConversationDataLineResetPlayers':
+		prefix: 'ConversationDataLineResetPlayers'
+		body: 'ConversationDataLineResetPlayers(${1:string convId}, ${2:string lineId})'
+	'void ConversationDataLineHideForObservers':
+		prefix: 'ConversationDataLineHideForObservers'
+		body: 'ConversationDataLineHideForObservers(${1:string convId}, ${2:string lineId}, ${3:bool hide})'
+	'void ConversationDataSetListenerGender':
+		prefix: 'ConversationDataSetListenerGender'
+		body: 'ConversationDataSetListenerGender(${1:string convId}, ${2:int gender})'
 	'void ConversationDataSaveStateValues':
 		prefix: 'ConversationDataSaveStateValues'
 		body: 'ConversationDataSaveStateValues(${1:string stateId}, ${2:bank b}, ${3:string section})'
@@ -4784,6 +5285,9 @@
 	'string ConversationDataGetSound':
 		prefix: 'ConversationDataGetSound'
 		body: 'ConversationDataGetSound(${1:string convLine}, ${2:bool checkConditions})'
+	'string ConversationDataGetSpeaker':
+		prefix: 'ConversationDataGetSpeaker'
+		body: 'ConversationDataGetSpeaker(${1:string convLine})'
 	'bool ConversationDataCanRun':
 		prefix: 'ConversationDataCanRun'
 		body: 'ConversationDataCanRun(${1:string convId}, ${2:bool unpickedOnly})'
@@ -4973,6 +5477,12 @@
 	'fixed DataTableGetFixed':
 		prefix: 'DataTableGetFixed'
 		body: 'DataTableGetFixed(${1:bool global}, ${2:string name})'
+	'void DataTableSetGenericHandle':
+		prefix: 'DataTableSetGenericHandle'
+		body: 'DataTableSetGenericHandle(${1:bool global}, ${2:string name}, ${3:generichandle val})'
+	'generichandle DataTableGetGenericHandle':
+		prefix: 'DataTableGetGenericHandle'
+		body: 'DataTableGetGenericHandle(${1:bool global}, ${2:string name})'
 	'void DataTableSetInt':
 		prefix: 'DataTableSetInt'
 		body: 'DataTableSetInt(${1:bool global}, ${2:string name}, ${3:int val})'
@@ -5174,6 +5684,9 @@
 	'void DialogSetPositionRelativeToUnit':
 		prefix: 'DialogSetPositionRelativeToUnit'
 		body: 'DialogSetPositionRelativeToUnit(${1:int dialog}, ${2:unit inUnit}, ${3:string inAttachment}, ${4:int offsetX}, ${5:int offsetY})'
+	'void DialogSetPositionRelativeToUnitWithAnchor':
+		prefix: 'DialogSetPositionRelativeToUnitWithAnchor'
+		body: 'DialogSetPositionRelativeToUnitWithAnchor(${1:int dialog}, ${2:unit inUnit}, ${3:string inAttachment}, ${4:int anchor}, ${5:int offsetX}, ${6:int offsetY})'
 	'void DialogSetVisible':
 		prefix: 'DialogSetVisible'
 		body: 'DialogSetVisible(${1:int dialog}, ${2:playergroup players}, ${3:bool isVisible})'
@@ -5198,6 +5711,9 @@
 	'void DialogSetChannel':
 		prefix: 'DialogSetChannel'
 		body: 'DialogSetChannel(${1:int dialog}, ${2:int channel})'
+	'void DialogSetRenderPriority':
+		prefix: 'DialogSetRenderPriority'
+		body: 'DialogSetRenderPriority(${1:int dialog}, ${2:int renderPriority})'
 	'void DialogSetObservedType':
 		prefix: 'DialogSetObservedType'
 		body: 'DialogSetObservedType(${1:int dialog}, ${2:int observedType})'
@@ -5252,6 +5768,9 @@
 	'int DialogGetChannel':
 		prefix: 'DialogGetChannel'
 		body: 'DialogGetChannel(${1:int dialog})'
+	'int DialogGetRenderPriority':
+		prefix: 'DialogGetRenderPriority'
+		body: 'DialogGetRenderPriority(${1:int dialog})'
 	'int DialogControlCreate':
 		prefix: 'DialogControlCreate'
 		body: 'DialogControlCreate(${1:int dialog}, ${2:int type})'
@@ -5363,6 +5882,9 @@
 	'void DialogControlSetPropertyAsUnit':
 		prefix: 'DialogControlSetPropertyAsUnit'
 		body: 'DialogControlSetPropertyAsUnit(${1:int control}, ${2:int property}, ${3:playergroup players}, ${4:unit value})'
+	'void DialogControlSetPropertyAsUnitGroup':
+		prefix: 'DialogControlSetPropertyAsUnitGroup'
+		body: 'DialogControlSetPropertyAsUnitGroup(${1:int control}, ${2:int property}, ${3:playergroup players}, ${4:unitgroup value})'
 	'text DialogControlGetPropertyAsText':
 		prefix: 'DialogControlGetPropertyAsText'
 		body: 'DialogControlGetPropertyAsText(${1:int control}, ${2:int property}, ${3:int player})'
@@ -5387,6 +5909,9 @@
 	'unit DialogControlGetPropertyAsUnit':
 		prefix: 'DialogControlGetPropertyAsUnit'
 		body: 'DialogControlGetPropertyAsUnit(${1:int control}, ${2:int property}, ${3:int player})'
+	'unitgroup DialogControlGetPropertyAsUnitGroup':
+		prefix: 'DialogControlGetPropertyAsUnitGroup'
+		body: 'DialogControlGetPropertyAsUnitGroup(${1:int control}, ${2:int property}, ${3:int player})'
 	'void DialogControlAddItem':
 		prefix: 'DialogControlAddItem'
 		body: 'DialogControlAddItem(${1:int control}, ${2:playergroup players}, ${3:text value})'
@@ -5414,9 +5939,24 @@
 	'void DialogControlInvokeAsString':
 		prefix: 'DialogControlInvokeAsString'
 		body: 'DialogControlInvokeAsString(${1:int control}, ${2:playergroup players}, ${3:string method}, ${4:string param1}, ${5:string param2}, ${6:string param3}, ${7:string param4})'
+	'void DialogControlSendAnimationEvent':
+		prefix: 'DialogControlSendAnimationEvent'
+		body: 'DialogControlSendAnimationEvent(${1:int control}, ${2:playergroup players}, ${3:string eventName})'
+	'void DialogControlSetAnimationSpeed':
+		prefix: 'DialogControlSetAnimationSpeed'
+		body: 'DialogControlSetAnimationSpeed(${1:int control}, ${2:playergroup players}, ${3:string animationName}, ${4:fixed speed})'
+	'void DialogControlSetAnimationTime':
+		prefix: 'DialogControlSetAnimationTime'
+		body: 'DialogControlSetAnimationTime(${1:int control}, ${2:playergroup players}, ${3:string animationName}, ${4:fixed speed})'
+	'void DialogControlAdvanceAnimation':
+		prefix: 'DialogControlAdvanceAnimation'
+		body: 'DialogControlAdvanceAnimation(${1:int control}, ${2:playergroup players}, ${3:string animationName}, ${4:fixed speed})'
 	'void DialogControlForceTransition':
 		prefix: 'DialogControlForceTransition'
 		body: 'DialogControlForceTransition(${1:int control}, ${2:playergroup players}, ${3:bool inVisible}, ${4:bool inInstant})'
+	'void DialogControlRequestFocus':
+		prefix: 'DialogControlRequestFocus'
+		body: 'DialogControlRequestFocus(${1:int control}, ${2:playergroup players})'
 	'void DialogControlSetObservedType':
 		prefix: 'DialogControlSetObservedType'
 		body: 'DialogControlSetObservedType(${1:int control}, ${2:int observedType})'
@@ -5432,6 +5972,33 @@
 	'int EventDialogControlMouseButton':
 		prefix: 'EventDialogControlMouseButton'
 		body: 'EventDialogControlMouseButton()'
+	'int EffectHistoryCount':
+		prefix: 'EffectHistoryCount'
+		body: 'EffectHistoryCount(${1:effecthistory inHistory})'
+	'string EffectHistoryGetAbil':
+		prefix: 'EffectHistoryGetAbil'
+		body: 'EffectHistoryGetAbil(${1:effecthistory inHistory}, ${2:int inIndex})'
+	'fixed EffectHistoryGetAmountFixed':
+		prefix: 'EffectHistoryGetAmountFixed'
+		body: 'EffectHistoryGetAmountFixed(${1:effecthistory inHistory}, ${2:int inIndex}, ${3:int inAmount}, ${4:bool inTotal})'
+	'int EffectHistoryGetAmountInt':
+		prefix: 'EffectHistoryGetAmountInt'
+		body: 'EffectHistoryGetAmountInt(${1:effecthistory inHistory}, ${2:int inIndex}, ${3:int inAmount}, ${4:bool inTotal})'
+	'string EffectHistoryGetEffect':
+		prefix: 'EffectHistoryGetEffect'
+		body: 'EffectHistoryGetEffect(${1:effecthistory inHistory}, ${2:int inIndex}, ${3:int inEffect})'
+	'fixed EffectHistoryGetTime':
+		prefix: 'EffectHistoryGetTime'
+		body: 'EffectHistoryGetTime(${1:effecthistory inHistory}, ${2:int inIndex})'
+	'int EffectHistoryGetType':
+		prefix: 'EffectHistoryGetType'
+		body: 'EffectHistoryGetType(${1:effecthistory inHistory}, ${2:int inIndex})'
+	'unit EffectHistoryGetUnitByLocation':
+		prefix: 'EffectHistoryGetUnitByLocation'
+		body: 'EffectHistoryGetUnitByLocation(${1:effecthistory inHistory}, ${2:int inIndex}, ${3:int inLocation})'
+	'string EffectHistoryGetWeapon':
+		prefix: 'EffectHistoryGetWeapon'
+		body: 'EffectHistoryGetWeapon(${1:effecthistory inHistory}, ${2:int inIndex})'
 	'string GameTimeOfDayGet':
 		prefix: 'GameTimeOfDayGet'
 		body: 'GameTimeOfDayGet()'
@@ -5489,6 +6056,9 @@
 	'fixed WorldHeight':
 		prefix: 'WorldHeight'
 		body: 'WorldHeight(${1:int inType}, ${2:point inPos})'
+	'bool InShrub':
+		prefix: 'InShrub'
+		body: 'InShrub(${1:point inPos})'
 	'void GameSetLighting':
 		prefix: 'GameSetLighting'
 		body: 'GameSetLighting(${1:string inId}, ${2:fixed inBlendTime})'
@@ -5567,6 +6137,9 @@
 	'bool GameMapIsBlizzard':
 		prefix: 'GameMapIsBlizzard'
 		body: 'GameMapIsBlizzard()'
+	'string GameMapPath':
+		prefix: 'GameMapPath'
+		body: 'GameMapPath()'
 	'void GameSetMissionTimePaused':
 		prefix: 'GameSetMissionTimePaused'
 		body: 'GameSetMissionTimePaused(${1:bool inPaused})'
@@ -5642,9 +6215,18 @@
 	'void GameAddChargeRegen':
 		prefix: 'GameAddChargeRegen'
 		body: 'GameAddChargeRegen(${1:string inCharge}, ${2:fixed inVal})'
+	'void GameAddChargeRegenRemaining':
+		prefix: 'GameAddChargeRegenRemaining'
+		body: 'GameAddChargeRegenRemaining(${1:string inCharge}, ${2:fixed inVal})'
 	'fixed GameGetChargeRegen':
 		prefix: 'GameGetChargeRegen'
 		body: 'GameGetChargeRegen(${1:string inCharge})'
+	'void GameAddChargeRegenFull':
+		prefix: 'GameAddChargeRegenFull'
+		body: 'GameAddChargeRegenFull(${1:string inCharge}, ${2:fixed inVal})'
+	'fixed GameGetChargeRegenFull':
+		prefix: 'GameGetChargeRegenFull'
+		body: 'GameGetChargeRegenFull(${1:string inCharge}, ${2:bool adjustmentOnly})'
 	'void GameAddChargeUsed':
 		prefix: 'GameAddChargeUsed'
 		body: 'GameAddChargeUsed(${1:string inCharge}, ${2:fixed inVal})'
@@ -5663,9 +6245,27 @@
 	'bool GameIsExaminable':
 		prefix: 'GameIsExaminable'
 		body: 'GameIsExaminable()'
+	'int GameTestConfigType':
+		prefix: 'GameTestConfigType'
+		body: 'GameTestConfigType()'
 	'bool GameIsOnline':
 		prefix: 'GameIsOnline'
 		body: 'GameIsOnline()'
+	'bool GameIsMatchmade':
+		prefix: 'GameIsMatchmade'
+		body: 'GameIsMatchmade()'
+	'bool GameIsCompetitive':
+		prefix: 'GameIsCompetitive'
+		body: 'GameIsCompetitive()'
+	'bool GameIsPractice':
+		prefix: 'GameIsPractice'
+		body: 'GameIsPractice()'
+	'bool GameIsCooperative':
+		prefix: 'GameIsCooperative'
+		body: 'GameIsCooperative()'
+	'bool GameAreHeroDuplicatesAllowed':
+		prefix: 'GameAreHeroDuplicatesAllowed'
+		body: 'GameAreHeroDuplicatesAllowed()'
 	'void GameSetNextMap':
 		prefix: 'GameSetNextMap'
 		body: 'GameSetNextMap(${1:string inMap})'
@@ -5690,6 +6290,9 @@
 	'void RestartGame':
 		prefix: 'RestartGame'
 		body: 'RestartGame(${1:playergroup inPlayerGroup})'
+	'void KickFromGame':
+		prefix: 'KickFromGame'
+		body: 'KickFromGame(${1:playergroup inPlayerGroup})'
 	'void GameCheatAllow':
 		prefix: 'GameCheatAllow'
 		body: 'GameCheatAllow(${1:int cheat}, ${2:bool allow})'
@@ -5702,6 +6305,9 @@
 	'bool GameDataIsFullyDownloaded':
 		prefix: 'GameDataIsFullyDownloaded'
 		body: 'GameDataIsFullyDownloaded(${1:int player})'
+	'void GameSetPauseable':
+		prefix: 'GameSetPauseable'
+		body: 'GameSetPauseable(${1:bool pauseable})'
 	'void TriggerAddEventMapInit':
 		prefix: 'TriggerAddEventMapInit'
 		body: 'TriggerAddEventMapInit(${1:trigger t})'
@@ -5726,6 +6332,21 @@
 	'int EventCheatUsed':
 		prefix: 'EventCheatUsed'
 		body: 'EventCheatUsed()'
+	'text GameUserName':
+		prefix: 'GameUserName'
+		body: 'GameUserName(${1:int gameUser})'
+	'string GameUserHandle':
+		prefix: 'GameUserHandle'
+		body: 'GameUserHandle(${1:int gameUser})'
+	'void GameUserDisplayMessage':
+		prefix: 'GameUserDisplayMessage'
+		body: 'GameUserDisplayMessage(${1:int gameUser}, ${2:int messageArea}, ${3:text messageText})'
+	'void GameUserClearMessages':
+		prefix: 'GameUserClearMessages'
+		body: 'GameUserClearMessages(${1:int gameUser}, ${2:int messageArea})'
+	'int EventGameUser':
+		prefix: 'EventGameUser'
+		body: 'EventGameUser()'
 	'void IntLoopBegin':
 		prefix: 'IntLoopBegin'
 		body: 'IntLoopBegin(${1:int start}, ${2:int end})'
@@ -6008,6 +6629,9 @@
 	'void MinimapPing':
 		prefix: 'MinimapPing'
 		body: 'MinimapPing(${1:playergroup players}, ${2:point position}, ${3:fixed duration}, ${4:color c})'
+	'void MinimapPingPossibleEnemyStartLocations':
+		prefix: 'MinimapPingPossibleEnemyStartLocations'
+		body: 'MinimapPingPossibleEnemyStartLocations(${1:fixed duration}, ${2:string inModelLink}, ${3:color c})'
 	'void PerfTestStart':
 		prefix: 'PerfTestStart'
 		body: 'PerfTestStart(${1:text name})'
@@ -6026,6 +6650,15 @@
 	'void EngineReset':
 		prefix: 'EngineReset'
 		body: 'EngineReset()'
+	'void StartProfileRun':
+		prefix: 'StartProfileRun'
+		body: 'StartProfileRun(${1:text name})'
+	'void StopProfileRun':
+		prefix: 'StopProfileRun'
+		body: 'StopProfileRun()'
+	'void WaitForProfilerLoggingToEnd':
+		prefix: 'WaitForProfilerLoggingToEnd'
+		body: 'WaitForProfilerLoggingToEnd()'
 	'void MoviePlayAfterGame':
 		prefix: 'MoviePlayAfterGame'
 		body: 'MoviePlayAfterGame(${1:playergroup players}, ${2:string assetLink})'
@@ -6236,6 +6869,12 @@
 	'point PathGetSourcePoint':
 		prefix: 'PathGetSourcePoint'
 		body: 'PathGetSourcePoint(${1:int inPathId})'
+	'void PathSetSourceUnit':
+		prefix: 'PathSetSourceUnit'
+		body: 'PathSetSourceUnit(${1:int inPathId}, ${2:unit inUnit})'
+	'unit PathGetSourceUnit':
+		prefix: 'PathGetSourceUnit'
+		body: 'PathGetSourceUnit(${1:int inPathId})'
 	'void PathSetLineTexture':
 		prefix: 'PathSetLineTexture'
 		body: 'PathSetLineTexture(${1:int inPathId}, ${2:int inLocation}, ${3:string inTexture})'
@@ -6254,6 +6893,24 @@
 	'fixed PathGetLineWidth':
 		prefix: 'PathGetLineWidth'
 		body: 'PathGetLineWidth(${1:int inPathId}, ${2:int inLocation})'
+	'void PathSetStepModel':
+		prefix: 'PathSetStepModel'
+		body: 'PathSetStepModel(${1:int inPathId}, ${2:int inLocation}, ${3:string inModel})'
+	'string PathGetStepModel':
+		prefix: 'PathGetStepModel'
+		body: 'PathGetStepModel(${1:int inPathId}, ${2:int inLocation})'
+	'void PathSetStepModelScale':
+		prefix: 'PathSetStepModelScale'
+		body: 'PathSetStepModelScale(${1:int inPathId}, ${2:int inLocation}, ${3:fixed inScale})'
+	'fixed PathGetStepModelScale':
+		prefix: 'PathGetStepModelScale'
+		body: 'PathGetStepModelScale(${1:int inPathId}, ${2:int inLocation})'
+	'void PathSetStepMidpoint':
+		prefix: 'PathSetStepMidpoint'
+		body: 'PathSetStepMidpoint(${1:int inPathId}, ${2:int inLocation}, ${3:fixed inMidpoint})'
+	'fixed PathGetStepMidpoint':
+		prefix: 'PathGetStepMidpoint'
+		body: 'PathGetStepMidpoint(${1:int inPathId}, ${2:int inLocation})'
 	'void PathSetColor':
 		prefix: 'PathSetColor'
 		body: 'PathSetColor(${1:int inPathId}, ${2:int inLocation}, ${3:color inColor})'
@@ -6275,9 +6932,45 @@
 	'void PathSetAbilClassFilter':
 		prefix: 'PathSetAbilClassFilter'
 		body: 'PathSetAbilClassFilter(${1:int inPathId}, ${2:int inAbilClass}, ${3:int inFilter})'
+	'void PathClearWayPoints':
+		prefix: 'PathClearWayPoints'
+		body: 'PathClearWayPoints(${1:int inPathId})'
+	'void PathAddWayPoint':
+		prefix: 'PathAddWayPoint'
+		body: 'PathAddWayPoint(${1:int inPathId}, ${2:point inWayPoint})'
+	'void PathSetMinimumLinearDistance':
+		prefix: 'PathSetMinimumLinearDistance'
+		body: 'PathSetMinimumLinearDistance(${1:int inPathId}, ${2:fixed inDistance})'
+	'fixed PathGetMinimumLinearDistance':
+		prefix: 'PathGetMinimumLinearDistance'
+		body: 'PathGetMinimumLinearDistance(${1:int inPathId})'
+	'void PathSetMinimumTravelDistance':
+		prefix: 'PathSetMinimumTravelDistance'
+		body: 'PathSetMinimumTravelDistance(${1:int inPathId}, ${2:fixed inDistance})'
+	'fixed PathGetMinimumTravelDistance':
+		prefix: 'PathGetMinimumTravelDistance'
+		body: 'PathGetMinimumTravelDistance(${1:int inPathId})'
+	'void PathSetMinimumStepCount':
+		prefix: 'PathSetMinimumStepCount'
+		body: 'PathSetMinimumStepCount(${1:int inPathId}, ${2:int inStepCount})'
+	'int PathGetMinimumStepCount':
+		prefix: 'PathGetMinimumStepCount'
+		body: 'PathGetMinimumStepCount(${1:int inPathId})'
+	'void PathAddNoFlyZone':
+		prefix: 'PathAddNoFlyZone'
+		body: 'PathAddNoFlyZone(${1:point center}, ${2:fixed innerRadius}, ${3:fixed outerRadius})'
+	'void PathRemoveNoFlyZonesInRegion':
+		prefix: 'PathRemoveNoFlyZonesInRegion'
+		body: 'PathRemoveNoFlyZonesInRegion(${1:region area})'
 	'int PingCreate':
 		prefix: 'PingCreate'
 		body: 'PingCreate(${1:playergroup players}, ${2:string modelLink}, ${3:point position}, ${4:color intColor}, ${5:fixed duration})'
+	'int PingCreateWithPlayerId':
+		prefix: 'PingCreateWithPlayerId'
+		body: 'PingCreateWithPlayerId(${1:playergroup players}, ${2:string modelLink}, ${3:point position}, ${4:color intColor}, ${5:fixed duration}, ${6:int player})'
+	'int PingCreateFromData':
+		prefix: 'PingCreateFromData'
+		body: 'PingCreateFromData(${1:playergroup players}, ${2:string pingLink}, ${3:point position})'
 	'int PingLastCreated':
 		prefix: 'PingLastCreated'
 		body: 'PingLastCreated()'
@@ -6305,6 +6998,12 @@
 	'point PingGetPosition':
 		prefix: 'PingGetPosition'
 		body: 'PingGetPosition(${1:int p})'
+	'void PingSetDepth':
+		prefix: 'PingSetDepth'
+		body: 'PingSetDepth(${1:int p}, ${2:fixed depth})'
+	'fixed PingGetDepth':
+		prefix: 'PingGetDepth'
+		body: 'PingGetDepth(${1:int p})'
 	'void PingSetScale':
 		prefix: 'PingSetScale'
 		body: 'PingSetScale(${1:int p}, ${2:fixed scale})'
@@ -6353,18 +7052,39 @@
 	'void PingSetUseUnitVisibility':
 		prefix: 'PingSetUseUnitVisibility'
 		body: 'PingSetUseUnitVisibility(${1:int p}, ${2:bool useUnitVisibility})'
+	'void PingSetObserver':
+		prefix: 'PingSetObserver'
+		body: 'PingSetObserver(${1:int p}, ${2:bool isObserver})'
 	'void TriggerAddEventPing':
 		prefix: 'TriggerAddEventPing'
 		body: 'TriggerAddEventPing(${1:trigger t}, ${2:int player})'
 	'unit EventPingUnit':
 		prefix: 'EventPingUnit'
 		body: 'EventPingUnit()'
+	'string EventPingUnitType':
+		prefix: 'EventPingUnitType'
+		body: 'EventPingUnitType()'
+	'int EventPingUnitControlPlayer':
+		prefix: 'EventPingUnitControlPlayer'
+		body: 'EventPingUnitControlPlayer()'
+	'int EventPingUnitUpkeepPlayer':
+		prefix: 'EventPingUnitUpkeepPlayer'
+		body: 'EventPingUnitUpkeepPlayer()'
+	'point EventPingUnitPosition':
+		prefix: 'EventPingUnitPosition'
+		body: 'EventPingUnitPosition()'
+	'bool EventPingUnitIsUnderConstruction':
+		prefix: 'EventPingUnitIsUnderConstruction'
+		body: 'EventPingUnitIsUnderConstruction()'
 	'point EventPingPoint':
 		prefix: 'EventPingPoint'
 		body: 'EventPingPoint()'
 	'bool EventPingedMinimap':
 		prefix: 'EventPingedMinimap'
 		body: 'EventPingedMinimap()'
+	'int EventPingOption':
+		prefix: 'EventPingOption'
+		body: 'EventPingOption()'
 	'int PlanetCreate':
 		prefix: 'PlanetCreate'
 		body: 'PlanetCreate(${1:playergroup inPlayerGroup}, ${2:int inState})'
@@ -6464,6 +7184,9 @@
 	'void PlanetSetContactModelLink':
 		prefix: 'PlanetSetContactModelLink'
 		body: 'PlanetSetContactModelLink(${1:int inPlanetId}, ${2:string inContactModelLink})'
+	'void PlanetSetContactActorLink':
+		prefix: 'PlanetSetContactActorLink'
+		body: 'PlanetSetContactActorLink(${1:int inPlanetId}, ${2:string inContactActorLink})'
 	'void PlanetSetBackgroundModelLink':
 		prefix: 'PlanetSetBackgroundModelLink'
 		body: 'PlanetSetBackgroundModelLink(${1:int inPlanetId}, ${2:string inBackgroundModelLink})'
@@ -6524,6 +7247,57 @@
 	'int EventPlanetPanelDifficultySelected':
 		prefix: 'EventPlanetPanelDifficultySelected'
 		body: 'EventPlanetPanelDifficultySelected()'
+	'string TalentTreeGetHeroTalentLink':
+		prefix: 'TalentTreeGetHeroTalentLink'
+		body: 'TalentTreeGetHeroTalentLink(${1:int inPlayer}, ${2:int inIndex})'
+	'bool TalentTreeCanSelectHeroTalentTree':
+		prefix: 'TalentTreeCanSelectHeroTalentTree'
+		body: 'TalentTreeCanSelectHeroTalentTree(${1:int inPlayer}, ${2:int inTalentTreeIndex})'
+	'void TalentTreeSetSelectedHeroTalentTree':
+		prefix: 'TalentTreeSetSelectedHeroTalentTree'
+		body: 'TalentTreeSetSelectedHeroTalentTree(${1:int inPlayer}, ${2:int inTalentTreeIndex})'
+	'int TalentTreeGetSelectedHeroTalentTree':
+		prefix: 'TalentTreeGetSelectedHeroTalentTree'
+		body: 'TalentTreeGetSelectedHeroTalentTree(${1:int inPlayer}, ${2:int inTier})'
+	'int TalentTreeGetSelectedHeroTalentTreeColumn':
+		prefix: 'TalentTreeGetSelectedHeroTalentTreeColumn'
+		body: 'TalentTreeGetSelectedHeroTalentTreeColumn(${1:int inPlayer}, ${2:int inTier})'
+	'void TalentTreeClearTier':
+		prefix: 'TalentTreeClearTier'
+		body: 'TalentTreeClearTier(${1:int inPlayer}, ${2:int inTier})'
+	'bool TalentTreeAllowed':
+		prefix: 'TalentTreeAllowed'
+		body: 'TalentTreeAllowed(${1:int inPlayer}, ${2:int inTalentTreeIndex})'
+	'void SetTalentTierEnabled':
+		prefix: 'SetTalentTierEnabled'
+		body: 'SetTalentTierEnabled(${1:int inTier}, ${2:bool inEnabled})'
+	'void SetTalentUpgradeRequired':
+		prefix: 'SetTalentUpgradeRequired'
+		body: 'SetTalentUpgradeRequired(${1:bool inRequired})'
+	'void SetTalentTreeHeroLevel':
+		prefix: 'SetTalentTreeHeroLevel'
+		body: 'SetTalentTreeHeroLevel(${1:int inPlayer}, ${2:int inLevel})'
+	'void SetTalentsEnabled':
+		prefix: 'SetTalentsEnabled'
+		body: 'SetTalentsEnabled(${1:bool inRequired})'
+	'void SetTalentTreeSelectionPanelDismissAllowed':
+		prefix: 'SetTalentTreeSelectionPanelDismissAllowed'
+		body: 'SetTalentTreeSelectionPanelDismissAllowed(${1:bool inAllowed})'
+	'void SetTalentTreeSelectionPanelAutoShow':
+		prefix: 'SetTalentTreeSelectionPanelAutoShow'
+		body: 'SetTalentTreeSelectionPanelAutoShow(${1:bool inAutoShow})'
+	'void SetTalentTreePauseGameWhenSelectionPanelShown':
+		prefix: 'SetTalentTreePauseGameWhenSelectionPanelShown'
+		body: 'SetTalentTreePauseGameWhenSelectionPanelShown(${1:bool inPauseGame})'
+	'void TriggerAddEventHeroTalentTreeSelected':
+		prefix: 'TriggerAddEventHeroTalentTreeSelected'
+		body: 'TriggerAddEventHeroTalentTreeSelected(${1:trigger t}, ${2:int player})'
+	'void TriggerAddEventHeroTalentTreeSelectionPanelShown':
+		prefix: 'TriggerAddEventHeroTalentTreeSelectionPanelShown'
+		body: 'TriggerAddEventHeroTalentTreeSelectionPanelShown(${1:trigger t}, ${2:int player})'
+	'void TriggerAddEventHeroTalentTreeSelectionPanelHidden':
+		prefix: 'TriggerAddEventHeroTalentTreeSelectionPanelHidden'
+		body: 'TriggerAddEventHeroTalentTreeSelectionPanelHidden(${1:trigger t}, ${2:int player})'
 	'void VictoryPanelSetVictoryText':
 		prefix: 'VictoryPanelSetVictoryText'
 		body: 'VictoryPanelSetVictoryText(${1:text inText})'
@@ -6605,6 +7379,9 @@
 	'void HelpPanelAddTutorial':
 		prefix: 'HelpPanelAddTutorial'
 		body: 'HelpPanelAddTutorial(${1:playergroup players}, ${2:text titleText}, ${3:text descriptionText}, ${4:string iconPath}, ${5:string moviePath}, ${6:bool flashing})'
+	'void HelpPanelAddMessage':
+		prefix: 'HelpPanelAddMessage'
+		body: 'HelpPanelAddMessage(${1:playergroup players}, ${2:text speakerText}, ${3:text subtitleText}, ${4:string modelLink}, ${5:soundlink soundId})'
 	'void HelpPanelDisplayPage':
 		prefix: 'HelpPanelDisplayPage'
 		body: 'HelpPanelDisplayPage(${1:playergroup players}, ${2:int inPage})'
@@ -6629,6 +7406,9 @@
 	'void TipAlertPanelClear':
 		prefix: 'TipAlertPanelClear'
 		body: 'TipAlertPanelClear(${1:playergroup inPlayerGroup})'
+	'void SetHeroLeaderPanelEnabled':
+		prefix: 'SetHeroLeaderPanelEnabled'
+		body: 'SetHeroLeaderPanelEnabled(${1:bool inRequired})'
 	'void PlayerModifyPropertyInt':
 		prefix: 'PlayerModifyPropertyInt'
 		body: 'PlayerModifyPropertyInt(${1:int inPlayer}, ${2:int inProp}, ${3:int inOper}, ${4:int inVal})'
@@ -6656,6 +7436,27 @@
 	'string PlayerRace':
 		prefix: 'PlayerRace'
 		body: 'PlayerRace(${1:int inPlayer})'
+	'string PlayerHero':
+		prefix: 'PlayerHero'
+		body: 'PlayerHero(${1:int inPlayer})'
+	'string PlayerSkin':
+		prefix: 'PlayerSkin'
+		body: 'PlayerSkin(${1:int inPlayer})'
+	'string PlayerMount':
+		prefix: 'PlayerMount'
+		body: 'PlayerMount(${1:int inPlayer})'
+	'string PlayerArtifact':
+		prefix: 'PlayerArtifact'
+		body: 'PlayerArtifact(${1:int inPlayer}, ${2:int inArtifactIndex})'
+	'int PlayerArtifactRank':
+		prefix: 'PlayerArtifactRank'
+		body: 'PlayerArtifactRank(${1:int inPlayer}, ${2:int inArtifactIndex})'
+	'string PlayerCommander':
+		prefix: 'PlayerCommander'
+		body: 'PlayerCommander(${1:int inPlayer})'
+	'int PlayerCommanderLevel':
+		prefix: 'PlayerCommanderLevel'
+		body: 'PlayerCommanderLevel(${1:int inPlayer})'
 	'int PlayerDifficulty':
 		prefix: 'PlayerDifficulty'
 		body: 'PlayerDifficulty(${1:int inPlayer})'
@@ -6665,18 +7466,48 @@
 	'void PlayerSetLighting':
 		prefix: 'PlayerSetLighting'
 		body: 'PlayerSetLighting(${1:int inPlayer}, ${2:string inLight}, ${3:fixed inBlendTime})'
+	'void PlayerSetToDLighting':
+		prefix: 'PlayerSetToDLighting'
+		body: 'PlayerSetToDLighting(${1:int inPlayer}, ${2:string inLight})'
 	'point PlayerStartLocation':
 		prefix: 'PlayerStartLocation'
 		body: 'PlayerStartLocation(${1:int inPlayer})'
 	'int PlayerAIBuildNumber':
 		prefix: 'PlayerAIBuildNumber'
 		body: 'PlayerAIBuildNumber(${1:int player})'
+	'bool PlayerAIControlAllowed':
+		prefix: 'PlayerAIControlAllowed'
+		body: 'PlayerAIControlAllowed(${1:int player})'
+	'void PlayerSetAllowAIControl':
+		prefix: 'PlayerSetAllowAIControl'
+		body: 'PlayerSetAllowAIControl(${1:int player}, ${2:bool allow})'
+	'bool PlayerIsUnderAIControl':
+		prefix: 'PlayerIsUnderAIControl'
+		body: 'PlayerIsUnderAIControl(${1:int player})'
+	'void PlayerSetUnderAIControl':
+		prefix: 'PlayerSetUnderAIControl'
+		body: 'PlayerSetUnderAIControl(${1:int player}, ${2:bool aiControlled})'
 	'bool PlayerHasLicense':
 		prefix: 'PlayerHasLicense'
 		body: 'PlayerHasLicense(${1:int inPlayer}, ${2:int inLicense})'
 	'bool PlayerHasAccessTo':
 		prefix: 'PlayerHasAccessTo'
 		body: 'PlayerHasAccessTo(${1:int inPlayer}, ${2:string inEntityName})'
+	'bool PlayerHasReward':
+		prefix: 'PlayerHasReward'
+		body: 'PlayerHasReward(${1:int inPlayer}, ${2:string inReward})'
+	'void PlayerAddTalent':
+		prefix: 'PlayerAddTalent'
+		body: 'PlayerAddTalent(${1:int inPlayer}, ${2:string inTalent})'
+	'void PlayerRemoveTalent':
+		prefix: 'PlayerRemoveTalent'
+		body: 'PlayerRemoveTalent(${1:int inPlayer}, ${2:string inTalent})'
+	'bool PlayerHasTalent':
+		prefix: 'PlayerHasTalent'
+		body: 'PlayerHasTalent(${1:int inPlayer}, ${2:string inTalent})'
+	'void PlayerSetBounds':
+		prefix: 'PlayerSetBounds'
+		body: 'PlayerSetBounds(${1:int inPlayer}, ${2:region inRegion})'
 	'void PlayerSetColorIndex':
 		prefix: 'PlayerSetColorIndex'
 		body: 'PlayerSetColorIndex(${1:int inPlayer}, ${2:int inIndex}, ${3:bool inChangeUnits})'
@@ -6698,6 +7529,45 @@
 	'bool PlayerGetState':
 		prefix: 'PlayerGetState'
 		body: 'PlayerGetState(${1:int inPlayer}, ${2:int inState})'
+	'void PlayerSetRace':
+		prefix: 'PlayerSetRace'
+		body: 'PlayerSetRace(${1:int inPlayer}, ${2:string inRace})'
+	'void PlayerSetHero':
+		prefix: 'PlayerSetHero'
+		body: 'PlayerSetHero(${1:int inPlayer}, ${2:string inHero})'
+	'void PlayerSetSkin':
+		prefix: 'PlayerSetSkin'
+		body: 'PlayerSetSkin(${1:int inPlayer}, ${2:string inSkin})'
+	'void PlayerSetMount':
+		prefix: 'PlayerSetMount'
+		body: 'PlayerSetMount(${1:int inPlayer}, ${2:string inMount})'
+	'void PlayerSetCommander':
+		prefix: 'PlayerSetCommander'
+		body: 'PlayerSetCommander(${1:int inPlayer}, ${2:string inCommander})'
+	'void PlayerSetCommanderLevel':
+		prefix: 'PlayerSetCommanderLevel'
+		body: 'PlayerSetCommanderLevel(${1:int inPlayer}, ${2:int inCommanderLevel})'
+	'void PlayerAddLabel':
+		prefix: 'PlayerAddLabel'
+		body: 'PlayerAddLabel(${1:int inPlayer}, ${2:string inLabel})'
+	'bool PlayerRemoveLabel':
+		prefix: 'PlayerRemoveLabel'
+		body: 'PlayerRemoveLabel(${1:int inPlayer}, ${2:string inLabel})'
+	'void PlayerRemoveAllLabels':
+		prefix: 'PlayerRemoveAllLabels'
+		body: 'PlayerRemoveAllLabels(${1:int inPlayer})'
+	'bool PlayerHasLabel':
+		prefix: 'PlayerHasLabel'
+		body: 'PlayerHasLabel(${1:int inPlayer}, ${2:string inLabel})'
+	'void PlayerSetDeathTimer':
+		prefix: 'PlayerSetDeathTimer'
+		body: 'PlayerSetDeathTimer(${1:int inPlayer}, ${2:timer inTimer})'
+	'void PlayerApplySkin':
+		prefix: 'PlayerApplySkin'
+		body: 'PlayerApplySkin(${1:int inPlayer}, ${2:string inSkin}, ${3:bool apply})'
+	'string PlayerGetHotkeyProfile':
+		prefix: 'PlayerGetHotkeyProfile'
+		body: 'PlayerGetHotkeyProfile(${1:int inPlayer})'
 	'void PlayerBeaconClearTarget':
 		prefix: 'PlayerBeaconClearTarget'
 		body: 'PlayerBeaconClearTarget(${1:int inPlayer}, ${2:int inBeacon})'
@@ -6770,9 +7640,18 @@
 	'void PlayerAddChargeRegen':
 		prefix: 'PlayerAddChargeRegen'
 		body: 'PlayerAddChargeRegen(${1:int inPlayer}, ${2:string inCharge}, ${3:fixed inVal})'
+	'void PlayerAddChargeRegenRemaining':
+		prefix: 'PlayerAddChargeRegenRemaining'
+		body: 'PlayerAddChargeRegenRemaining(${1:int inPlayer}, ${2:string inCharge}, ${3:fixed inVal})'
 	'fixed PlayerGetChargeRegen':
 		prefix: 'PlayerGetChargeRegen'
 		body: 'PlayerGetChargeRegen(${1:int inPlayer}, ${2:string inCharge})'
+	'void PlayerAddChargeRegenFull':
+		prefix: 'PlayerAddChargeRegenFull'
+		body: 'PlayerAddChargeRegenFull(${1:int inPlayer}, ${2:string inCharge}, ${3:fixed inVal})'
+	'fixed PlayerGetChargeRegenFull':
+		prefix: 'PlayerGetChargeRegenFull'
+		body: 'PlayerGetChargeRegenFull(${1:int inPlayer}, ${2:string inCharge}, ${3:bool adjustmentOnly})'
 	'void PlayerAddChargeUsed':
 		prefix: 'PlayerAddChargeUsed'
 		body: 'PlayerAddChargeUsed(${1:int inPlayer}, ${2:string inCharge}, ${3:fixed inVal})'
@@ -6818,6 +7697,9 @@
 	'void TriggerAddEventPlayerAllianceChange':
 		prefix: 'TriggerAddEventPlayerAllianceChange'
 		body: 'TriggerAddEventPlayerAllianceChange(${1:trigger inTrigger}, ${2:int player})'
+	'void TriggerAddEventPlayerJoin':
+		prefix: 'TriggerAddEventPlayerJoin'
+		body: 'TriggerAddEventPlayerJoin(${1:trigger inTrigger}, ${2:int player})'
 	'void TriggerAddEventPlayerLeft':
 		prefix: 'TriggerAddEventPlayerLeft'
 		body: 'TriggerAddEventPlayerLeft(${1:trigger inTrigger}, ${2:int player}, ${3:int inResult})'
@@ -6830,6 +7712,9 @@
 	'void TriggerAddEventPlayerEffectUsed':
 		prefix: 'TriggerAddEventPlayerEffectUsed'
 		body: 'TriggerAddEventPlayerEffectUsed(${1:trigger t}, ${2:int player}, ${3:string inEffect})'
+	'void TriggerAddEventPlayerEffectUsedFromScope':
+		prefix: 'TriggerAddEventPlayerEffectUsedFromScope'
+		body: 'TriggerAddEventPlayerEffectUsedFromScope(${1:trigger t}, ${2:int player}, ${3:string inScope})'
 	'int EventPlayer':
 		prefix: 'EventPlayer'
 		body: 'EventPlayer()'
@@ -6863,6 +7748,9 @@
 	'fixed EventPlayerEffectUsedAmountFixed':
 		prefix: 'EventPlayerEffectUsedAmountFixed'
 		body: 'EventPlayerEffectUsedAmountFixed(${1:int inAmount}, ${2:bool total})'
+	'string EventPlayerEffectUsedSourceBehavior':
+		prefix: 'EventPlayerEffectUsedSourceBehavior'
+		body: 'EventPlayerEffectUsedSourceBehavior()'
 	'wave EventPlayerWave':
 		prefix: 'EventPlayerWave'
 		body: 'EventPlayerWave()'
@@ -6878,6 +7766,9 @@
 	'int DifficultyAPM':
 		prefix: 'DifficultyAPM'
 		body: 'DifficultyAPM(${1:int inDifficulty})'
+	'void SetScoreTimer':
+		prefix: 'SetScoreTimer'
+		body: 'SetScoreTimer(${1:timer inTimer})'
 	'playergroup PlayerGroupEmpty':
 		prefix: 'PlayerGroupEmpty'
 		body: 'PlayerGroupEmpty()'
@@ -6959,6 +7850,9 @@
 	'fixed DistanceBetweenPoints':
 		prefix: 'DistanceBetweenPoints'
 		body: 'DistanceBetweenPoints(${1:point p1}, ${2:point p2})'
+	'fixed DistanceSquaredBetweenPoints':
+		prefix: 'DistanceSquaredBetweenPoints'
+		body: 'DistanceSquaredBetweenPoints(${1:point p1}, ${2:point p2})'
 	'int PointPathingCost':
 		prefix: 'PointPathingCost'
 		body: 'PointPathingCost(${1:point p1}, ${2:point p2})'
@@ -6974,6 +7868,12 @@
 	'point PointReflect':
 		prefix: 'PointReflect'
 		body: 'PointReflect(${1:point source}, ${2:point dest}, ${3:fixed angle})'
+	'point PointInterpolate':
+		prefix: 'PointInterpolate'
+		body: 'PointInterpolate(${1:point source}, ${2:point dest}, ${3:fixed fraction})'
+	'point MidPoint':
+		prefix: 'MidPoint'
+		body: 'MidPoint(${1:point source}, ${2:point dest})'
 	'int PortraitCreate':
 		prefix: 'PortraitCreate'
 		body: 'PortraitCreate(${1:int offsetX}, ${2:int offsetY}, ${3:int anchor}, ${4:int width}, ${5:int height}, ${6:string modelLink}, ${7:string cameraLink}, ${8:string animProps}, ${9:bool visible}, ${10:bool waitUntilLoaded})'
@@ -7418,21 +8318,18 @@
 	'int SoundLinkAsset':
 		prefix: 'SoundLinkAsset'
 		body: 'SoundLinkAsset(${1:soundlink soundId})'
-	'void SoundPlay':
-		prefix: 'SoundPlay'
-		body: 'SoundPlay(${1:soundlink link}, ${2:playergroup players}, ${3:fixed volume}, ${4:fixed offset})'
-	'void SoundPlayAtPoint':
-		prefix: 'SoundPlayAtPoint'
-		body: 'SoundPlayAtPoint(${1:soundlink link}, ${2:playergroup players}, ${3:point inPoint}, ${4:fixed height}, ${5:fixed volume}, ${6:fixed offset})'
-	'void SoundPlayOnUnit':
-		prefix: 'SoundPlayOnUnit'
-		body: 'SoundPlayOnUnit(${1:soundlink link}, ${2:playergroup players}, ${3:unit inUnit}, ${4:fixed height}, ${5:fixed volume}, ${6:fixed offset})'
-	'void SoundPlayScene':
-		prefix: 'SoundPlayScene'
-		body: 'SoundPlayScene(${1:soundlink link}, ${2:playergroup players}, ${3:unitgroup units}, ${4:string animProps})'
-	'void SoundPlaySceneFile':
-		prefix: 'SoundPlaySceneFile'
-		body: 'SoundPlaySceneFile(${1:soundlink link}, ${2:playergroup players}, ${3:string sceneFile}, ${4:string camera})'
+	'void SoundPlayForPlayer':
+		prefix: 'SoundPlayForPlayer'
+		body: 'SoundPlayForPlayer(${1:soundlink link}, ${2:int inOwningPlayer}, ${3:playergroup audibleMask}, ${4:fixed volume}, ${5:fixed offset})'
+	'void SoundPlayAtPointForPlayer':
+		prefix: 'SoundPlayAtPointForPlayer'
+		body: 'SoundPlayAtPointForPlayer(${1:soundlink link}, ${2:int inOwningPlayer}, ${3:playergroup audibleMask}, ${4:point inPoint}, ${5:fixed height}, ${6:fixed volume}, ${7:fixed offset})'
+	'void SoundPlayOnUnitForPlayer':
+		prefix: 'SoundPlayOnUnitForPlayer'
+		body: 'SoundPlayOnUnitForPlayer(${1:soundlink link}, ${2:int inOwningPlayer}, ${3:playergroup audibleMask}, ${4:unit inUnit}, ${5:fixed height}, ${6:fixed volume}, ${7:fixed offset})'
+	'void SoundPlaySceneForPlayer':
+		prefix: 'SoundPlaySceneForPlayer'
+		body: 'SoundPlaySceneForPlayer(${1:soundlink link}, ${2:int inOwningPlayer}, ${3:playergroup audibleMask}, ${4:unitgroup units}, ${5:string animProps})'
 	'sound SoundLastPlayed':
 		prefix: 'SoundLastPlayed'
 		body: 'SoundLastPlayed()'
@@ -7493,6 +8390,9 @@
 	'void SoundSetReverb':
 		prefix: 'SoundSetReverb'
 		body: 'SoundSetReverb(${1:string inReverbLink}, ${2:fixed inDuration}, ${3:bool inAmbient}, ${4:bool inGlobal})'
+	'void SoundSetReverbForPlayers':
+		prefix: 'SoundSetReverbForPlayers'
+		body: 'SoundSetReverbForPlayers(${1:playergroup players}, ${2:string inReverbLink}, ${3:fixed inDuration}, ${4:bool inAmbient}, ${5:bool inGlobal})'
 	'void SoundSetFactors':
 		prefix: 'SoundSetFactors'
 		body: 'SoundSetFactors(${1:fixed distance}, ${2:fixed doppler}, ${3:fixed rolloff})'
@@ -7502,6 +8402,12 @@
 	'string SoundPortraitModel':
 		prefix: 'SoundPortraitModel'
 		body: 'SoundPortraitModel(${1:soundlink link})'
+	'void SoundSetListenerGender':
+		prefix: 'SoundSetListenerGender'
+		body: 'SoundSetListenerGender(${1:soundlink link}, ${2:int gender})'
+	'void SoundPlaySceneFile':
+		prefix: 'SoundPlaySceneFile'
+		body: 'SoundPlaySceneFile(${1:soundlink link}, ${2:playergroup players}, ${3:string sceneFile}, ${4:string camera})'
 	'void SoundtrackDefault':
 		prefix: 'SoundtrackDefault'
 		body: 'SoundtrackDefault(${1:playergroup players}, ${2:int category}, ${3:string soundtrack}, ${4:int cue}, ${5:int index})'
@@ -7553,6 +8459,9 @@
 	'bool StringEqual':
 		prefix: 'StringEqual'
 		body: 'StringEqual(${1:string s1}, ${2:string s2}, ${3:bool caseSens})'
+	'int StringCompare':
+		prefix: 'StringCompare'
+		body: 'StringCompare(${1:string s1}, ${2:string s2}, ${3:bool caseSens})'
 	'int StringFind':
 		prefix: 'StringFind'
 		body: 'StringFind(${1:string s1}, ${2:string s2}, ${3:bool caseSens})'
@@ -7724,6 +8633,9 @@
 	'void TextTagSetVelocity':
 		prefix: 'TextTagSetVelocity'
 		body: 'TextTagSetVelocity(${1:int inTag}, ${2:fixed inSpeed}, ${3:fixed inAngle})'
+	'void TextTagSetGravity':
+		prefix: 'TextTagSetGravity'
+		body: 'TextTagSetGravity(${1:int inTag}, ${2:fixed inGravity})'
 	'void TextTagSetAlignment':
 		prefix: 'TextTagSetAlignment'
 		body: 'TextTagSetAlignment(${1:int inTag}, ${2:int inHoriz}, ${3:int inVert})'
@@ -7898,21 +8810,27 @@
 	'void TransmissionSourceSetStreamingAllowed':
 		prefix: 'TransmissionSourceSetStreamingAllowed'
 		body: 'TransmissionSourceSetStreamingAllowed(${1:transmissionsource source}, ${2:bool allowed})'
-	'int TransmissionSend':
-		prefix: 'TransmissionSend'
-		body: 'TransmissionSend(${1:playergroup players}, ${2:transmissionsource source}, ${3:int targetPortrait}, ${4:string targetAnim}, ${5:soundlink soundLink}, ${6:text speaker}, ${7:text subtitle}, ${8:fixed duration}, ${9:int durationType}, ${10:bool waitUntilDone})'
-	'int TransmissionSendAdvanced':
-		prefix: 'TransmissionSendAdvanced'
-		body: 'TransmissionSendAdvanced(${1:playergroup players}, ${2:transmissionsource source}, ${3:int targetPortrait}, ${4:string actorLink}, ${5:string targetAnim}, ${6:soundlink soundLink}, ${7:text speaker}, ${8:text subtitle}, ${9:fixed duration}, ${10:int durationType}, ${11:bool waitUntilDone})'
+	'void TransmissionSourceSetBypassMessageLog':
+		prefix: 'TransmissionSourceSetBypassMessageLog'
+		body: 'TransmissionSourceSetBypassMessageLog(${1:transmissionsource source}, ${2:bool bypass})'
+	'int TransmissionSendForPlayer':
+		prefix: 'TransmissionSendForPlayer'
+		body: 'TransmissionSendForPlayer(${1:playergroup players}, ${2:transmissionsource source}, ${3:int targetPortrait}, ${4:string actorLink}, ${5:string targetAnim}, ${6:soundlink soundLink}, ${7:text speaker}, ${8:text subtitle}, ${9:fixed duration}, ${10:int durationType}, ${11:bool waitUntilDone}, ${12:int owningPlayer})'
 	'int TransmissionLastSent':
 		prefix: 'TransmissionLastSent'
 		body: 'TransmissionLastSent()'
 	'void TransmissionClear':
 		prefix: 'TransmissionClear'
 		body: 'TransmissionClear(${1:int t})'
+	'bool TransmissionPlayerHasActiveTransmission':
+		prefix: 'TransmissionPlayerHasActiveTransmission'
+		body: 'TransmissionPlayerHasActiveTransmission(${1:int inPlayerId})'
 	'void TransmissionClearAll':
 		prefix: 'TransmissionClearAll'
 		body: 'TransmissionClearAll()'
+	'void TransmissionClearGroup':
+		prefix: 'TransmissionClearGroup'
+		body: 'TransmissionClearGroup(${1:playergroup players})'
 	'void TransmissionSetOption':
 		prefix: 'TransmissionSetOption'
 		body: 'TransmissionSetOption(${1:int inOptionIndex}, ${2:bool inValue})'
@@ -7967,6 +8885,9 @@
 	'void TriggerWaitForTrigger':
 		prefix: 'TriggerWaitForTrigger'
 		body: 'TriggerWaitForTrigger(${1:trigger t}, ${2:bool waitUntilDone})'
+	'void TriggerCurrentTriggerThreadSetFlags':
+		prefix: 'TriggerCurrentTriggerThreadSetFlags'
+		body: 'TriggerCurrentTriggerThreadSetFlags(${1:int f}, ${2:bool on})'
 	'void TriggerQueueEnter':
 		prefix: 'TriggerQueueEnter'
 		body: 'TriggerQueueEnter()'
@@ -7994,6 +8915,9 @@
 	'trigger EventTrigger':
 		prefix: 'EventTrigger'
 		body: 'EventTrigger()'
+	'string TriggerEventParamName':
+		prefix: 'TriggerEventParamName'
+		body: 'TriggerEventParamName(${1:string eventName}, ${2:string paramName})'
 	'void TriggerSendEvent':
 		prefix: 'TriggerSendEvent'
 		body: 'TriggerSendEvent(${1:string name})'
@@ -8009,6 +8933,9 @@
 	'void TriggerDebugOutput':
 		prefix: 'TriggerDebugOutput'
 		body: 'TriggerDebugOutput(${1:int type}, ${2:text inText}, ${3:bool includeGameUI})'
+	'void TriggerDebugOutputEnable':
+		prefix: 'TriggerDebugOutputEnable'
+		body: 'TriggerDebugOutputEnable(${1:bool inEnable})'
 	'void TriggerDebugEnableType':
 		prefix: 'TriggerDebugEnableType'
 		body: 'TriggerDebugEnableType(${1:int type}, ${2:bool enable})'
@@ -8021,6 +8948,9 @@
 	'void TriggerDebugSetTypeFile':
 		prefix: 'TriggerDebugSetTypeFile'
 		body: 'TriggerDebugSetTypeFile(${1:int type}, ${2:string file})'
+	'void TriggerDebugSetTypeFilter':
+		prefix: 'TriggerDebugSetTypeFilter'
+		body: 'TriggerDebugSetTypeFilter(${1:int type}, ${2:int filter}, ${3:bool enabled})'
 	'unitgroup UnitCreate':
 		prefix: 'UnitCreate'
 		body: 'UnitCreate(${1:int inCount}, ${2:string inUnitType}, ${3:int inCreateStyle}, ${4:int inPlayer}, ${5:point inPos}, ${6:fixed inFacing})'
@@ -8057,6 +8987,9 @@
 	'void UnitWaitUntilIdle':
 		prefix: 'UnitWaitUntilIdle'
 		body: 'UnitWaitUntilIdle(${1:unit inUnit}, ${2:bool inIdle})'
+	'text UnitGetName':
+		prefix: 'UnitGetName'
+		body: 'UnitGetName(${1:unit inUnit})'
 	'int UnitGetTag':
 		prefix: 'UnitGetTag'
 		body: 'UnitGetTag(${1:unit inUnit})'
@@ -8081,6 +9014,9 @@
 	'point UnitGetPosition':
 		prefix: 'UnitGetPosition'
 		body: 'UnitGetPosition(${1:unit inUnit})'
+	'point UnitGetGoalPosition':
+		prefix: 'UnitGetGoalPosition'
+		body: 'UnitGetGoalPosition(${1:unit inUnit})'
 	'void UnitSetPosition':
 		prefix: 'UnitSetPosition'
 		body: 'UnitSetPosition(${1:unit inUnit}, ${2:point inPos}, ${3:bool blend})'
@@ -8165,9 +9101,18 @@
 	'void UnitAddChargeRegen':
 		prefix: 'UnitAddChargeRegen'
 		body: 'UnitAddChargeRegen(${1:unit inUnit}, ${2:string inCharge}, ${3:fixed inVal})'
+	'void UnitAddChargeRegenRemaining':
+		prefix: 'UnitAddChargeRegenRemaining'
+		body: 'UnitAddChargeRegenRemaining(${1:unit inUnit}, ${2:string inCharge}, ${3:fixed inVal})'
 	'fixed UnitGetChargeRegen':
 		prefix: 'UnitGetChargeRegen'
 		body: 'UnitGetChargeRegen(${1:unit inUnit}, ${2:string inCharge})'
+	'void UnitAddChargeRegenFull':
+		prefix: 'UnitAddChargeRegenFull'
+		body: 'UnitAddChargeRegenFull(${1:unit inUnit}, ${2:string inCharge}, ${3:fixed inVal})'
+	'fixed UnitGetChargeRegenFull':
+		prefix: 'UnitGetChargeRegenFull'
+		body: 'UnitGetChargeRegenFull(${1:unit inUnit}, ${2:string inCharge}, ${3:bool adjustmentOnly})'
 	'void UnitAddChargeUsed':
 		prefix: 'UnitAddChargeUsed'
 		body: 'UnitAddChargeUsed(${1:unit inUnit}, ${2:string inCharge}, ${3:fixed inVal})'
@@ -8177,6 +9122,12 @@
 	'void UnitAddCooldown':
 		prefix: 'UnitAddCooldown'
 		body: 'UnitAddCooldown(${1:unit inUnit}, ${2:string inCooldown}, ${3:fixed inVal})'
+	'void UnitModifyCooldown':
+		prefix: 'UnitModifyCooldown'
+		body: 'UnitModifyCooldown(${1:unit inUnit}, ${2:string inCooldown}, ${3:fixed inVal}, ${4:int inOperation})'
+	'void UnitClearCooldowns':
+		prefix: 'UnitClearCooldowns'
+		body: 'UnitClearCooldowns(${1:unit inUnit}, ${2:bool inReset})'
 	'fixed UnitGetCooldown':
 		prefix: 'UnitGetCooldown'
 		body: 'UnitGetCooldown(${1:unit inUnit}, ${2:string inCooldown})'
@@ -8195,6 +9146,9 @@
 	'void UnitDamage':
 		prefix: 'UnitDamage'
 		body: 'UnitDamage(${1:unit inAttacker}, ${2:string inEffect}, ${3:unit inVictim}, ${4:fixed inBonus})'
+	'effecthistory UnitEffectHistory':
+		prefix: 'UnitEffectHistory'
+		body: 'UnitEffectHistory(${1:unit inUnit}, ${2:int inMaxCount})'
 	'void UnitSetAIOption':
 		prefix: 'UnitSetAIOption'
 		body: 'UnitSetAIOption(${1:unit inUnit}, ${2:int inOption}, ${3:bool inVal})'
@@ -8204,6 +9158,9 @@
 	'void UnitAbilitySpend':
 		prefix: 'UnitAbilitySpend'
 		body: 'UnitAbilitySpend(${1:unit inUnit}, ${2:abilcmd inAbilCmd}, ${3:int inLocation})'
+	'void UnitAbilitySpendExplicit':
+		prefix: 'UnitAbilitySpendExplicit'
+		body: 'UnitAbilitySpendExplicit(${1:unit inUnit}, ${2:abilcmd inAbilCmd}, ${3:int inLocation}, ${4:fixed inVitalsFactor}, ${5:fixed inResourcesFactor}, ${6:fixed inChargesFactor}, ${7:fixed inCooldownFactor})'
 	'void UnitAbilityReset':
 		prefix: 'UnitAbilityReset'
 		body: 'UnitAbilityReset(${1:unit inUnit}, ${2:abilcmd inAbilCmd}, ${3:int inLocation})'
@@ -8240,9 +9197,18 @@
 	'void UnitAbilityAddChargeRegen':
 		prefix: 'UnitAbilityAddChargeRegen'
 		body: 'UnitAbilityAddChargeRegen(${1:unit inUnit}, ${2:string inAbil}, ${3:string inCharge}, ${4:fixed inVal})'
+	'void UnitAbilityAddChargeRegenRemaining':
+		prefix: 'UnitAbilityAddChargeRegenRemaining'
+		body: 'UnitAbilityAddChargeRegenRemaining(${1:unit inUnit}, ${2:string inAbil}, ${3:string inCharge}, ${4:fixed inVal})'
 	'fixed UnitAbilityGetChargeRegen':
 		prefix: 'UnitAbilityGetChargeRegen'
 		body: 'UnitAbilityGetChargeRegen(${1:unit inUnit}, ${2:string inAbil}, ${3:string inCharge})'
+	'void UnitAbilityAddChargeRegenFull':
+		prefix: 'UnitAbilityAddChargeRegenFull'
+		body: 'UnitAbilityAddChargeRegenFull(${1:unit inUnit}, ${2:string inAbil}, ${3:string inCharge}, ${4:fixed inVal})'
+	'fixed UnitAbilityGetChargeRegenFull':
+		prefix: 'UnitAbilityGetChargeRegenFull'
+		body: 'UnitAbilityGetChargeRegenFull(${1:unit inUnit}, ${2:string inAbil}, ${3:string inCharge}, ${4:bool adjustmentOnly})'
 	'void UnitAbilityAddChargeUsed':
 		prefix: 'UnitAbilityAddChargeUsed'
 		body: 'UnitAbilityAddChargeUsed(${1:unit inUnit}, ${2:string inAbil}, ${3:string inCharge}, ${4:fixed inVal})'
@@ -8288,6 +9254,9 @@
 	'unit UnitTransport':
 		prefix: 'UnitTransport'
 		body: 'UnitTransport(${1:unit inUnit})'
+	'unitgroup UnitConjoinedGroup':
+		prefix: 'UnitConjoinedGroup'
+		body: 'UnitConjoinedGroup(${1:unit inUnit}, ${2:string inConjoinedBehavior})'
 	'unit UnitAgent':
 		prefix: 'UnitAgent'
 		body: 'UnitAgent(${1:unit inUnit}, ${2:int inPlayer})'
@@ -8324,6 +9293,12 @@
 	'bool UnitTestPlane':
 		prefix: 'UnitTestPlane'
 		body: 'UnitTestPlane(${1:unit inUnit}, ${2:int inPlane})'
+	'fixed UnitGetDamageDealtTime':
+		prefix: 'UnitGetDamageDealtTime'
+		body: 'UnitGetDamageDealtTime(${1:unit inUnit})'
+	'fixed UnitGetDamageTakenTime':
+		prefix: 'UnitGetDamageTakenTime'
+		body: 'UnitGetDamageTakenTime(${1:unit inUnit})'
 	'fixed UnitGetProgressComplete':
 		prefix: 'UnitGetProgressComplete'
 		body: 'UnitGetProgressComplete(${1:unit inUnit}, ${2:int inSlot})'
@@ -8366,6 +9341,9 @@
 	'bool UnitHasBehavior':
 		prefix: 'UnitHasBehavior'
 		body: 'UnitHasBehavior(${1:unit inUnit}, ${2:string inBehavior})'
+	'bool UnitHasBehavior2':
+		prefix: 'UnitHasBehavior2'
+		body: 'UnitHasBehavior2(${1:unit inUnit}, ${2:string inBehavior})'
 	'void UnitBehaviorRemove':
 		prefix: 'UnitBehaviorRemove'
 		body: 'UnitBehaviorRemove(${1:unit inUnit}, ${2:string inBehavior}, ${3:int inCount})'
@@ -8390,9 +9368,18 @@
 	'void UnitBehaviorAddChargeRegen':
 		prefix: 'UnitBehaviorAddChargeRegen'
 		body: 'UnitBehaviorAddChargeRegen(${1:unit inUnit}, ${2:string inBehavior}, ${3:string inCharge}, ${4:fixed inVal})'
+	'void UnitBehaviorAddChargeRegenRemaining':
+		prefix: 'UnitBehaviorAddChargeRegenRemaining'
+		body: 'UnitBehaviorAddChargeRegenRemaining(${1:unit inUnit}, ${2:string inAbil}, ${3:string inCharge}, ${4:fixed inVal})'
 	'fixed UnitBehaviorGetChargeRegen':
 		prefix: 'UnitBehaviorGetChargeRegen'
-		body: 'UnitBehaviorGetChargeRegen(${1:unit inUnit}, ${2:string inBehavior}, ${3:string inCharge})'
+		body: 'UnitBehaviorGetChargeRegen(${1:unit inUnit}, ${2:string inAbil}, ${3:string inCharge})'
+	'void UnitBehaviorAddChargeRegenFull':
+		prefix: 'UnitBehaviorAddChargeRegenFull'
+		body: 'UnitBehaviorAddChargeRegenFull(${1:unit inUnit}, ${2:string inAbil}, ${3:string inCharge}, ${4:fixed inVal})'
+	'fixed UnitBehaviorGetChargeRegenFull':
+		prefix: 'UnitBehaviorGetChargeRegenFull'
+		body: 'UnitBehaviorGetChargeRegenFull(${1:unit inUnit}, ${2:string inAbil}, ${3:string inCharge}, ${4:bool adjustmentOnly})'
 	'void UnitBehaviorAddChargeUsed':
 		prefix: 'UnitBehaviorAddChargeUsed'
 		body: 'UnitBehaviorAddChargeUsed(${1:unit inUnit}, ${2:string inBehavior}, ${3:string inCharge}, ${4:fixed inVal})'
@@ -8408,6 +9395,12 @@
 	'void UnitBehaviorSpawn':
 		prefix: 'UnitBehaviorSpawn'
 		body: 'UnitBehaviorSpawn(${1:unit inUnit}, ${2:string inBehavior}, ${3:int inCount})'
+	'fixed UnitBehaviorDamageModifyRemaining':
+		prefix: 'UnitBehaviorDamageModifyRemaining'
+		body: 'UnitBehaviorDamageModifyRemaining(${1:unit inUnit}, ${2:string inBehavior})'
+	'fixed UnitBehaviorDamageModifyLimit':
+		prefix: 'UnitBehaviorDamageModifyLimit'
+		body: 'UnitBehaviorDamageModifyLimit(${1:unit inUnit}, ${2:string inBehavior})'
 	'void UnitXPGainEnable':
 		prefix: 'UnitXPGainEnable'
 		body: 'UnitXPGainEnable(${1:unit inUnit}, ${2:string inBehavior}, ${3:bool inEnable})'
@@ -8432,6 +9425,9 @@
 	'bool UnitOrderHasAbil':
 		prefix: 'UnitOrderHasAbil'
 		body: 'UnitOrderHasAbil(${1:unit inUnit}, ${2:string abilLink})'
+	'bool UnitOrderIsAcquired':
+		prefix: 'UnitOrderIsAcquired'
+		body: 'UnitOrderIsAcquired(${1:unit inUnit}, ${2:int inIndex})'
 	'bool UnitOrderIsValid':
 		prefix: 'UnitOrderIsValid'
 		body: 'UnitOrderIsValid(${1:unit inUnit}, ${2:order inOrder})'
@@ -8525,6 +9521,9 @@
 	'fixed UnitWeaponPeriodRemaining':
 		prefix: 'UnitWeaponPeriodRemaining'
 		body: 'UnitWeaponPeriodRemaining(${1:unit inUnit}, ${2:int inIndex})'
+	'void UnitWeaponSetPeriodRemaining':
+		prefix: 'UnitWeaponSetPeriodRemaining'
+		body: 'UnitWeaponSetPeriodRemaining(${1:unit inUnit}, ${2:int inIndex}, ${3:fixed inRemaining})'
 	'void UnitWeaponRemove':
 		prefix: 'UnitWeaponRemove'
 		body: 'UnitWeaponRemove(${1:unit inUnit}, ${2:string inWeapon})'
@@ -8540,18 +9539,48 @@
 	'bool UnitCanAttackTarget':
 		prefix: 'UnitCanAttackTarget'
 		body: 'UnitCanAttackTarget(${1:unit inUnit}, ${2:unit inTarget})'
+	'bool UnitInRangeAndAbleToAttackTarget':
+		prefix: 'UnitInRangeAndAbleToAttackTarget'
+		body: 'UnitInRangeAndAbleToAttackTarget(${1:unit inUnit}, ${2:unit inTarget})'
 	'fixed UnitXPTotal':
 		prefix: 'UnitXPTotal'
 		body: 'UnitXPTotal(${1:unit inUnit})'
 	'int UnitLevel':
 		prefix: 'UnitLevel'
 		body: 'UnitLevel(${1:unit inUnit})'
+	'fixed UnitXPGetCurrentXP':
+		prefix: 'UnitXPGetCurrentXP'
+		body: 'UnitXPGetCurrentXP(${1:unit inUnit}, ${2:string inVeterancyBehavior})'
+	'void UnitXPAddXP':
+		prefix: 'UnitXPAddXP'
+		body: 'UnitXPAddXP(${1:unit inUnit}, ${2:string inVeterancyBehavior}, ${3:fixed inXP})'
+	'void UnitXPSetCurrentXP':
+		prefix: 'UnitXPSetCurrentXP'
+		body: 'UnitXPSetCurrentXP(${1:unit inUnit}, ${2:string inVeterancyBehavior}, ${3:fixed inXP})'
+	'int UnitXPGetXPForLevel':
+		prefix: 'UnitXPGetXPForLevel'
+		body: 'UnitXPGetXPForLevel(${1:unit inUnit}, ${2:string inVeterancyBehavior}, ${3:int inLevel})'
+	'void UnitXPSetXPForLevel':
+		prefix: 'UnitXPSetXPForLevel'
+		body: 'UnitXPSetXPForLevel(${1:unit inUnit}, ${2:string inVeterancyBehavior}, ${3:int inLevel}, ${4:int inXp})'
+	'int UnitXPGetCurrentLevel':
+		prefix: 'UnitXPGetCurrentLevel'
+		body: 'UnitXPGetCurrentLevel(${1:unit inUnit}, ${2:string inVeterancyBehavior})'
+	'void UnitXPSetCurrentLevel':
+		prefix: 'UnitXPSetCurrentLevel'
+		body: 'UnitXPSetCurrentLevel(${1:unit inUnit}, ${2:string inVeterancyBehavior}, ${3:int inLevel})'
+	'int UnitXPGetNumLevels':
+		prefix: 'UnitXPGetNumLevels'
+		body: 'UnitXPGetNumLevels(${1:unit inUnit}, ${2:string inVeterancyBehavior})'
 	'string UnitTypeFromString':
 		prefix: 'UnitTypeFromString'
 		body: 'UnitTypeFromString(${1:string inString})'
 	'text UnitTypeGetName':
 		prefix: 'UnitTypeGetName'
 		body: 'UnitTypeGetName(${1:string inUnitType})'
+	'string UnitTypeGetGenderCode':
+		prefix: 'UnitTypeGetGenderCode'
+		body: 'UnitTypeGetGenderCode(${1:string inUnitType})'
 	'fixed UnitTypeGetProperty':
 		prefix: 'UnitTypeGetProperty'
 		body: 'UnitTypeGetProperty(${1:string inUnitType}, ${2:int inProp})'
@@ -8594,6 +9623,12 @@
 	'point UnitTypePlacementTestsFromUnit':
 		prefix: 'UnitTypePlacementTestsFromUnit'
 		body: 'UnitTypePlacementTestsFromUnit(${1:string inType}, ${2:int inPlayer}, ${3:unit inSource}, ${4:fixed inRange}, ${5:int inTests})'
+	'bool UnitPathableToPoint':
+		prefix: 'UnitPathableToPoint'
+		body: 'UnitPathableToPoint(${1:unit u}, ${2:point inTarget}, ${3:fixed inRange}, ${4:fixed inMaxDistance})'
+	'bool UnitPathableToUnit':
+		prefix: 'UnitPathableToUnit'
+		body: 'UnitPathableToUnit(${1:unit u}, ${2:unit inTarget}, ${3:fixed inRange}, ${4:fixed inMaxDistance})'
 	'void UnitEventSetNullVariableInvalid':
 		prefix: 'UnitEventSetNullVariableInvalid'
 		body: 'UnitEventSetNullVariableInvalid(${1:bool inVal})'
@@ -8624,9 +9659,15 @@
 	'void TriggerAddEventUnitAttributeChange':
 		prefix: 'TriggerAddEventUnitAttributeChange'
 		body: 'TriggerAddEventUnitAttributeChange(${1:trigger t}, ${2:unitref u})'
+	'void TriggerAddEventUnitDamageAbsorbed':
+		prefix: 'TriggerAddEventUnitDamageAbsorbed'
+		body: 'TriggerAddEventUnitDamageAbsorbed(${1:trigger inTrigger}, ${2:unitref inUnit}, ${3:string inBehavior})'
 	'void TriggerAddEventUnitDamaged':
 		prefix: 'TriggerAddEventUnitDamaged'
 		body: 'TriggerAddEventUnitDamaged(${1:trigger inTrigger}, ${2:unitref inUnit}, ${3:int inDamageType}, ${4:int inDamageFatal}, ${5:string inEffect})'
+	'void TriggerAddEventUnitHealed':
+		prefix: 'TriggerAddEventUnitHealed'
+		body: 'TriggerAddEventUnitHealed(${1:trigger inTrigger}, ${2:unitref inUnit}, ${3:int inHealType}, ${4:string inEffect})'
 	'void TriggerAddEventUnitBecomesIdle':
 		prefix: 'TriggerAddEventUnitBecomesIdle'
 		body: 'TriggerAddEventUnitBecomesIdle(${1:trigger t}, ${2:unitref u}, ${3:bool idle})'
@@ -8651,12 +9692,27 @@
 	'string EventUnitCreatedBehavior':
 		prefix: 'EventUnitCreatedBehavior'
 		body: 'EventUnitCreatedBehavior()'
+	'fixed EventUnitDamageAttempted':
+		prefix: 'EventUnitDamageAttempted'
+		body: 'EventUnitDamageAttempted()'
+	'fixed EventUnitDamageAttemptedVitals':
+		prefix: 'EventUnitDamageAttemptedVitals'
+		body: 'EventUnitDamageAttemptedVitals()'
 	'fixed EventUnitDamageAmount':
 		prefix: 'EventUnitDamageAmount'
 		body: 'EventUnitDamageAmount()'
 	'fixed EventUnitDamageAbsorbed':
 		prefix: 'EventUnitDamageAbsorbed'
 		body: 'EventUnitDamageAbsorbed()'
+	'fixed EventUnitDamageBehaviorShield':
+		prefix: 'EventUnitDamageBehaviorShield'
+		body: 'EventUnitDamageBehaviorShield()'
+	'fixed EventUnitDamageVitalsLeeched':
+		prefix: 'EventUnitDamageVitalsLeeched'
+		body: 'EventUnitDamageVitalsLeeched(${1:int inVital})'
+	'int EventUnitDamageKillXP':
+		prefix: 'EventUnitDamageKillXP'
+		body: 'EventUnitDamageKillXP()'
 	'unit EventUnitDamageSourceUnit':
 		prefix: 'EventUnitDamageSourceUnit'
 		body: 'EventUnitDamageSourceUnit()'
@@ -8678,6 +9734,21 @@
 	'string EventUnitGetItemType':
 		prefix: 'EventUnitGetItemType'
 		body: 'EventUnitGetItemType()'
+	'unit EventUnitHealLaunchUnit':
+		prefix: 'EventUnitHealLaunchUnit'
+		body: 'EventUnitHealLaunchUnit()'
+	'int EventUnitHealLaunchPlayer':
+		prefix: 'EventUnitHealLaunchPlayer'
+		body: 'EventUnitHealLaunchPlayer()'
+	'int EventUnitHealVital':
+		prefix: 'EventUnitHealVital'
+		body: 'EventUnitHealVital()'
+	'fixed EventUnitHealAmount':
+		prefix: 'EventUnitHealAmount'
+		body: 'EventUnitHealAmount()'
+	'string EventUnitHealEffect':
+		prefix: 'EventUnitHealEffect'
+		body: 'EventUnitHealEffect()'
 	'int EventUnitInventoryChange':
 		prefix: 'EventUnitInventoryChange'
 		body: 'EventUnitInventoryChange()'
@@ -8771,9 +9842,15 @@
 	'unit EventUnitTargetUnit':
 		prefix: 'EventUnitTargetUnit'
 		body: 'EventUnitTargetUnit()'
+	'unit EventUnitAbilityOtherUnit':
+		prefix: 'EventUnitAbilityOtherUnit'
+		body: 'EventUnitAbilityOtherUnit()'
 	'void TriggerAddEventUnitBehaviorChange':
 		prefix: 'TriggerAddEventUnitBehaviorChange'
 		body: 'TriggerAddEventUnitBehaviorChange(${1:trigger t}, ${2:unitref u}, ${3:string behavior}, ${4:int inChangeType})'
+	'void TriggerAddEventUnitBehaviorChangeFromCategory':
+		prefix: 'TriggerAddEventUnitBehaviorChangeFromCategory'
+		body: 'TriggerAddEventUnitBehaviorChangeFromCategory(${1:trigger t}, ${2:unitref u}, ${3:int inCategory}, ${4:int inChangeType})'
 	'void TriggerAddEventUnitGainExperience':
 		prefix: 'TriggerAddEventUnitGainExperience'
 		body: 'TriggerAddEventUnitGainExperience(${1:trigger t}, ${2:unitref u})'
@@ -8789,6 +9866,15 @@
 	'fixed EventUnitXPDelta':
 		prefix: 'EventUnitXPDelta'
 		body: 'EventUnitXPDelta()'
+	'unit EventUnitVictimUnit':
+		prefix: 'EventUnitVictimUnit'
+		body: 'EventUnitVictimUnit()'
+	'unit EventUnitItemUsed':
+		prefix: 'EventUnitItemUsed'
+		body: 'EventUnitItemUsed()'
+	'string EventUnitEffectUsed':
+		prefix: 'EventUnitEffectUsed'
+		body: 'EventUnitEffectUsed()'
 	'int EventUnitAttributePoints':
 		prefix: 'EventUnitAttributePoints'
 		body: 'EventUnitAttributePoints()'
@@ -8828,6 +9914,9 @@
 	'void TriggerAddEventUnitRevive':
 		prefix: 'TriggerAddEventUnitRevive'
 		body: 'TriggerAddEventUnitRevive(${1:trigger t}, ${2:unitref u})'
+	'string PickedExclusiveMapTag':
+		prefix: 'PickedExclusiveMapTag'
+		body: 'PickedExclusiveMapTag()'
 	'unitfilter UnitFilter':
 		prefix: 'UnitFilter'
 		body: 'UnitFilter(${1:int inRequired1}, ${2:int inRequired2}, ${3:int inExcluded1}, ${4:int inExcluded2})'
@@ -8933,6 +10022,9 @@
 	'unit UnitGroupNearestUnit':
 		prefix: 'UnitGroupNearestUnit'
 		body: 'UnitGroupNearestUnit(${1:unitgroup inGroup}, ${2:point inPoint})'
+	'void UnitGroupPauseAll':
+		prefix: 'UnitGroupPauseAll'
+		body: 'UnitGroupPauseAll(${1:unitgroup inGroup}, ${2:bool inPause})'
 	'unitref UnitRefFromUnit':
 		prefix: 'UnitRefFromUnit'
 		body: 'UnitRefFromUnit(${1:unit u})'
@@ -9152,6 +10244,12 @@
 	'void UISetCursorAutoHide':
 		prefix: 'UISetCursorAutoHide'
 		body: 'UISetCursorAutoHide(${1:playergroup players}, ${2:bool autoHide}, ${3:fixed delay})'
+	'void UISetHotkeyProfile':
+		prefix: 'UISetHotkeyProfile'
+		body: 'UISetHotkeyProfile(${1:playergroup players}, ${2:string profileName})'
+	'text UIHotKeyString':
+		prefix: 'UIHotKeyString'
+		body: 'UIHotKeyString(${1:int hotKey}, ${2:int count}, ${3:bool abbreviate}, ${4:bool addTags})'
 	'void UIDisplayMessage':
 		prefix: 'UIDisplayMessage'
 		body: 'UIDisplayMessage(${1:playergroup players}, ${2:int messageArea}, ${3:text messageText})'
@@ -9233,6 +10331,9 @@
 	'void UISetGameMenuItemText':
 		prefix: 'UISetGameMenuItemText'
 		body: 'UISetGameMenuItemText(${1:playergroup inPlayers}, ${2:int inMenuItemType}, ${3:text inText})'
+	'void UISetGameMenuItemShortcut':
+		prefix: 'UISetGameMenuItemShortcut'
+		body: 'UISetGameMenuItemShortcut(${1:playergroup inPlayers}, ${2:int inMenuItemType}, ${3:text inShortcut})'
 	'void UIClearCustomMenuItemList':
 		prefix: 'UIClearCustomMenuItemList'
 		body: 'UIClearCustomMenuItemList(${1:playergroup inPlayers})'
@@ -9248,6 +10349,9 @@
 	'void UISetCustomMenuItemText':
 		prefix: 'UISetCustomMenuItemText'
 		body: 'UISetCustomMenuItemText(${1:playergroup inPlayers}, ${2:int inMenuItemType}, ${3:text inText})'
+	'void UIShowStandardMenu':
+		prefix: 'UIShowStandardMenu'
+		body: 'UIShowStandardMenu(${1:playergroup inPlayers})'
 	'void UIShowCustomMenu':
 		prefix: 'UIShowCustomMenu'
 		body: 'UIShowCustomMenu(${1:playergroup inPlayers}, ${2:text inTitleText})'
@@ -9284,6 +10388,9 @@
 	'void UISetCommandDisallowedMessage':
 		prefix: 'UISetCommandDisallowedMessage'
 		body: 'UISetCommandDisallowedMessage(${1:playergroup players}, ${2:text message})'
+	'void UISetHotkeyAllowed':
+		prefix: 'UISetHotkeyAllowed'
+		body: 'UISetHotkeyAllowed(${1:playergroup players}, ${2:int hotkey}, ${3:bool allow})'
 	'void UISetDragSelectEnabled':
 		prefix: 'UISetDragSelectEnabled'
 		body: 'UISetDragSelectEnabled(${1:playergroup players}, ${2:bool enable})'
@@ -9317,6 +10424,12 @@
 	'void UILaunchNydusLink':
 		prefix: 'UILaunchNydusLink'
 		body: 'UILaunchNydusLink(${1:playergroup inPlayers}, ${2:int inNydusLink})'
+	'void UIMessageLogPanelSetVisible':
+		prefix: 'UIMessageLogPanelSetVisible'
+		body: 'UIMessageLogPanelSetVisible(${1:playergroup inPlayers}, ${2:bool inVisible})'
+	'void UISetTargetingOrder':
+		prefix: 'UISetTargetingOrder'
+		body: 'UISetTargetingOrder(${1:playergroup inPlayers}, ${2:unitgroup inUnits}, ${3:order inOrder}, ${4:bool inSticky})'
 	'void TriggerAddEventAbortMission':
 		prefix: 'TriggerAddEventAbortMission'
 		body: 'TriggerAddEventAbortMission(${1:trigger t}, ${2:int player})'
@@ -9332,9 +10445,15 @@
 	'void TriggerAddEventMouseMoved':
 		prefix: 'TriggerAddEventMouseMoved'
 		body: 'TriggerAddEventMouseMoved(${1:trigger t}, ${2:int player})'
+	'void TriggerAddEventMouseWheel':
+		prefix: 'TriggerAddEventMouseWheel'
+		body: 'TriggerAddEventMouseWheel(${1:trigger t}, ${2:int player})'
 	'void TriggerAddEventKeyPressed':
 		prefix: 'TriggerAddEventKeyPressed'
 		body: 'TriggerAddEventKeyPressed(${1:trigger t}, ${2:int player}, ${3:int key}, ${4:bool down}, ${5:int s}, ${6:int c}, ${7:int a})'
+	'void TriggerAddEventHotkeyPressed':
+		prefix: 'TriggerAddEventHotkeyPressed'
+		body: 'TriggerAddEventHotkeyPressed(${1:trigger t}, ${2:int player}, ${3:int hotkey}, ${4:bool down})'
 	'void TriggerAddEventButtonPressed':
 		prefix: 'TriggerAddEventButtonPressed'
 		body: 'TriggerAddEventButtonPressed(${1:trigger t}, ${2:int player}, ${3:string button})'
@@ -9344,6 +10463,18 @@
 	'void TriggerAddEventTargetModeUpdate':
 		prefix: 'TriggerAddEventTargetModeUpdate'
 		body: 'TriggerAddEventTargetModeUpdate(${1:trigger t}, ${2:int player}, ${3:abilcmd inAbilCmd}, ${4:int state})'
+	'void TriggerAddEventResourceRequest':
+		prefix: 'TriggerAddEventResourceRequest'
+		body: 'TriggerAddEventResourceRequest(${1:trigger t}, ${2:int player})'
+	'void TriggerAddEventResourceTrade':
+		prefix: 'TriggerAddEventResourceTrade'
+		body: 'TriggerAddEventResourceTrade(${1:trigger t}, ${2:int player}, ${3:int recipientPlayer})'
+	'void TriggerAddEventCommandError':
+		prefix: 'TriggerAddEventCommandError'
+		body: 'TriggerAddEventCommandError(${1:trigger t}, ${2:int player}, ${3:int error}, ${4:abilcmd inAbilCmd})'
+	'void TriggerAddEventAlert':
+		prefix: 'TriggerAddEventAlert'
+		body: 'TriggerAddEventAlert(${1:trigger t}, ${2:int player}, ${3:string modelLink})'
 	'int EventCustomDialogResult':
 		prefix: 'EventCustomDialogResult'
 		body: 'EventCustomDialogResult()'
@@ -9383,6 +10514,9 @@
 	'fixed EventMouseMovedPosZWorld':
 		prefix: 'EventMouseMovedPosZWorld'
 		body: 'EventMouseMovedPosZWorld()'
+	'fixed EventMouseWheelSpin':
+		prefix: 'EventMouseWheelSpin'
+		body: 'EventMouseWheelSpin()'
 	'int EventKeyPressed':
 		prefix: 'EventKeyPressed'
 		body: 'EventKeyPressed()'
@@ -9404,6 +10538,24 @@
 	'int EventTargetModeState':
 		prefix: 'EventTargetModeState'
 		body: 'EventTargetModeState()'
+	'int EventResourceRequestAmount':
+		prefix: 'EventResourceRequestAmount'
+		body: 'EventResourceRequestAmount(${1:int resourceIndex})'
+	'int EventResourceTradeRecipient':
+		prefix: 'EventResourceTradeRecipient'
+		body: 'EventResourceTradeRecipient()'
+	'int EventResourceTradeAmount':
+		prefix: 'EventResourceTradeAmount'
+		body: 'EventResourceTradeAmount(${1:int resourceIndex})'
+	'int EventCommandErrorValue':
+		prefix: 'EventCommandErrorValue'
+		body: 'EventCommandErrorValue()'
+	'abilcmd EventCommandErrorAbilCmd':
+		prefix: 'EventCommandErrorAbilCmd'
+		body: 'EventCommandErrorAbilCmd()'
+	'string EventAlert':
+		prefix: 'EventAlert'
+		body: 'EventAlert()'
 	'void VisEnable':
 		prefix: 'VisEnable'
 		body: 'VisEnable(${1:int visType}, ${2:bool enable})'
@@ -9413,9 +10565,21 @@
 	'bool VisIsVisibleForPlayer':
 		prefix: 'VisIsVisibleForPlayer'
 		body: 'VisIsVisibleForPlayer(${1:int player}, ${2:point inPos})'
+	'fixed VisGetFoWAlpha':
+		prefix: 'VisGetFoWAlpha'
+		body: 'VisGetFoWAlpha(${1:int player})'
+	'void VisSetFoWAlpha':
+		prefix: 'VisSetFoWAlpha'
+		body: 'VisSetFoWAlpha(${1:int player}, ${2:fixed alpha})'
+	'void VisResetFoWAlpha':
+		prefix: 'VisResetFoWAlpha'
+		body: 'VisResetFoWAlpha(${1:int player})'
 	'void VisExploreArea':
 		prefix: 'VisExploreArea'
 		body: 'VisExploreArea(${1:int player}, ${2:region area}, ${3:bool explored}, ${4:bool checkCliffLevel})'
+	'void VisFillArea':
+		prefix: 'VisFillArea'
+		body: 'VisFillArea(${1:int player}, ${2:region area}, ${3:int fillType}, ${4:bool checkCliffLevel})'
 	'void VisRevealArea':
 		prefix: 'VisRevealArea'
 		body: 'VisRevealArea(${1:int player}, ${2:region area}, ${3:fixed duration}, ${4:bool checkCliffLevel})'
@@ -9434,6 +10598,1335 @@
 	'void VisRevealerUpdate':
 		prefix: 'VisRevealerUpdate'
 		body: 'VisRevealerUpdate(${1:revealer r})'
+	'actor libNtve_gf_AttachModelToActor':
+		prefix: 'libNtve_gf_AttachModelToActor'
+		body: 'libNtve_gf_AttachModelToActor(${1:actor lp_actor}, ${2:string lp_model}, ${3:string lp_attachPoint})'
+	'actorscope libNtve_gf_LastCreatedActorScope':
+		prefix: 'libNtve_gf_LastCreatedActorScope'
+		body: 'libNtve_gf_LastCreatedActorScope()'
+	'actor libNtve_gf_LastCreatedActor':
+		prefix: 'libNtve_gf_LastCreatedActor'
+		body: 'libNtve_gf_LastCreatedActor()'
+	'actor libNtve_gf_AttachModelToUnit':
+		prefix: 'libNtve_gf_AttachModelToUnit'
+		body: 'libNtve_gf_AttachModelToUnit(${1:unit lp_unit}, ${2:string lp_model}, ${3:string lp_attachPoint})'
+	'actor libNtve_gf_AttachModelToUnitInheritVisibility':
+		prefix: 'libNtve_gf_AttachModelToUnitInheritVisibility'
+		body: 'libNtve_gf_AttachModelToUnitInheritVisibility(${1:unit lp_unit}, ${2:string lp_model}, ${3:string lp_attachPoint})'
+	'actor libNtve_gf_AttachModelToActor2':
+		prefix: 'libNtve_gf_AttachModelToActor2'
+		body: 'libNtve_gf_AttachModelToActor2(${1:actor lp_actor}, ${2:string lp_model}, ${3:string lp_attachPoint})'
+	'actorscope libNtve_gf_ActorScopeLastCreated':
+		prefix: 'libNtve_gf_ActorScopeLastCreated'
+		body: 'libNtve_gf_ActorScopeLastCreated()'
+	'actorscope libNtve_gf_ActorScopeLastCreatedSend':
+		prefix: 'libNtve_gf_ActorScopeLastCreatedSend'
+		body: 'libNtve_gf_ActorScopeLastCreatedSend()'
+	'actor libNtve_gf_ActorLastCreated':
+		prefix: 'libNtve_gf_ActorLastCreated'
+		body: 'libNtve_gf_ActorLastCreated()'
+	'actor libNtve_gf_ActorLastCreatedSend':
+		prefix: 'libNtve_gf_ActorLastCreatedSend'
+		body: 'libNtve_gf_ActorLastCreatedSend()'
+	'actor libNtve_gf_AttachActorToUnit':
+		prefix: 'libNtve_gf_AttachActorToUnit'
+		body: 'libNtve_gf_AttachActorToUnit(${1:unit lp_unit}, ${2:string lp_actor}, ${3:string lp_attachPoint})'
+	'actor libNtve_gf_AttachActorToActor':
+		prefix: 'libNtve_gf_AttachActorToActor'
+		body: 'libNtve_gf_AttachActorToActor(${1:actor lp_hostingActor}, ${2:string lp_attachingActor}, ${3:string lp_attachPoint})'
+	'actor libNtve_gf_CreateActorAtPoint':
+		prefix: 'libNtve_gf_CreateActorAtPoint'
+		body: 'libNtve_gf_CreateActorAtPoint(${1:string lp_actor}, ${2:point lp_position})'
+	'actor libNtve_gf_CreateModelAtPoint':
+		prefix: 'libNtve_gf_CreateModelAtPoint'
+		body: 'libNtve_gf_CreateModelAtPoint(${1:string lp_model}, ${2:point lp_position})'
+	'void libNtve_gf_CreateModelWithPointFacing':
+		prefix: 'libNtve_gf_CreateModelWithPointFacing'
+		body: 'libNtve_gf_CreateModelWithPointFacing(${1:string lp_model}, ${2:point lp_position})'
+	'void libNtve_gf_SendActorMessageToUnit':
+		prefix: 'libNtve_gf_SendActorMessageToUnit'
+		body: 'libNtve_gf_SendActorMessageToUnit(${1:unit lp_unit}, ${2:string lp_message})'
+	'void libNtve_gf_ActorRegionSendSimple':
+		prefix: 'libNtve_gf_ActorRegionSendSimple'
+		body: 'libNtve_gf_ActorRegionSendSimple(${1:actor lp_region}, ${2:string lp_message})'
+	'void libNtve_gf_SendActorMessageToGameRegion':
+		prefix: 'libNtve_gf_SendActorMessageToGameRegion'
+		body: 'libNtve_gf_SendActorMessageToGameRegion(${1:region lp_region}, ${2:string lp_message})'
+	'void libNtve_gf_SendActorMessageToGameRegionWithFilters':
+		prefix: 'libNtve_gf_SendActorMessageToGameRegionWithFilters'
+		body: 'libNtve_gf_SendActorMessageToGameRegionWithFilters(${1:region lp_region}, ${2:int lp_intersectType}, ${3:string lp_message}, ${4:string lp_classFilters}, ${5:string lp_terms})'
+	'string libNtve_gf_ActorMsg1':
+		prefix: 'libNtve_gf_ActorMsg1'
+		body: 'libNtve_gf_ActorMsg1(${1:string lp_msgName}, ${2:string lp_param1})'
+	'string libNtve_gf_ActorMsg2':
+		prefix: 'libNtve_gf_ActorMsg2'
+		body: 'libNtve_gf_ActorMsg2(${1:string lp_msgName}, ${2:string lp_param1}, ${3:string lp_param2})'
+	'string libNtve_gf_ActorMsg3':
+		prefix: 'libNtve_gf_ActorMsg3'
+		body: 'libNtve_gf_ActorMsg3(${1:string lp_msgName}, ${2:string lp_param1}, ${3:string lp_param2}, ${4:string lp_param3})'
+	'string libNtve_gf_ActorMsg4':
+		prefix: 'libNtve_gf_ActorMsg4'
+		body: 'libNtve_gf_ActorMsg4(${1:string lp_msgName}, ${2:string lp_param1}, ${3:string lp_param2}, ${4:string lp_param3}, ${5:string lp_param4})'
+	'string libNtve_gf_ActionDamage':
+		prefix: 'libNtve_gf_ActionDamage'
+		body: 'libNtve_gf_ActionDamage()'
+	'string libNtve_gf_ActionImpact':
+		prefix: 'libNtve_gf_ActionImpact'
+		body: 'libNtve_gf_ActionImpact()'
+	'string libNtve_gf_AliasAdd':
+		prefix: 'libNtve_gf_AliasAdd'
+		body: 'libNtve_gf_AliasAdd(${1:string lp_alias})'
+	'string libNtve_gf_AliasRemove':
+		prefix: 'libNtve_gf_AliasRemove'
+		body: 'libNtve_gf_AliasRemove(${1:string lp_alias})'
+	'string libNtve_gf_AnimBaselineStart':
+		prefix: 'libNtve_gf_AnimBaselineStart'
+		body: 'libNtve_gf_AnimBaselineStart()'
+	'string libNtve_gf_AnimBaselineStop':
+		prefix: 'libNtve_gf_AnimBaselineStop'
+		body: 'libNtve_gf_AnimBaselineStop()'
+	'string libNtve_gf_AnimBlendTimeApply':
+		prefix: 'libNtve_gf_AnimBlendTimeApply'
+		body: 'libNtve_gf_AnimBlendTimeApply(${1:fixed lp_blendTime})'
+	'string libNtve_gf_AnimBlendTimeRemove':
+		prefix: 'libNtve_gf_AnimBlendTimeRemove'
+		body: 'libNtve_gf_AnimBlendTimeRemove()'
+	'string libNtve_gf_AnimClear':
+		prefix: 'libNtve_gf_AnimClear'
+		body: 'libNtve_gf_AnimClear(${1:string lp_animName}, ${2:fixed lp_blendTime})'
+	'string libNtve_gf_AnimClearAllBut':
+		prefix: 'libNtve_gf_AnimClearAllBut'
+		body: 'libNtve_gf_AnimClearAllBut(${1:string lp_animName}, ${2:fixed lp_blendTime})'
+	'string libNtve_gf_AnimDumpDB':
+		prefix: 'libNtve_gf_AnimDumpDB'
+		body: 'libNtve_gf_AnimDumpDB()'
+	'string libNtve_gf_AnimGroupRemoveAll':
+		prefix: 'libNtve_gf_AnimGroupRemoveAll'
+		body: 'libNtve_gf_AnimGroupRemoveAll()'
+	'string libNtve_gf_AnimPlaySequence':
+		prefix: 'libNtve_gf_AnimPlaySequence'
+		body: 'libNtve_gf_AnimPlaySequence(${1:string lp_animName}, ${2:string lp_sequenceList})'
+	'string libNtve_gf_AnimSetCompletion':
+		prefix: 'libNtve_gf_AnimSetCompletion'
+		body: 'libNtve_gf_AnimSetCompletion(${1:string lp_animName}, ${2:fixed lp_percent})'
+	'string libNtve_gf_AnimSetDuration':
+		prefix: 'libNtve_gf_AnimSetDuration'
+		body: 'libNtve_gf_AnimSetDuration(${1:string lp_animName}, ${2:fixed lp_duration})'
+	'string libNtve_gf_AnimSetPaused':
+		prefix: 'libNtve_gf_AnimSetPaused'
+		body: 'libNtve_gf_AnimSetPaused(${1:bool lp_pause})'
+	'string libNtve_gf_AnimSetTime':
+		prefix: 'libNtve_gf_AnimSetTime'
+		body: 'libNtve_gf_AnimSetTime(${1:string lp_animName}, ${2:fixed lp_time}, ${3:bool lp_scaled})'
+	'string libNtve_gf_AnimSetTimeScale':
+		prefix: 'libNtve_gf_AnimSetTimeScale'
+		body: 'libNtve_gf_AnimSetTimeScale(${1:string lp_animName}, ${2:fixed lp_scale})'
+	'string libNtve_gf_AnimSetTimeScaleGlobal':
+		prefix: 'libNtve_gf_AnimSetTimeScaleGlobal'
+		body: 'libNtve_gf_AnimSetTimeScaleGlobal(${1:fixed lp_value})'
+	'string libNtve_gf_AttachSetBearings':
+		prefix: 'libNtve_gf_AttachSetBearings'
+		body: 'libNtve_gf_AttachSetBearings(${1:string lp_attachMethods}, ${2:string lp_bearings})'
+	'string libNtve_gf_AttachSetBearingsFrom':
+		prefix: 'libNtve_gf_AttachSetBearingsFrom'
+		body: 'libNtve_gf_AttachSetBearingsFrom(${1:string lp_attachMethods}, ${2:string lp_actorName}, ${3:string lp_actorSiteOps})'
+	'string libNtve_gf_AttachSetPosition':
+		prefix: 'libNtve_gf_AttachSetPosition'
+		body: 'libNtve_gf_AttachSetPosition(${1:string lp_attachMethods}, ${2:string lp_position})'
+	'string libNtve_gf_AttachSetPositionFrom':
+		prefix: 'libNtve_gf_AttachSetPositionFrom'
+		body: 'libNtve_gf_AttachSetPositionFrom(${1:string lp_attachMethods}, ${2:string lp_actorName}, ${3:string lp_actorSiteOps})'
+	'string libNtve_gf_AttachSetRotation':
+		prefix: 'libNtve_gf_AttachSetRotation'
+		body: 'libNtve_gf_AttachSetRotation(${1:string lp_attachMethods}, ${2:fixed lp_rotation})'
+	'string libNtve_gf_AttachSetRotationFrom':
+		prefix: 'libNtve_gf_AttachSetRotationFrom'
+		body: 'libNtve_gf_AttachSetRotationFrom(${1:string lp_attachMethods}, ${2:string lp_actorName}, ${3:string lp_actorSiteOps})'
+	'string libNtve_gf_Create':
+		prefix: 'libNtve_gf_Create'
+		body: 'libNtve_gf_Create(${1:string lp_actor}, ${2:string lp_content})'
+	'string libNtve_gf_CreateCopy':
+		prefix: 'libNtve_gf_CreateCopy'
+		body: 'libNtve_gf_CreateCopy(${1:string lp_createKey}, ${2:string lp_sourceKey})'
+	'string libNtve_gf_DeathCustomize':
+		prefix: 'libNtve_gf_DeathCustomize'
+		body: 'libNtve_gf_DeathCustomize(${1:string lp_subname})'
+	'string libNtve_gf_Destroy':
+		prefix: 'libNtve_gf_Destroy'
+		body: 'libNtve_gf_Destroy()'
+	'string libNtve_gf_HostSiteOpsSet':
+		prefix: 'libNtve_gf_HostSiteOpsSet'
+		body: 'libNtve_gf_HostSiteOpsSet(${1:string lp_hostName}, ${2:string lp_ops}, ${3:int lp_holdPosition}, ${4:int lp_holdRotation})'
+	'string libNtve_gf_ListAdd':
+		prefix: 'libNtve_gf_ListAdd'
+		body: 'libNtve_gf_ListAdd(${1:string lp_actorRefName})'
+	'string libNtve_gf_ListRemove':
+		prefix: 'libNtve_gf_ListRemove'
+		body: 'libNtve_gf_ListRemove(${1:string lp_actorRefName})'
+	'string libNtve_gf_MissileTentacleReturn':
+		prefix: 'libNtve_gf_MissileTentacleReturn'
+		body: 'libNtve_gf_MissileTentacleReturn()'
+	'string libNtve_gf_ModelEventSuppress':
+		prefix: 'libNtve_gf_ModelEventSuppress'
+		body: 'libNtve_gf_ModelEventSuppress(${1:int lp_value}, ${2:string lp_event})'
+	'string libNtve_gf_ModelSwap':
+		prefix: 'libNtve_gf_ModelSwap'
+		body: 'libNtve_gf_ModelSwap(${1:string lp_model}, ${2:int lp_variation})'
+	'string libNtve_gf_MoverSetAcceleration':
+		prefix: 'libNtve_gf_MoverSetAcceleration'
+		body: 'libNtve_gf_MoverSetAcceleration(${1:fixed lp_value})'
+	'string libNtve_gf_MoverSetDeceleration':
+		prefix: 'libNtve_gf_MoverSetDeceleration'
+		body: 'libNtve_gf_MoverSetDeceleration(${1:fixed lp_value})'
+	'string libNtve_gf_MoverSetDestination2D':
+		prefix: 'libNtve_gf_MoverSetDestination2D'
+		body: 'libNtve_gf_MoverSetDestination2D(${1:fixed lp_x}, ${2:fixed lp_y})'
+	'string libNtve_gf_MoverSetDestinationFrom':
+		prefix: 'libNtve_gf_MoverSetDestinationFrom'
+		body: 'libNtve_gf_MoverSetDestinationFrom(${1:string lp_actorRefName})'
+	'string libNtve_gf_MoverSetDestinationH':
+		prefix: 'libNtve_gf_MoverSetDestinationH'
+		body: 'libNtve_gf_MoverSetDestinationH(${1:fixed lp_value})'
+	'string libNtve_gf_MoverSetDestinationZ':
+		prefix: 'libNtve_gf_MoverSetDestinationZ'
+		body: 'libNtve_gf_MoverSetDestinationZ(${1:fixed lp_value})'
+	'string libNtve_gf_MoverSetSpeed':
+		prefix: 'libNtve_gf_MoverSetSpeed'
+		body: 'libNtve_gf_MoverSetSpeed(${1:fixed lp_value})'
+	'string libNtve_gf_MoverSetSpeedMax':
+		prefix: 'libNtve_gf_MoverSetSpeedMax'
+		body: 'libNtve_gf_MoverSetSpeedMax(${1:fixed lp_value})'
+	'string libNtve_gf_MoverSetSpeedFromDuration':
+		prefix: 'libNtve_gf_MoverSetSpeedFromDuration'
+		body: 'libNtve_gf_MoverSetSpeedFromDuration(${1:fixed lp_value})'
+	'string libNtve_gf_MoverMove':
+		prefix: 'libNtve_gf_MoverMove'
+		body: 'libNtve_gf_MoverMove()'
+	'string libNtve_gf_MoverStop':
+		prefix: 'libNtve_gf_MoverStop'
+		body: 'libNtve_gf_MoverStop()'
+	'string libNtve_gf_MoverStopNow':
+		prefix: 'libNtve_gf_MoverStopNow'
+		body: 'libNtve_gf_MoverStopNow()'
+	'string libNtve_gf_MultiplyScale':
+		prefix: 'libNtve_gf_MultiplyScale'
+		body: 'libNtve_gf_MultiplyScale(${1:fixed lp_x}, ${2:fixed lp_y}, ${3:fixed lp_z}, ${4:fixed lp_duration})'
+	'string libNtve_gf_Print':
+		prefix: 'libNtve_gf_Print'
+		body: 'libNtve_gf_Print(${1:string lp_string})'
+	'string libNtve_gf_QueryPersistent':
+		prefix: 'libNtve_gf_QueryPersistent'
+		body: 'libNtve_gf_QueryPersistent(${1:string lp_enterResponseActor}, ${2:string lp_leaveResponeActor})'
+	'string libNtve_gf_QueryRadius':
+		prefix: 'libNtve_gf_QueryRadius'
+		body: 'libNtve_gf_QueryRadius(${1:fixed lp_radius}, ${2:string lp_responseActor})'
+	'string libNtve_gf_QueryRegion':
+		prefix: 'libNtve_gf_QueryRegion'
+		body: 'libNtve_gf_QueryRegion(${1:string lp_regionActor}, ${2:string lp_responseActor})'
+	'string libNtve_gf_RefClear':
+		prefix: 'libNtve_gf_RefClear'
+		body: 'libNtve_gf_RefClear(${1:string lp_actorRefName})'
+	'string libNtve_gf_RefDestroy':
+		prefix: 'libNtve_gf_RefDestroy'
+		body: 'libNtve_gf_RefDestroy(${1:string lp_actorRefName})'
+	'string libNtve_gf_RefDump':
+		prefix: 'libNtve_gf_RefDump'
+		body: 'libNtve_gf_RefDump(${1:string lp_actorRefName})'
+	'string libNtve_gf_RefNotify':
+		prefix: 'libNtve_gf_RefNotify'
+		body: 'libNtve_gf_RefNotify(${1:string lp_actorRefName}, ${2:string lp_subName})'
+	'string libNtve_gf_RefSet':
+		prefix: 'libNtve_gf_RefSet'
+		body: 'libNtve_gf_RefSet(${1:string lp_actorRefName}, ${2:string lp_refSource})'
+	'string libNtve_gf_RefSetFromMsg':
+		prefix: 'libNtve_gf_RefSetFromMsg'
+		body: 'libNtve_gf_RefSetFromMsg(${1:string lp_actorRefName}, ${2:string lp_message})'
+	'string libNtve_gf_RefSetFromActor':
+		prefix: 'libNtve_gf_RefSetFromActor'
+		body: 'libNtve_gf_RefSetFromActor(${1:string lp_actorRefName}, ${2:string lp_refPrimary}, ${3:string lp_refSecondary})'
+	'string libNtve_gf_RefSetRefreshName':
+		prefix: 'libNtve_gf_RefSetRefreshName'
+		body: 'libNtve_gf_RefSetRefreshName(${1:string lp_actorRefName}, ${2:string lp_refreshName})'
+	'string libNtve_gf_SetBearings':
+		prefix: 'libNtve_gf_SetBearings'
+		body: 'libNtve_gf_SetBearings(${1:fixed lp_positionX}, ${2:fixed lp_positionY}, ${3:fixed lp_positionZ}, ${4:fixed lp_forwardX}, ${5:fixed lp_forwardY}, ${6:fixed lp_forwardZ}, ${7:fixed lp_upX}, ${8:fixed lp_upY}, ${9:fixed lp_upZ})'
+	'string libNtve_gf_SetBearingsFrom':
+		prefix: 'libNtve_gf_SetBearingsFrom'
+		body: 'libNtve_gf_SetBearingsFrom(${1:string lp_actor})'
+	'string libNtve_gf_SetBearingsH':
+		prefix: 'libNtve_gf_SetBearingsH'
+		body: 'libNtve_gf_SetBearingsH(${1:fixed lp_positionX}, ${2:fixed lp_positionY}, ${3:fixed lp_height}, ${4:fixed lp_forwardX}, ${5:fixed lp_forwardY}, ${6:fixed lp_forwardZ}, ${7:fixed lp_upX}, ${8:fixed lp_upY}, ${9:fixed lp_upZ})'
+	'string libNtve_gf_SetFacing':
+		prefix: 'libNtve_gf_SetFacing'
+		body: 'libNtve_gf_SetFacing(${1:fixed lp_facing})'
+	'string libNtve_gf_SetHeight':
+		prefix: 'libNtve_gf_SetHeight'
+		body: 'libNtve_gf_SetHeight(${1:fixed lp_height})'
+	'string libNtve_gf_SetOpacity':
+		prefix: 'libNtve_gf_SetOpacity'
+		body: 'libNtve_gf_SetOpacity(${1:fixed lp_opacity}, ${2:fixed lp_blendDuration})'
+	'string libNtve_gf_SetPosition':
+		prefix: 'libNtve_gf_SetPosition'
+		body: 'libNtve_gf_SetPosition(${1:fixed lp_x}, ${2:fixed lp_y}, ${3:fixed lp_z})'
+	'string libNtve_gf_SetPosition2D':
+		prefix: 'libNtve_gf_SetPosition2D'
+		body: 'libNtve_gf_SetPosition2D(${1:fixed lp_x}, ${2:fixed lp_y})'
+	'string libNtve_gf_SetPosition2DH':
+		prefix: 'libNtve_gf_SetPosition2DH'
+		body: 'libNtve_gf_SetPosition2DH(${1:fixed lp_x}, ${2:fixed lp_y})'
+	'string libNtve_gf_SetPositionFrom':
+		prefix: 'libNtve_gf_SetPositionFrom'
+		body: 'libNtve_gf_SetPositionFrom(${1:string lp_actor})'
+	'string libNtve_gf_SetPositionH':
+		prefix: 'libNtve_gf_SetPositionH'
+		body: 'libNtve_gf_SetPositionH(${1:fixed lp_x}, ${2:fixed lp_y}, ${3:fixed lp_height})'
+	'string libNtve_gf_SetRenderToTextureEnabled':
+		prefix: 'libNtve_gf_SetRenderToTextureEnabled'
+		body: 'libNtve_gf_SetRenderToTextureEnabled(${1:bool lp_enabled})'
+	'string libNtve_gf_SetRotation':
+		prefix: 'libNtve_gf_SetRotation'
+		body: 'libNtve_gf_SetRotation(${1:fixed lp_forwardX}, ${2:fixed lp_forwardY}, ${3:fixed lp_forwardZ}, ${4:fixed lp_upX}, ${5:fixed lp_upY}, ${6:fixed lp_upZ})'
+	'string libNtve_gf_SetRotationFrom':
+		prefix: 'libNtve_gf_SetRotationFrom'
+		body: 'libNtve_gf_SetRotationFrom(${1:string lp_actor})'
+	'string libNtve_gf_SetScale':
+		prefix: 'libNtve_gf_SetScale'
+		body: 'libNtve_gf_SetScale(${1:fixed lp_x}, ${2:fixed lp_y}, ${3:fixed lp_z}, ${4:fixed lp_blendDuration})'
+	'string libNtve_gf_SetScaleAbsolute':
+		prefix: 'libNtve_gf_SetScaleAbsolute'
+		body: 'libNtve_gf_SetScaleAbsolute(${1:fixed lp_x}, ${2:fixed lp_y}, ${3:fixed lp_z}, ${4:fixed lp_blendDuration})'
+	'string libNtve_gf_SetTeamColor':
+		prefix: 'libNtve_gf_SetTeamColor'
+		body: 'libNtve_gf_SetTeamColor(${1:color lp_diffuseColor}, ${2:color lp_emissiveColor})'
+	'string libNtve_gf_SetLocalTintColor':
+		prefix: 'libNtve_gf_SetLocalTintColor'
+		body: 'libNtve_gf_SetLocalTintColor(${1:color lp_color})'
+	'string libNtve_gf_SetTintColor':
+		prefix: 'libNtve_gf_SetTintColor'
+		body: 'libNtve_gf_SetTintColor(${1:color lp_color}, ${2:fixed lp_hdr}, ${3:fixed lp_duration})'
+	'string libNtve_gf_SetVisibility':
+		prefix: 'libNtve_gf_SetVisibility'
+		body: 'libNtve_gf_SetVisibility(${1:bool lp_visible})'
+	'string libNtve_gf_SetWalkAnimMoveSpeed':
+		prefix: 'libNtve_gf_SetWalkAnimMoveSpeed'
+		body: 'libNtve_gf_SetWalkAnimMoveSpeed(${1:fixed lp_value})'
+	'string libNtve_gf_SetZ':
+		prefix: 'libNtve_gf_SetZ'
+		body: 'libNtve_gf_SetZ(${1:fixed lp_z})'
+	'string libNtve_gf_Signal':
+		prefix: 'libNtve_gf_Signal'
+		body: 'libNtve_gf_Signal(${1:string lp_signal})'
+	'string libNtve_gf_SoundAddDSP':
+		prefix: 'libNtve_gf_SoundAddDSP'
+		body: 'libNtve_gf_SoundAddDSP(${1:string lp_effect})'
+	'string libNtve_gf_SoundSetMuted':
+		prefix: 'libNtve_gf_SoundSetMuted'
+		body: 'libNtve_gf_SoundSetMuted(${1:bool lp_mutedState}, ${2:bool lp_fade})'
+	'string libNtve_gf_SoundSetOffset':
+		prefix: 'libNtve_gf_SoundSetOffset'
+		body: 'libNtve_gf_SoundSetOffset(${1:int lp_offset})'
+	'string libNtve_gf_SoundSetPaused':
+		prefix: 'libNtve_gf_SoundSetPaused'
+		body: 'libNtve_gf_SoundSetPaused(${1:bool lp_pausedState}, ${2:bool lp_fade})'
+	'string libNtve_gf_StatusDecrement':
+		prefix: 'libNtve_gf_StatusDecrement'
+		body: 'libNtve_gf_StatusDecrement(${1:string lp_statusVariable})'
+	'string libNtve_gf_StatusIncrement':
+		prefix: 'libNtve_gf_StatusIncrement'
+		body: 'libNtve_gf_StatusIncrement(${1:string lp_statusVariable})'
+	'string libNtve_gf_TextureDump':
+		prefix: 'libNtve_gf_TextureDump'
+		body: 'libNtve_gf_TextureDump()'
+	'string libNtve_gf_TextureDumpDB':
+		prefix: 'libNtve_gf_TextureDumpDB'
+		body: 'libNtve_gf_TextureDumpDB()'
+	'string libNtve_gf_TextureGroupApply':
+		prefix: 'libNtve_gf_TextureGroupApply'
+		body: 'libNtve_gf_TextureGroupApply(${1:string lp_textureProps})'
+	'string libNtve_gf_TextureGroupRemove':
+		prefix: 'libNtve_gf_TextureGroupRemove'
+		body: 'libNtve_gf_TextureGroupRemove(${1:string lp_textureProps})'
+	'string libNtve_gf_TextureSelectByID':
+		prefix: 'libNtve_gf_TextureSelectByID'
+		body: 'libNtve_gf_TextureSelectByID(${1:string lp_texture})'
+	'string libNtve_gf_MakeMsgTextureVideoPlay':
+		prefix: 'libNtve_gf_MakeMsgTextureVideoPlay'
+		body: 'libNtve_gf_MakeMsgTextureVideoPlay(${1:string lp_texture}, ${2:int lp_fPS}, ${3:int lp_textureVideoPlayFlags}, ${4:int lp_soundType}, ${5:string lp_attachQuery})'
+	'string libNtve_gf_TextureVideoSetFrame':
+		prefix: 'libNtve_gf_TextureVideoSetFrame'
+		body: 'libNtve_gf_TextureVideoSetFrame(${1:string lp_texture}, ${2:int lp_frame})'
+	'string libNtve_gf_TextureVideoSetPaused':
+		prefix: 'libNtve_gf_TextureVideoSetPaused'
+		body: 'libNtve_gf_TextureVideoSetPaused(${1:string lp_texture}, ${2:bool lp_pauseState})'
+	'string libNtve_gf_TextureVideoSetTime':
+		prefix: 'libNtve_gf_TextureVideoSetTime'
+		body: 'libNtve_gf_TextureVideoSetTime(${1:string lp_texture}, ${2:fixed lp_time})'
+	'string libNtve_gf_TextureVideoStop':
+		prefix: 'libNtve_gf_TextureVideoStop'
+		body: 'libNtve_gf_TextureVideoStop(${1:string lp_texture})'
+	'string libNtve_gf_TextureVideoStopAll':
+		prefix: 'libNtve_gf_TextureVideoStopAll'
+		body: 'libNtve_gf_TextureVideoStopAll()'
+	'string libNtve_gf_TimerSet':
+		prefix: 'libNtve_gf_TimerSet'
+		body: 'libNtve_gf_TimerSet(${1:fixed lp_duration}, ${2:string lp_timerName})'
+	'string libNtve_gf_TimerKill':
+		prefix: 'libNtve_gf_TimerKill'
+		body: 'libNtve_gf_TimerKill(${1:string lp_timerName})'
+	'void libNtve_gf_KillModel':
+		prefix: 'libNtve_gf_KillModel'
+		body: 'libNtve_gf_KillModel(${1:actor lp_model})'
+	'void libNtve_gf_RemoveDoodadsinRegion':
+		prefix: 'libNtve_gf_RemoveDoodadsinRegion'
+		body: 'libNtve_gf_RemoveDoodadsinRegion(${1:region lp_target}, ${2:string lp_doodadType})'
+	'void libNtve_gf_RemoveDeathModelsinRegion':
+		prefix: 'libNtve_gf_RemoveDeathModelsinRegion'
+		body: 'libNtve_gf_RemoveDeathModelsinRegion(${1:region lp_region})'
+	'void libNtve_gf_RemoveDeathModelsinRegionImmediately':
+		prefix: 'libNtve_gf_RemoveDeathModelsinRegionImmediately'
+		body: 'libNtve_gf_RemoveDeathModelsinRegionImmediately(${1:region lp_region})'
+	'actor libNtve_gf_LookAtTargetFromPointWithZOffset':
+		prefix: 'libNtve_gf_LookAtTargetFromPointWithZOffset'
+		body: 'libNtve_gf_LookAtTargetFromPointWithZOffset(${1:point lp_point}, ${2:fixed lp_z})'
+	'actor libNtve_gf_LookAtTargetFromUnitAttachPoint':
+		prefix: 'libNtve_gf_LookAtTargetFromUnitAttachPoint'
+		body: 'libNtve_gf_LookAtTargetFromUnitAttachPoint(${1:unit lp_unit}, ${2:string lp_attachPoint})'
+	'void libNtve_gf_CreateLookAtTargetAtPoint':
+		prefix: 'libNtve_gf_CreateLookAtTargetAtPoint'
+		body: 'libNtve_gf_CreateLookAtTargetAtPoint(${1:point lp_point})'
+	'void libNtve_gf_CreateLookAtTargetAtUnitAttachPoint':
+		prefix: 'libNtve_gf_CreateLookAtTargetAtUnitAttachPoint'
+		body: 'libNtve_gf_CreateLookAtTargetAtUnitAttachPoint(${1:unit lp_unit}, ${2:string lp_attachPoint})'
+	'void libNtve_gf_SimpleLookAtStart':
+		prefix: 'libNtve_gf_SimpleLookAtStart'
+		body: 'libNtve_gf_SimpleLookAtStart(${1:unit lp_unit}, ${2:string lp_type}, ${3:actor lp_lookAtTarget})'
+	'void libNtve_gf_MakeUnitLookAtPoint':
+		prefix: 'libNtve_gf_MakeUnitLookAtPoint'
+		body: 'libNtve_gf_MakeUnitLookAtPoint(${1:unit lp_unit}, ${2:string lp_type}, ${3:point lp_point})'
+	'void libNtve_gf_MakeUnitLookAtUnit':
+		prefix: 'libNtve_gf_MakeUnitLookAtUnit'
+		body: 'libNtve_gf_MakeUnitLookAtUnit(${1:unit lp_unit}, ${2:string lp_type}, ${3:unit lp_lookAtTargetUnit}, ${4:string lp_attachPoint})'
+	'void libNtve_gf_SimpleLookAtStop':
+		prefix: 'libNtve_gf_SimpleLookAtStop'
+		body: 'libNtve_gf_SimpleLookAtStop(${1:unit lp_unit}, ${2:string lp_type})'
+	'actor libNtve_gf_MainActorofUnit':
+		prefix: 'libNtve_gf_MainActorofUnit'
+		body: 'libNtve_gf_MainActorofUnit(${1:unit lp_unit})'
+	'void libNtve_gf_MakeModelFaceAngle':
+		prefix: 'libNtve_gf_MakeModelFaceAngle'
+		body: 'libNtve_gf_MakeModelFaceAngle(${1:actor lp_model}, ${2:fixed lp_angle})'
+	'void libNtve_gf_PlayMovieTextureOnUnitActor':
+		prefix: 'libNtve_gf_PlayMovieTextureOnUnitActor'
+		body: 'libNtve_gf_PlayMovieTextureOnUnitActor(${1:unit lp_unit}, ${2:string lp_movieTexture})'
+	'void libNtve_gf_StopAllVideoTexturesOnUnit':
+		prefix: 'libNtve_gf_StopAllVideoTexturesOnUnit'
+		body: 'libNtve_gf_StopAllVideoTexturesOnUnit(${1:unit lp_unit})'
+	'void libNtve_gf_ShowHideDoodadsInRegion':
+		prefix: 'libNtve_gf_ShowHideDoodadsInRegion'
+		body: 'libNtve_gf_ShowHideDoodadsInRegion(${1:bool lp_showHide}, ${2:region lp_target}, ${3:string lp_doodadType})'
+	'int libNtve_gf_DifficultyValueInt':
+		prefix: 'libNtve_gf_DifficultyValueInt'
+		body: 'libNtve_gf_DifficultyValueInt(${1:int lp_easy}, ${2:int lp_normal}, ${3:int lp_advanced}, ${4:int lp_expert})'
+	'fixed libNtve_gf_DifficultyValueFixed':
+		prefix: 'libNtve_gf_DifficultyValueFixed'
+		body: 'libNtve_gf_DifficultyValueFixed(${1:fixed lp_easy}, ${2:fixed lp_normal}, ${3:fixed lp_advanced}, ${4:fixed lp_expert})'
+	'string libNtve_gf_DifficultyValueUnitType':
+		prefix: 'libNtve_gf_DifficultyValueUnitType'
+		body: 'libNtve_gf_DifficultyValueUnitType(${1:string lp_easy}, ${2:string lp_normal}, ${3:string lp_advanced}, ${4:string lp_expert})'
+	'void libNtve_gf_AICast':
+		prefix: 'libNtve_gf_AICast'
+		body: 'libNtve_gf_AICast(${1:unit lp_unit}, ${2:order lp_order})'
+	'void libNtve_gf_DeclareNextTown':
+		prefix: 'libNtve_gf_DeclareNextTown'
+		body: 'libNtve_gf_DeclareNextTown(${1:int lp_player}, ${2:point lp_center})'
+	'void libNtve_gf_SetTacticalAIRange':
+		prefix: 'libNtve_gf_SetTacticalAIRange'
+		body: 'libNtve_gf_SetTacticalAIRange(${1:int lp_player}, ${2:string lp_unitType}, ${3:int lp_distance})'
+	'void libNtve_gf_SetTacticalAIThink':
+		prefix: 'libNtve_gf_SetTacticalAIThink'
+		body: 'libNtve_gf_SetTacticalAIThink(${1:int lp_player}, ${2:string lp_unitType}, ${3:string lp_target}, ${4:bool lp_isNative})'
+	'void libNtve_gf_PlayAnimation':
+		prefix: 'libNtve_gf_PlayAnimation'
+		body: 'libNtve_gf_PlayAnimation(${1:actor lp_target}, ${2:string lp_identifier}, ${3:string lp_animation}, ${4:int lp_flags}, ${5:fixed lp_blendTime})'
+	'void libNtve_gf_PlayAnimationOnDoodadsInRegion':
+		prefix: 'libNtve_gf_PlayAnimationOnDoodadsInRegion'
+		body: 'libNtve_gf_PlayAnimationOnDoodadsInRegion(${1:region lp_target}, ${2:string lp_doodadType}, ${3:string lp_identifier}, ${4:string lp_animation}, ${5:int lp_flags}, ${6:fixed lp_blendTime})'
+	'void libNtve_gf_KillDoodadsInRegion':
+		prefix: 'libNtve_gf_KillDoodadsInRegion'
+		body: 'libNtve_gf_KillDoodadsInRegion(${1:region lp_target}, ${2:string lp_doodadType})'
+	'void libNtve_gf_ClearAnimation':
+		prefix: 'libNtve_gf_ClearAnimation'
+		body: 'libNtve_gf_ClearAnimation(${1:actor lp_target}, ${2:string lp_identifier})'
+	'void libNtve_gf_ClearAnimationOnDoodadsInRegion':
+		prefix: 'libNtve_gf_ClearAnimationOnDoodadsInRegion'
+		body: 'libNtve_gf_ClearAnimationOnDoodadsInRegion(${1:region lp_target}, ${2:string lp_doodadType}, ${3:string lp_identifier})'
+	'void libNtve_gf_TurnAnimationPropertiesOn':
+		prefix: 'libNtve_gf_TurnAnimationPropertiesOn'
+		body: 'libNtve_gf_TurnAnimationPropertiesOn(${1:actor lp_target}, ${2:string lp_prop})'
+	'void libNtve_gf_TurnAnimationPropertiesOnWithBlendInOut':
+		prefix: 'libNtve_gf_TurnAnimationPropertiesOnWithBlendInOut'
+		body: 'libNtve_gf_TurnAnimationPropertiesOnWithBlendInOut(${1:actor lp_target}, ${2:string lp_prop}, ${3:string lp_blendInAnimation}, ${4:string lp_blendOutAnimation})'
+	'void libNtve_gf_TurnAnimationPropertiesOff':
+		prefix: 'libNtve_gf_TurnAnimationPropertiesOff'
+		body: 'libNtve_gf_TurnAnimationPropertiesOff(${1:actor lp_target}, ${2:string lp_prop})'
+	'void libNtve_gf_TurnAllAnimationPropertiesOff':
+		prefix: 'libNtve_gf_TurnAllAnimationPropertiesOff'
+		body: 'libNtve_gf_TurnAllAnimationPropertiesOff(${1:actor lp_target})'
+	'void libNtve_gf_SetAnimationTime':
+		prefix: 'libNtve_gf_SetAnimationTime'
+		body: 'libNtve_gf_SetAnimationTime(${1:actor lp_target}, ${2:string lp_identifier}, ${3:fixed lp_time}, ${4:bool lp_scaled})'
+	'void libNtve_gf_SetAnimationTimeScale':
+		prefix: 'libNtve_gf_SetAnimationTimeScale'
+		body: 'libNtve_gf_SetAnimationTimeScale(${1:actor lp_target}, ${2:string lp_identifier}, ${3:fixed lp_scale})'
+	'void libNtve_gf_SetAnimationCompletion':
+		prefix: 'libNtve_gf_SetAnimationCompletion'
+		body: 'libNtve_gf_SetAnimationCompletion(${1:actor lp_target}, ${2:string lp_identifier}, ${3:fixed lp_percent})'
+	'void libNtve_gf_SetAnimationDuration':
+		prefix: 'libNtve_gf_SetAnimationDuration'
+		body: 'libNtve_gf_SetAnimationDuration(${1:actor lp_target}, ${2:string lp_identifier}, ${3:fixed lp_duration})'
+	'void libNtve_gf_SwooshCamera':
+		prefix: 'libNtve_gf_SwooshCamera'
+		body: 'libNtve_gf_SwooshCamera(${1:int lp_player}, ${2:fixed lp_distance1}, ${3:fixed lp_distance2}, ${4:point lp_location}, ${5:fixed lp_duration})'
+	'camerainfo libNtve_gf_CopyOfCameraObject':
+		prefix: 'libNtve_gf_CopyOfCameraObject'
+		body: 'libNtve_gf_CopyOfCameraObject(${1:camerainfo lp_cam})'
+	'fixed libNtve_gf_CostOfAbility':
+		prefix: 'libNtve_gf_CostOfAbility'
+		body: 'libNtve_gf_CostOfAbility(${1:string lp_ability}, ${2:string lp_costType})'
+	'void libNtve_gf__CineModeTurnOnOffForPlayer':
+		prefix: 'libNtve_gf__CineModeTurnOnOffForPlayer'
+		body: 'libNtve_gf__CineModeTurnOnOffForPlayer(${1:int lp_player}, ${2:bool lp_onOff})'
+	'void libNtve_gf__CineModeTurnOnOffForPlayerGroup':
+		prefix: 'libNtve_gf__CineModeTurnOnOffForPlayerGroup'
+		body: 'libNtve_gf__CineModeTurnOnOffForPlayerGroup(${1:playergroup lp_players}, ${2:bool lp_onOff})'
+	'bool libNtve_gf__CineModeFogSetting':
+		prefix: 'libNtve_gf__CineModeFogSetting'
+		body: 'libNtve_gf__CineModeFogSetting(${1:int lp_player})'
+	'void libNtve_gf__CineModeChangeFogSettingForPlayer':
+		prefix: 'libNtve_gf__CineModeChangeFogSettingForPlayer'
+		body: 'libNtve_gf__CineModeChangeFogSettingForPlayer(${1:int lp_player}, ${2:bool lp_fog})'
+	'void libNtve_gf__CineModeChangeFogSettingForPlayerGroup':
+		prefix: 'libNtve_gf__CineModeChangeFogSettingForPlayerGroup'
+		body: 'libNtve_gf__CineModeChangeFogSettingForPlayerGroup(${1:playergroup lp_players}, ${2:bool lp_fog})'
+	'bool libNtve_gf__CineModeMaskSetting':
+		prefix: 'libNtve_gf__CineModeMaskSetting'
+		body: 'libNtve_gf__CineModeMaskSetting(${1:int lp_player})'
+	'void libNtve_gf__CineModeChangeMaskSettingForPlayer':
+		prefix: 'libNtve_gf__CineModeChangeMaskSettingForPlayer'
+		body: 'libNtve_gf__CineModeChangeMaskSettingForPlayer(${1:int lp_player}, ${2:bool lp_mask})'
+	'void libNtve_gf__CineModeChangeMaskSettingForPlayerGroup':
+		prefix: 'libNtve_gf__CineModeChangeMaskSettingForPlayerGroup'
+		body: 'libNtve_gf__CineModeChangeMaskSettingForPlayerGroup(${1:playergroup lp_players}, ${2:bool lp_mask})'
+	'void libNtve_gf__CineModeHideUI':
+		prefix: 'libNtve_gf__CineModeHideUI'
+		body: 'libNtve_gf__CineModeHideUI(${1:playergroup lp_players})'
+	'void libNtve_gf__CineModeRestoreUI':
+		prefix: 'libNtve_gf__CineModeRestoreUI'
+		body: 'libNtve_gf__CineModeRestoreUI(${1:playergroup lp_players})'
+	'void libNtve_gf__CineModeStoreCheatStatus':
+		prefix: 'libNtve_gf__CineModeStoreCheatStatus'
+		body: 'libNtve_gf__CineModeStoreCheatStatus()'
+	'void libNtve_gf__CineModeRestoreCheatStatus':
+		prefix: 'libNtve_gf__CineModeRestoreCheatStatus'
+		body: 'libNtve_gf__CineModeRestoreCheatStatus()'
+	'void libNtve_gf_CinematicMode':
+		prefix: 'libNtve_gf_CinematicMode'
+		body: 'libNtve_gf_CinematicMode(${1:bool lp_onOff}, ${2:playergroup lp_players}, ${3:fixed lp_duration})'
+	'void libNtve_gf_GlobalCinematicSetting':
+		prefix: 'libNtve_gf_GlobalCinematicSetting'
+		body: 'libNtve_gf_GlobalCinematicSetting(${1:bool lp_onOff})'
+	'void libNtve_gf_SetCinematicTransitionStyle':
+		prefix: 'libNtve_gf_SetCinematicTransitionStyle'
+		body: 'libNtve_gf_SetCinematicTransitionStyle(${1:int lp_style})'
+	'bool libNtve_gf_PlayerInCinematicMode':
+		prefix: 'libNtve_gf_PlayerInCinematicMode'
+		body: 'libNtve_gf_PlayerInCinematicMode(${1:int lp_player})'
+	'void libNtve_gf_MovieDynamicSubtitlesandDuration':
+		prefix: 'libNtve_gf_MovieDynamicSubtitlesandDuration'
+		body: 'libNtve_gf_MovieDynamicSubtitlesandDuration(${1:string lp_soundFile})'
+	'text libNtve_gf_ConvertBooleanToText':
+		prefix: 'libNtve_gf_ConvertBooleanToText'
+		body: 'libNtve_gf_ConvertBooleanToText(${1:bool lp_value})'
+	'string libNtve_gf_ConvertBooleanToString':
+		prefix: 'libNtve_gf_ConvertBooleanToString'
+		body: 'libNtve_gf_ConvertBooleanToString(${1:bool lp_value})'
+	'bool libNtve_gf_ConvertStringToBoolean':
+		prefix: 'libNtve_gf_ConvertStringToBoolean'
+		body: 'libNtve_gf_ConvertStringToBoolean(${1:string lp_value})'
+	'string libNtve_gf_ConvertPointToString':
+		prefix: 'libNtve_gf_ConvertPointToString'
+		body: 'libNtve_gf_ConvertPointToString(${1:point lp_value})'
+	'point libNtve_gf_ConvertStringToPoint':
+		prefix: 'libNtve_gf_ConvertStringToPoint'
+		body: 'libNtve_gf_ConvertStringToPoint(${1:string lp_value})'
+	'color libNtve_gf_ConvertPlayerColorToColor':
+		prefix: 'libNtve_gf_ConvertPlayerColorToColor'
+		body: 'libNtve_gf_ConvertPlayerColorToColor(${1:int lp_playerColor})'
+	'string libNtve_gf_ConvertColorToString':
+		prefix: 'libNtve_gf_ConvertColorToString'
+		body: 'libNtve_gf_ConvertColorToString(${1:color lp_color})'
+	'string libNtve_gf_ConvertBearingsToString':
+		prefix: 'libNtve_gf_ConvertBearingsToString'
+		body: 'libNtve_gf_ConvertBearingsToString(${1:fixed lp_positionX}, ${2:fixed lp_positionY}, ${3:fixed lp_positionZ}, ${4:fixed lp_forwardX}, ${5:fixed lp_forwardY}, ${6:fixed lp_forwardZ}, ${7:fixed lp_upX}, ${8:fixed lp_upY}, ${9:fixed lp_upZ})'
+	'string libNtve_gf_ConvertXYToString':
+		prefix: 'libNtve_gf_ConvertXYToString'
+		body: 'libNtve_gf_ConvertXYToString(${1:fixed lp_x}, ${2:fixed lp_y})'
+	'string libNtve_gf_Convert3DVectorToString':
+		prefix: 'libNtve_gf_Convert3DVectorToString'
+		body: 'libNtve_gf_Convert3DVectorToString(${1:fixed lp_x}, ${2:fixed lp_y}, ${3:fixed lp_z})'
+	'string libNtve_gf_Convert3DRotationToString':
+		prefix: 'libNtve_gf_Convert3DRotationToString'
+		body: 'libNtve_gf_Convert3DRotationToString(${1:fixed lp_forwardX}, ${2:fixed lp_forwardY}, ${3:fixed lp_forwardZ}, ${4:fixed lp_upX}, ${5:fixed lp_upY}, ${6:fixed lp_upZ})'
+	'string libNtve_gf_ConvertStringToUILayoutFrameName':
+		prefix: 'libNtve_gf_ConvertStringToUILayoutFrameName'
+		body: 'libNtve_gf_ConvertStringToUILayoutFrameName(${1:string lp_value})'
+	'void libNtve_gf_SaveDataTableValueDialogItem':
+		prefix: 'libNtve_gf_SaveDataTableValueDialogItem'
+		body: 'libNtve_gf_SaveDataTableValueDialogItem(${1:bool lp_scope}, ${2:string lp_name}, ${3:int lp_value})'
+	'void libNtve_gf_SaveDataTableValueDifficultyLevel':
+		prefix: 'libNtve_gf_SaveDataTableValueDifficultyLevel'
+		body: 'libNtve_gf_SaveDataTableValueDifficultyLevel(${1:bool lp_scope}, ${2:string lp_name}, ${3:int lp_value})'
+	'void libNtve_gf_SaveDataTableValuePlayerColor':
+		prefix: 'libNtve_gf_SaveDataTableValuePlayerColor'
+		body: 'libNtve_gf_SaveDataTableValuePlayerColor(${1:bool lp_scope}, ${2:string lp_name}, ${3:int lp_value})'
+	'void libNtve_gf_SaveDataTableValueTextTag':
+		prefix: 'libNtve_gf_SaveDataTableValueTextTag'
+		body: 'libNtve_gf_SaveDataTableValueTextTag(${1:bool lp_scope}, ${2:string lp_name}, ${3:int lp_value})'
+	'int libNtve_gf_ValueFromDataTableDialogItem':
+		prefix: 'libNtve_gf_ValueFromDataTableDialogItem'
+		body: 'libNtve_gf_ValueFromDataTableDialogItem(${1:bool lp_scope}, ${2:string lp_name})'
+	'int libNtve_gf_ValueFromDataTableDifficultyLevel':
+		prefix: 'libNtve_gf_ValueFromDataTableDifficultyLevel'
+		body: 'libNtve_gf_ValueFromDataTableDifficultyLevel(${1:bool lp_scope}, ${2:string lp_name})'
+	'int libNtve_gf_ValueFromDataTablePlayerColor':
+		prefix: 'libNtve_gf_ValueFromDataTablePlayerColor'
+		body: 'libNtve_gf_ValueFromDataTablePlayerColor(${1:bool lp_scope}, ${2:string lp_name})'
+	'int libNtve_gf_ValueFromDataTableTextTag':
+		prefix: 'libNtve_gf_ValueFromDataTableTextTag'
+		body: 'libNtve_gf_ValueFromDataTableTextTag(${1:bool lp_scope}, ${2:string lp_name})'
+	'int libNtve_gf_ConvertIntegerToDebugMessageType':
+		prefix: 'libNtve_gf_ConvertIntegerToDebugMessageType'
+		body: 'libNtve_gf_ConvertIntegerToDebugMessageType(${1:int lp_value})'
+	'void libNtve_gf_SetDialogItemText':
+		prefix: 'libNtve_gf_SetDialogItemText'
+		body: 'libNtve_gf_SetDialogItemText(${1:int lp_dialogItem}, ${2:text lp_text}, ${3:playergroup lp_players})'
+	'text libNtve_gf_DialogItemText':
+		prefix: 'libNtve_gf_DialogItemText'
+		body: 'libNtve_gf_DialogItemText(${1:int lp_dialogItem}, ${2:int lp_player})'
+	'int libNtve_gf_CreateDialogItemAchievement':
+		prefix: 'libNtve_gf_CreateDialogItemAchievement'
+		body: 'libNtve_gf_CreateDialogItemAchievement(${1:int lp_dialog}, ${2:int lp_width}, ${3:int lp_height}, ${4:int lp_anchor}, ${5:int lp_offsetX}, ${6:int lp_offsetY}, ${7:text lp_tooltip}, ${8:string lp_achievement})'
+	'int libNtve_gf_CreateDialogItemButton':
+		prefix: 'libNtve_gf_CreateDialogItemButton'
+		body: 'libNtve_gf_CreateDialogItemButton(${1:int lp_dialog}, ${2:int lp_width}, ${3:int lp_height}, ${4:int lp_anchor}, ${5:int lp_offsetX}, ${6:int lp_offsetY}, ${7:text lp_tooltip}, ${8:text lp_buttonText}, ${9:string lp_hoverImage})'
+	'int libNtve_gf_CreateDialogItemCheckBox':
+		prefix: 'libNtve_gf_CreateDialogItemCheckBox'
+		body: 'libNtve_gf_CreateDialogItemCheckBox(${1:int lp_dialog}, ${2:int lp_width}, ${3:int lp_height}, ${4:int lp_anchor}, ${5:int lp_offsetX}, ${6:int lp_offsetY}, ${7:text lp_tooltip}, ${8:bool lp_checked})'
+	'int libNtve_gf_CreateDialogItemImage':
+		prefix: 'libNtve_gf_CreateDialogItemImage'
+		body: 'libNtve_gf_CreateDialogItemImage(${1:int lp_dialog}, ${2:int lp_width}, ${3:int lp_height}, ${4:int lp_anchor}, ${5:int lp_offsetX}, ${6:int lp_offsetY}, ${7:text lp_tooltip}, ${8:string lp_image}, ${9:int lp_imageType}, ${10:bool lp_tiled}, ${11:color lp_tintColor}, ${12:int lp_blendMode})'
+	'int libNtve_gf_CreateDialogItemLabel':
+		prefix: 'libNtve_gf_CreateDialogItemLabel'
+		body: 'libNtve_gf_CreateDialogItemLabel(${1:int lp_dialog}, ${2:int lp_width}, ${3:int lp_height}, ${4:int lp_anchor}, ${5:int lp_offsetX}, ${6:int lp_offsetY}, ${7:text lp_text}, ${8:color lp_color}, ${9:bool lp_textWriteout}, ${10:fixed lp_textWriteoutDuration})'
+	'void libNtve_gf_SetDialogItemRotation':
+		prefix: 'libNtve_gf_SetDialogItemRotation'
+		body: 'libNtve_gf_SetDialogItemRotation(${1:int lp_dialogItem}, ${2:int lp_rotation}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemtoUseAspectUncorrection':
+		prefix: 'libNtve_gf_SetDialogItemtoUseAspectUncorrection'
+		body: 'libNtve_gf_SetDialogItemtoUseAspectUncorrection(${1:int lp_dialogItem}, ${2:bool lp_useAspectUncorrection}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemCurrentValue':
+		prefix: 'libNtve_gf_SetDialogItemCurrentValue'
+		body: 'libNtve_gf_SetDialogItemCurrentValue(${1:int lp_dialogItem}, ${2:fixed lp_currentValue}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemMinimumValue':
+		prefix: 'libNtve_gf_SetDialogItemMinimumValue'
+		body: 'libNtve_gf_SetDialogItemMinimumValue(${1:int lp_dialogItem}, ${2:fixed lp_minValue}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemMaximumValue':
+		prefix: 'libNtve_gf_SetDialogItemMaximumValue'
+		body: 'libNtve_gf_SetDialogItemMaximumValue(${1:int lp_dialogItem}, ${2:fixed lp_maxValue}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemChecked':
+		prefix: 'libNtve_gf_SetDialogItemChecked'
+		body: 'libNtve_gf_SetDialogItemChecked(${1:int lp_dialogItem}, ${2:bool lp_checked}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemEditorValue':
+		prefix: 'libNtve_gf_SetDialogItemEditorValue'
+		body: 'libNtve_gf_SetDialogItemEditorValue(${1:int lp_dialogItem}, ${2:string lp_value}, ${3:playergroup lp_players})'
+	'fixed libNtve_gf_DialogItemValue':
+		prefix: 'libNtve_gf_DialogItemValue'
+		body: 'libNtve_gf_DialogItemValue(${1:int lp_dialogItem}, ${2:int lp_player})'
+	'fixed libNtve_gf_DialogItemMaximumValue':
+		prefix: 'libNtve_gf_DialogItemMaximumValue'
+		body: 'libNtve_gf_DialogItemMaximumValue(${1:int lp_dialogItem}, ${2:int lp_player})'
+	'fixed libNtve_gf_DialogItemMinimumValue':
+		prefix: 'libNtve_gf_DialogItemMinimumValue'
+		body: 'libNtve_gf_DialogItemMinimumValue(${1:int lp_dialogItem}, ${2:int lp_player})'
+	'bool libNtve_gf_DialogItemIsChecked':
+		prefix: 'libNtve_gf_DialogItemIsChecked'
+		body: 'libNtve_gf_DialogItemIsChecked(${1:int lp_dialogItem}, ${2:int lp_player})'
+	'string libNtve_gf_DialogItemEditValue':
+		prefix: 'libNtve_gf_DialogItemEditValue'
+		body: 'libNtve_gf_DialogItemEditValue(${1:int lp_dialogItem}, ${2:int lp_player})'
+	'void libNtve_gf_SetDialogItemColor':
+		prefix: 'libNtve_gf_SetDialogItemColor'
+		body: 'libNtve_gf_SetDialogItemColor(${1:int lp_dialogItem}, ${2:color lp_color}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemStyle':
+		prefix: 'libNtve_gf_SetDialogItemStyle'
+		body: 'libNtve_gf_SetDialogItemStyle(${1:int lp_dialogItem}, ${2:string lp_style}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemTextWriteout':
+		prefix: 'libNtve_gf_SetDialogItemTextWriteout'
+		body: 'libNtve_gf_SetDialogItemTextWriteout(${1:int lp_dialogItem}, ${2:bool lp_writeout}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemTextWriteoutDuration':
+		prefix: 'libNtve_gf_SetDialogItemTextWriteoutDuration'
+		body: 'libNtve_gf_SetDialogItemTextWriteoutDuration(${1:int lp_dialogItem}, ${2:fixed lp_duration}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemTooltip':
+		prefix: 'libNtve_gf_SetDialogItemTooltip'
+		body: 'libNtve_gf_SetDialogItemTooltip(${1:int lp_dialogItem}, ${2:text lp_tooltip}, ${3:playergroup lp_players})'
+	'color libNtve_gf_DialogItemColor':
+		prefix: 'libNtve_gf_DialogItemColor'
+		body: 'libNtve_gf_DialogItemColor(${1:int lp_dialogItem}, ${2:int lp_player})'
+	'string libNtve_gf_DialogItemStyle':
+		prefix: 'libNtve_gf_DialogItemStyle'
+		body: 'libNtve_gf_DialogItemStyle(${1:int lp_dialogItem}, ${2:int lp_player})'
+	'text libNtve_gf_DialogItemTooltip':
+		prefix: 'libNtve_gf_DialogItemTooltip'
+		body: 'libNtve_gf_DialogItemTooltip(${1:int lp_dialogItem}, ${2:int lp_player})'
+	'void libNtve_gf_SetDialogItemImage':
+		prefix: 'libNtve_gf_SetDialogItemImage'
+		body: 'libNtve_gf_SetDialogItemImage(${1:int lp_dialogItem}, ${2:string lp_image}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemImage2':
+		prefix: 'libNtve_gf_SetDialogItemImage2'
+		body: 'libNtve_gf_SetDialogItemImage2(${1:int lp_dialogItem}, ${2:string lp_image}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemImageType':
+		prefix: 'libNtve_gf_SetDialogItemImageType'
+		body: 'libNtve_gf_SetDialogItemImageType(${1:int lp_dialogItem}, ${2:int lp_imageType}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemBlendMode':
+		prefix: 'libNtve_gf_SetDialogItemBlendMode'
+		body: 'libNtve_gf_SetDialogItemBlendMode(${1:int lp_dialogItem}, ${2:int lp_blendMode}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemImageType2':
+		prefix: 'libNtve_gf_SetDialogItemImageType2'
+		body: 'libNtve_gf_SetDialogItemImageType2(${1:int lp_dialogItem}, ${2:bool lp_tiled}, ${3:playergroup lp_players})'
+	'string libNtve_gf_DialogItemImage':
+		prefix: 'libNtve_gf_DialogItemImage'
+		body: 'libNtve_gf_DialogItemImage(${1:int lp_dialogItem}, ${2:int lp_player})'
+	'int libNtve_gf_DialogItemImageType':
+		prefix: 'libNtve_gf_DialogItemImageType'
+		body: 'libNtve_gf_DialogItemImageType(${1:int lp_dialogItem}, ${2:int lp_player})'
+	'void libNtve_gf_SetDialogItemFlash':
+		prefix: 'libNtve_gf_SetDialogItemFlash'
+		body: 'libNtve_gf_SetDialogItemFlash(${1:int lp_dialogItem}, ${2:string lp_flash}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemCutscene':
+		prefix: 'libNtve_gf_SetDialogItemCutscene'
+		body: 'libNtve_gf_SetDialogItemCutscene(${1:int lp_dialogItem}, ${2:string lp_cutscene}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemAchievement':
+		prefix: 'libNtve_gf_SetDialogItemAchievement'
+		body: 'libNtve_gf_SetDialogItemAchievement(${1:int lp_dialogItem}, ${2:string lp_achievement}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemRenderPriority':
+		prefix: 'libNtve_gf_SetDialogItemRenderPriority'
+		body: 'libNtve_gf_SetDialogItemRenderPriority(${1:int lp_dialogItem}, ${2:int lp_renderPriority}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemClickOnDown':
+		prefix: 'libNtve_gf_SetDialogItemClickOnDown'
+		body: 'libNtve_gf_SetDialogItemClickOnDown(${1:int lp_dialogItem}, ${2:bool lp_clickOnDown}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemToggled':
+		prefix: 'libNtve_gf_SetDialogItemToggled'
+		body: 'libNtve_gf_SetDialogItemToggled(${1:int lp_dialogItem}, ${2:bool lp_toggled}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemMovie':
+		prefix: 'libNtve_gf_SetDialogItemMovie'
+		body: 'libNtve_gf_SetDialogItemMovie(${1:int lp_dialogItem}, ${2:string lp_movie}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemDesaturated':
+		prefix: 'libNtve_gf_SetDialogItemDesaturated'
+		body: 'libNtve_gf_SetDialogItemDesaturated(${1:int lp_dialogItem}, ${2:bool lp_desaturated}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemDesaturationColor':
+		prefix: 'libNtve_gf_SetDialogItemDesaturationColor'
+		body: 'libNtve_gf_SetDialogItemDesaturationColor(${1:int lp_dialogItem}, ${2:color lp_color}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemCustomTooltip':
+		prefix: 'libNtve_gf_SetDialogItemCustomTooltip'
+		body: 'libNtve_gf_SetDialogItemCustomTooltip(${1:int lp_dialogItem}, ${2:int lp_tooltip}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemUnit':
+		prefix: 'libNtve_gf_SetDialogItemUnit'
+		body: 'libNtve_gf_SetDialogItemUnit(${1:int lp_dialogItem}, ${2:unit lp_unit}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemModel':
+		prefix: 'libNtve_gf_SetDialogItemModel'
+		body: 'libNtve_gf_SetDialogItemModel(${1:int lp_dialogItem}, ${2:string lp_model}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemAnimation':
+		prefix: 'libNtve_gf_SetDialogItemAnimation'
+		body: 'libNtve_gf_SetDialogItemAnimation(${1:int lp_dialogItem}, ${2:string lp_animation}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemCamera':
+		prefix: 'libNtve_gf_SetDialogItemCamera'
+		body: 'libNtve_gf_SetDialogItemCamera(${1:int lp_dialogItem}, ${2:string lp_camera}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemBorderVisible':
+		prefix: 'libNtve_gf_SetDialogItemBorderVisible'
+		body: 'libNtve_gf_SetDialogItemBorderVisible(${1:int lp_dialogItem}, ${2:bool lp_visible}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemBorderImage':
+		prefix: 'libNtve_gf_SetDialogItemBorderImage'
+		body: 'libNtve_gf_SetDialogItemBorderImage(${1:int lp_dialogItem}, ${2:string lp_image}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemBackgroundVisible':
+		prefix: 'libNtve_gf_SetDialogItemBackgroundVisible'
+		body: 'libNtve_gf_SetDialogItemBackgroundVisible(${1:int lp_dialogItem}, ${2:bool lp_visible}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemUseTransition':
+		prefix: 'libNtve_gf_SetDialogItemUseTransition'
+		body: 'libNtve_gf_SetDialogItemUseTransition(${1:int lp_dialogItem}, ${2:bool lp_useTransition}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemMuted':
+		prefix: 'libNtve_gf_SetDialogItemMuted'
+		body: 'libNtve_gf_SetDialogItemMuted(${1:int lp_dialogItem}, ${2:bool lp_muted}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemPaused':
+		prefix: 'libNtve_gf_SetDialogItemPaused'
+		body: 'libNtve_gf_SetDialogItemPaused(${1:int lp_dialogItem}, ${2:bool lp_paused}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemAcceptMouse':
+		prefix: 'libNtve_gf_SetDialogItemAcceptMouse'
+		body: 'libNtve_gf_SetDialogItemAcceptMouse(${1:int lp_dialogItem}, ${2:bool lp_acceptMouse}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemTintColor':
+		prefix: 'libNtve_gf_SetDialogItemTintColor'
+		body: 'libNtve_gf_SetDialogItemTintColor(${1:int lp_dialogItem}, ${2:color lp_color}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemTeamColor':
+		prefix: 'libNtve_gf_SetDialogItemTeamColor'
+		body: 'libNtve_gf_SetDialogItemTeamColor(${1:int lp_dialogItem}, ${2:color lp_color}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemLight':
+		prefix: 'libNtve_gf_SetDialogItemLight'
+		body: 'libNtve_gf_SetDialogItemLight(${1:int lp_dialogItem}, ${2:string lp_light}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemTransitionModel':
+		prefix: 'libNtve_gf_SetDialogItemTransitionModel'
+		body: 'libNtve_gf_SetDialogItemTransitionModel(${1:int lp_dialogItem}, ${2:string lp_model}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemForceVisible':
+		prefix: 'libNtve_gf_SetDialogItemForceVisible'
+		body: 'libNtve_gf_SetDialogItemForceVisible(${1:int lp_dialogItem}, ${2:bool lp_visible}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemRenderType':
+		prefix: 'libNtve_gf_SetDialogItemRenderType'
+		body: 'libNtve_gf_SetDialogItemRenderType(${1:int lp_dialogItem}, ${2:int lp_renderType}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemUnitLink':
+		prefix: 'libNtve_gf_SetDialogItemUnitLink'
+		body: 'libNtve_gf_SetDialogItemUnitLink(${1:int lp_dialogItem}, ${2:string lp_unitLink}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemTeamColorIndex':
+		prefix: 'libNtve_gf_SetDialogItemTeamColorIndex'
+		body: 'libNtve_gf_SetDialogItemTeamColorIndex(${1:int lp_dialogItem}, ${2:int lp_index}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemAnimationDuration':
+		prefix: 'libNtve_gf_SetDialogItemAnimationDuration'
+		body: 'libNtve_gf_SetDialogItemAnimationDuration(${1:int lp_dialogItem}, ${2:fixed lp_time}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemAnimationTime':
+		prefix: 'libNtve_gf_SetDialogItemAnimationTime'
+		body: 'libNtve_gf_SetDialogItemAnimationTime(${1:int lp_dialogItem}, ${2:fixed lp_time}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemActor':
+		prefix: 'libNtve_gf_SetDialogItemActor'
+		body: 'libNtve_gf_SetDialogItemActor(${1:int lp_dialogItem}, ${2:string lp_actor}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemBehavior':
+		prefix: 'libNtve_gf_SetDialogItemBehavior'
+		body: 'libNtve_gf_SetDialogItemBehavior(${1:int lp_dialogItem}, ${2:string lp_behavior}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemHotkey':
+		prefix: 'libNtve_gf_SetDialogItemHotkey'
+		body: 'libNtve_gf_SetDialogItemHotkey(${1:int lp_dialogItem}, ${2:int lp_hotkey}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemAllowedMouseButtons':
+		prefix: 'libNtve_gf_SetDialogItemAllowedMouseButtons'
+		body: 'libNtve_gf_SetDialogItemAllowedMouseButtons(${1:int lp_dialogItem}, ${2:int lp_allowedButtons}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemAlphaMask':
+		prefix: 'libNtve_gf_SetDialogItemAlphaMask'
+		body: 'libNtve_gf_SetDialogItemAlphaMask(${1:int lp_dialogItem}, ${2:string lp_image}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemAnimationIndex':
+		prefix: 'libNtve_gf_SetDialogItemAnimationIndex'
+		body: 'libNtve_gf_SetDialogItemAnimationIndex(${1:int lp_dialogItem}, ${2:int lp_index}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemHandle':
+		prefix: 'libNtve_gf_SetDialogItemHandle'
+		body: 'libNtve_gf_SetDialogItemHandle(${1:int lp_dialogItem}, ${2:string lp_handle}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemBorderColor':
+		prefix: 'libNtve_gf_SetDialogItemBorderColor'
+		body: 'libNtve_gf_SetDialogItemBorderColor(${1:int lp_dialogItem}, ${2:color lp_color}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemFillColor':
+		prefix: 'libNtve_gf_SetDialogItemFillColor'
+		body: 'libNtve_gf_SetDialogItemFillColor(${1:int lp_dialogItem}, ${2:color lp_color}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemSubmenu':
+		prefix: 'libNtve_gf_SetDialogItemSubmenu'
+		body: 'libNtve_gf_SetDialogItemSubmenu(${1:int lp_dialogItem}, ${2:string lp_submenu}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemUnitGroup':
+		prefix: 'libNtve_gf_SetDialogItemUnitGroup'
+		body: 'libNtve_gf_SetDialogItemUnitGroup(${1:int lp_dialogItem}, ${2:unitgroup lp_unitGroup}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemPlayerId':
+		prefix: 'libNtve_gf_SetDialogItemPlayerId'
+		body: 'libNtve_gf_SetDialogItemPlayerId(${1:int lp_dialogItem}, ${2:int lp_playerId}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemScoreValueLink':
+		prefix: 'libNtve_gf_SetDialogItemScoreValueLink'
+		body: 'libNtve_gf_SetDialogItemScoreValueLink(${1:int lp_dialogItem}, ${2:string lp_scoreValueLink}, ${3:playergroup lp_players})'
+	'void libNtve_gf_SetDialogItemStateIndex':
+		prefix: 'libNtve_gf_SetDialogItemStateIndex'
+		body: 'libNtve_gf_SetDialogItemStateIndex(${1:int lp_dialogItem}, ${2:int lp_stateIndex}, ${3:playergroup lp_players})'
+	'void libNtve_gf_DisplayScreenButton':
+		prefix: 'libNtve_gf_DisplayScreenButton'
+		body: 'libNtve_gf_DisplayScreenButton(${1:int lp_screenButtonID}, ${2:text lp_text}, ${3:int lp_width}, ${4:int lp_height}, ${5:int lp_anchor}, ${6:int lp_offsetX}, ${7:int lp_offsetY}, ${8:trigger lp_callback})'
+	'void libNtve_gf_HideScreenButton':
+		prefix: 'libNtve_gf_HideScreenButton'
+		body: 'libNtve_gf_HideScreenButton(${1:bool lp_showHide}, ${2:int lp_screenButtonID})'
+	'void libNtve_gf_FlashScreenButton':
+		prefix: 'libNtve_gf_FlashScreenButton'
+		body: 'libNtve_gf_FlashScreenButton(${1:int lp_screenButtonID}, ${2:fixed lp_flashTime}, ${3:color lp_color1}, ${4:color lp_color2})'
+	'void libNtve_gf_StopFlashingScreenButton':
+		prefix: 'libNtve_gf_StopFlashingScreenButton'
+		body: 'libNtve_gf_StopFlashingScreenButton(${1:int lp_screenButtonID})'
+	'void libNtve_gf_SetScreenButtonBorderImage':
+		prefix: 'libNtve_gf_SetScreenButtonBorderImage'
+		body: 'libNtve_gf_SetScreenButtonBorderImage(${1:int lp_screenButtonID}, ${2:string lp_borderImage}, ${3:string lp_hoverImage}, ${4:int lp_borderType})'
+	'void libNtve_gf_SetScreenButtonFlashingBorderImage':
+		prefix: 'libNtve_gf_SetScreenButtonFlashingBorderImage'
+		body: 'libNtve_gf_SetScreenButtonFlashingBorderImage(${1:int lp_screenButtonID}, ${2:string lp_borderImage}, ${3:string lp_hoverImage}, ${4:int lp_borderType})'
+	'int libNtve_gf_ScreenButtonDialog':
+		prefix: 'libNtve_gf_ScreenButtonDialog'
+		body: 'libNtve_gf_ScreenButtonDialog(${1:int lp_screenButtonID})'
+	'int libNtve_gf_ScreenButton':
+		prefix: 'libNtve_gf_ScreenButton'
+		body: 'libNtve_gf_ScreenButton(${1:int lp_screenButtonID})'
+	'void libNtve_gf_DisplayScreenImage':
+		prefix: 'libNtve_gf_DisplayScreenImage'
+		body: 'libNtve_gf_DisplayScreenImage(${1:int lp_screenImageID}, ${2:string lp_image}, ${3:int lp_blendMode}, ${4:int lp_width}, ${5:int lp_height}, ${6:int lp_anchor}, ${7:int lp_offsetX}, ${8:int lp_offsetY})'
+	'void libNtve_gf_HideScreenImage':
+		prefix: 'libNtve_gf_HideScreenImage'
+		body: 'libNtve_gf_HideScreenImage(${1:bool lp_showHideOption}, ${2:int lp_screenImageID})'
+	'void libNtve_gf_PulseScreenImage':
+		prefix: 'libNtve_gf_PulseScreenImage'
+		body: 'libNtve_gf_PulseScreenImage(${1:int lp_screenImageID}, ${2:fixed lp_period}, ${3:fixed lp_transparency1}, ${4:fixed lp_transparency2})'
+	'void libNtve_gf_StopPulsingScreenImage':
+		prefix: 'libNtve_gf_StopPulsingScreenImage'
+		body: 'libNtve_gf_StopPulsingScreenImage(${1:int lp_screenImageID})'
+	'int libNtve_gf_ScreenImageDialog':
+		prefix: 'libNtve_gf_ScreenImageDialog'
+		body: 'libNtve_gf_ScreenImageDialog(${1:int lp_screenImageID})'
+	'int libNtve_gf_ScreenImageDialogItem':
+		prefix: 'libNtve_gf_ScreenImageDialogItem'
+		body: 'libNtve_gf_ScreenImageDialogItem(${1:int lp_screenImageID})'
+	'void libNtve_gf_DisplayScreenLabel':
+		prefix: 'libNtve_gf_DisplayScreenLabel'
+		body: 'libNtve_gf_DisplayScreenLabel(${1:int lp_screenLabelID}, ${2:text lp_label}, ${3:string lp_style}, ${4:int lp_width}, ${5:int lp_height}, ${6:int lp_anchor}, ${7:int lp_offsetX}, ${8:int lp_offsetY})'
+	'void libNtve_gf_HideScreenImage2':
+		prefix: 'libNtve_gf_HideScreenImage2'
+		body: 'libNtve_gf_HideScreenImage2(${1:bool lp_showHideOption}, ${2:int lp_screenLabelID})'
+	'int libNtve_gf_ScreenLabelDialog':
+		prefix: 'libNtve_gf_ScreenLabelDialog'
+		body: 'libNtve_gf_ScreenLabelDialog(${1:int lp_screenLabelID})'
+	'int libNtve_gf_ScreenLabelDialogItem':
+		prefix: 'libNtve_gf_ScreenLabelDialogItem'
+		body: 'libNtve_gf_ScreenLabelDialogItem(${1:int lp_screenLabelID})'
+	'void libNtve_gf_CreateExplosionAtPoint':
+		prefix: 'libNtve_gf_CreateExplosionAtPoint'
+		body: 'libNtve_gf_CreateExplosionAtPoint(${1:int lp_size}, ${2:int lp_race}, ${3:point lp_point})'
+	'bool libNtve_gf_PlayerCanCreateEffectAtPoint':
+		prefix: 'libNtve_gf_PlayerCanCreateEffectAtPoint'
+		body: 'libNtve_gf_PlayerCanCreateEffectAtPoint(${1:int lp_player}, ${2:string lp_effect}, ${3:point lp_point})'
+	'bool libNtve_gf_PlayerCanCreateEffectOnUnit':
+		prefix: 'libNtve_gf_PlayerCanCreateEffectOnUnit'
+		body: 'libNtve_gf_PlayerCanCreateEffectOnUnit(${1:int lp_player}, ${2:string lp_effect}, ${3:unit lp_target})'
+	'bool libNtve_gf_UnitCanCreateEffectAtPoint':
+		prefix: 'libNtve_gf_UnitCanCreateEffectAtPoint'
+		body: 'libNtve_gf_UnitCanCreateEffectAtPoint(${1:unit lp_caster}, ${2:string lp_effect}, ${3:point lp_point})'
+	'bool libNtve_gf_UnitCanCreateEffectOnUnit':
+		prefix: 'libNtve_gf_UnitCanCreateEffectOnUnit'
+		body: 'libNtve_gf_UnitCanCreateEffectOnUnit(${1:unit lp_caster}, ${2:string lp_effect}, ${3:unit lp_target})'
+	'fixed libNtve_gf_GamePlayTime':
+		prefix: 'libNtve_gf_GamePlayTime'
+		body: 'libNtve_gf_GamePlayTime(${1:int lp_player})'
+	'void libNtve_gf_GameRemoveChargeRegen':
+		prefix: 'libNtve_gf_GameRemoveChargeRegen'
+		body: 'libNtve_gf_GameRemoveChargeRegen(${1:string lp_inCharge})'
+	'void libNtve_gf_GameRemoveChargeUsed':
+		prefix: 'libNtve_gf_GameRemoveChargeUsed'
+		body: 'libNtve_gf_GameRemoveChargeUsed(${1:string lp_inCharge})'
+	'void libNtve_gf_GameRemoveCooldown':
+		prefix: 'libNtve_gf_GameRemoveCooldown'
+		body: 'libNtve_gf_GameRemoveCooldown(${1:string lp_inCooldown})'
+	'void libNtve_gf_PreloadModelAnimation':
+		prefix: 'libNtve_gf_PreloadModelAnimation'
+		body: 'libNtve_gf_PreloadModelAnimation(${1:string lp_file}, ${2:bool lp_queue})'
+	'void libNtve_gf_PreloadModelObject':
+		prefix: 'libNtve_gf_PreloadModelObject'
+		body: 'libNtve_gf_PreloadModelObject(${1:string lp_id}, ${2:bool lp_queue})'
+	'void libNtve_gf_PreloadSoundObject':
+		prefix: 'libNtve_gf_PreloadSoundObject'
+		body: 'libNtve_gf_PreloadSoundObject(${1:string lp_id}, ${2:bool lp_queue})'
+	'void libNtve_gf_PreloadSoundtrack':
+		prefix: 'libNtve_gf_PreloadSoundtrack'
+		body: 'libNtve_gf_PreloadSoundtrack(${1:string lp_soundtrack}, ${2:bool lp_queue})'
+	'void libNtve_gf_PreloadUnit':
+		prefix: 'libNtve_gf_PreloadUnit'
+		body: 'libNtve_gf_PreloadUnit(${1:string lp_unit}, ${2:bool lp_queue})'
+	'void libNtve_gf_WaitForTimer':
+		prefix: 'libNtve_gf_WaitForTimer'
+		body: 'libNtve_gf_WaitForTimer(${1:timer lp_timer}, ${2:fixed lp_time}, ${3:bool lp_waitType})'
+	'void libNtve_gf_ShowHideLeaderboard':
+		prefix: 'libNtve_gf_ShowHideLeaderboard'
+		body: 'libNtve_gf_ShowHideLeaderboard(${1:int lp_board}, ${2:bool lp_showHide}, ${3:playergroup lp_players})'
+	'int libNtve_gf_ArithmeticIntClamp':
+		prefix: 'libNtve_gf_ArithmeticIntClamp'
+		body: 'libNtve_gf_ArithmeticIntClamp(${1:int lp_value}, ${2:int lp_min}, ${3:int lp_max})'
+	'fixed libNtve_gf_ArithmeticRealClamp':
+		prefix: 'libNtve_gf_ArithmeticRealClamp'
+		body: 'libNtve_gf_ArithmeticRealClamp(${1:fixed lp_value}, ${2:fixed lp_min}, ${3:fixed lp_max})'
+	'fixed libNtve_gf_RandomPercent':
+		prefix: 'libNtve_gf_RandomPercent'
+		body: 'libNtve_gf_RandomPercent()'
+	'fixed libNtve_gf_RandomAngle':
+		prefix: 'libNtve_gf_RandomAngle'
+		body: 'libNtve_gf_RandomAngle()'
+	'order libNtve_gf_ReviveOrderTargetingPoint':
+		prefix: 'libNtve_gf_ReviveOrderTargetingPoint'
+		body: 'libNtve_gf_ReviveOrderTargetingPoint(${1:abilcmd lp_abilCmd}, ${2:point lp_p}, ${3:unit lp_reviveUnit})'
+	'order libNtve_gf_ReviveOrderWithNoTarget':
+		prefix: 'libNtve_gf_ReviveOrderWithNoTarget'
+		body: 'libNtve_gf_ReviveOrderWithNoTarget(${1:abilcmd lp_abilCmd}, ${2:unit lp_reviveUnit})'
+	'void libNtve_gf_CreatePingFacingAngle':
+		prefix: 'libNtve_gf_CreatePingFacingAngle'
+		body: 'libNtve_gf_CreatePingFacingAngle(${1:playergroup lp_players}, ${2:string lp_model}, ${3:point lp_position}, ${4:color lp_color}, ${5:fixed lp_duration}, ${6:fixed lp_angle})'
+	'void libNtve_gf_ClearAlliance':
+		prefix: 'libNtve_gf_ClearAlliance'
+		body: 'libNtve_gf_ClearAlliance(${1:int lp_sourcePlayer}, ${2:int lp_targetPlayer})'
+	'void libNtve_gf_MakeAlly':
+		prefix: 'libNtve_gf_MakeAlly'
+		body: 'libNtve_gf_MakeAlly(${1:int lp_sourcePlayer}, ${2:int lp_targetPlayer})'
+	'void libNtve_gf_SetAlliance':
+		prefix: 'libNtve_gf_SetAlliance'
+		body: 'libNtve_gf_SetAlliance(${1:int lp_sourcePlayer}, ${2:int lp_targetPlayer}, ${3:int lp_alliance})'
+	'void libNtve_gf_SetAllianceOneWay':
+		prefix: 'libNtve_gf_SetAllianceOneWay'
+		body: 'libNtve_gf_SetAllianceOneWay(${1:int lp_sourcePlayer}, ${2:int lp_targetPlayer}, ${3:int lp_alliance})'
+	'void libNtve_gf_SetPlayerGroupAlliance':
+		prefix: 'libNtve_gf_SetPlayerGroupAlliance'
+		body: 'libNtve_gf_SetPlayerGroupAlliance(${1:playergroup lp_players}, ${2:int lp_alliance})'
+	'bool libNtve_gf_PlayerIsEnemy':
+		prefix: 'libNtve_gf_PlayerIsEnemy'
+		body: 'libNtve_gf_PlayerIsEnemy(${1:int lp_sourcePlayer}, ${2:int lp_targetPlayer}, ${3:int lp_relation})'
+	'void libNtve_gf_PlayerRemoveChargeRegen':
+		prefix: 'libNtve_gf_PlayerRemoveChargeRegen'
+		body: 'libNtve_gf_PlayerRemoveChargeRegen(${1:int lp_inPlayer}, ${2:string lp_inCharge})'
+	'void libNtve_gf_PlayerRemoveChargeUsed':
+		prefix: 'libNtve_gf_PlayerRemoveChargeUsed'
+		body: 'libNtve_gf_PlayerRemoveChargeUsed(${1:int lp_inPlayer}, ${2:string lp_inCharge})'
+	'void libNtve_gf_PlayerRemoveCooldown':
+		prefix: 'libNtve_gf_PlayerRemoveCooldown'
+		body: 'libNtve_gf_PlayerRemoveCooldown(${1:int lp_inPlayer}, ${2:string lp_inCooldown})'
+	'void libNtve_gf_AddPlayerGroupToPlayerGroup':
+		prefix: 'libNtve_gf_AddPlayerGroupToPlayerGroup'
+		body: 'libNtve_gf_AddPlayerGroupToPlayerGroup(${1:playergroup lp_sourceGroup}, ${2:playergroup lp_targetGroup})'
+	'void libNtve_gf_RemovePlayerGroupFromPlayerGroup':
+		prefix: 'libNtve_gf_RemovePlayerGroupFromPlayerGroup'
+		body: 'libNtve_gf_RemovePlayerGroupFromPlayerGroup(${1:playergroup lp_sourceGroup}, ${2:playergroup lp_targetGroup})'
+	'point libNtve_gf_PointFromPositionAndAngle':
+		prefix: 'libNtve_gf_PointFromPositionAndAngle'
+		body: 'libNtve_gf_PointFromPositionAndAngle(${1:point lp_point}, ${2:fixed lp_angle})'
+	'point libNtve_gf_PointFromXYZ':
+		prefix: 'libNtve_gf_PointFromXYZ'
+		body: 'libNtve_gf_PointFromXYZ(${1:fixed lp_x}, ${2:fixed lp_y}, ${3:fixed lp_y2})'
+	'point libNtve_gf_PointFacingAngle':
+		prefix: 'libNtve_gf_PointFacingAngle'
+		body: 'libNtve_gf_PointFacingAngle(${1:point lp_point}, ${2:fixed lp_angle})'
+	'point libNtve_gf_PointWithZOffset':
+		prefix: 'libNtve_gf_PointWithZOffset'
+		body: 'libNtve_gf_PointWithZOffset(${1:point lp_p}, ${2:fixed lp_z})'
+	'point libNtve_gf_PointOffsetTowardsPoint':
+		prefix: 'libNtve_gf_PointOffsetTowardsPoint'
+		body: 'libNtve_gf_PointOffsetTowardsPoint(${1:point lp_sourcePoint}, ${2:fixed lp_distance}, ${3:point lp_targetPoint})'
+	'point libNtve_gf_RandomPointBetweenPoints':
+		prefix: 'libNtve_gf_RandomPointBetweenPoints'
+		body: 'libNtve_gf_RandomPointBetweenPoints(${1:point lp_point1}, ${2:point lp_point2})'
+	'int libNtve_gf_CinematicPortrait':
+		prefix: 'libNtve_gf_CinematicPortrait'
+		body: 'libNtve_gf_CinematicPortrait(${1:int lp_position})'
+	'void libNtve_gf_HideAllCinematicPortraits':
+		prefix: 'libNtve_gf_HideAllCinematicPortraits'
+		body: 'libNtve_gf_HideAllCinematicPortraits(${1:playergroup lp_players})'
+	'int libNtve_gf_FullscreenPortrait':
+		prefix: 'libNtve_gf_FullscreenPortrait'
+		body: 'libNtve_gf_FullscreenPortrait()'
+	'void libNtve_gf_PortraitSetAnim':
+		prefix: 'libNtve_gf_PortraitSetAnim'
+		body: 'libNtve_gf_PortraitSetAnim(${1:int lp_Portrait}, ${2:string lp_Anim}, ${3:string lp_identifier}, ${4:int lp_flags}, ${5:fixed lp_blendTime})'
+	'void libNtve_gf_ClearPortraitAnimation':
+		prefix: 'libNtve_gf_ClearPortraitAnimation'
+		body: 'libNtve_gf_ClearPortraitAnimation(${1:int lp_portrait}, ${2:string lp_identifier})'
+	'fixed libNtve_gf_WidthOfRegion':
+		prefix: 'libNtve_gf_WidthOfRegion'
+		body: 'libNtve_gf_WidthOfRegion(${1:region lp_region})'
+	'fixed libNtve_gf_HeightOfRegion':
+		prefix: 'libNtve_gf_HeightOfRegion'
+		body: 'libNtve_gf_HeightOfRegion(${1:region lp_region})'
+	'bool libNtve_gf_UnitTypeIsSelected':
+		prefix: 'libNtve_gf_UnitTypeIsSelected'
+		body: 'libNtve_gf_UnitTypeIsSelected(${1:string lp_unitType}, ${2:int lp_player})'
+	'void libNtve_gf_StoreUnitSelection':
+		prefix: 'libNtve_gf_StoreUnitSelection'
+		body: 'libNtve_gf_StoreUnitSelection(${1:int lp_forPlayer}, ${2:int lp_storeOption})'
+	'void libNtve_gf_RestoreUnitSelection':
+		prefix: 'libNtve_gf_RestoreUnitSelection'
+		body: 'libNtve_gf_RestoreUnitSelection(${1:int lp_forPlayer})'
+	'void libNtve_gf_SetAllSoundChannelVolumes':
+		prefix: 'libNtve_gf_SetAllSoundChannelVolumes'
+		body: 'libNtve_gf_SetAllSoundChannelVolumes(${1:int lp_mode}, ${2:playergroup lp_players}, ${3:fixed lp_duration})'
+	'void libNtve_gf__StoryModeOnOffForPlayer':
+		prefix: 'libNtve_gf__StoryModeOnOffForPlayer'
+		body: 'libNtve_gf__StoryModeOnOffForPlayer(${1:int lp_player}, ${2:bool lp_onOff})'
+	'void libNtve_gf__StoryModeOnOffForPlayerGroup':
+		prefix: 'libNtve_gf__StoryModeOnOffForPlayerGroup'
+		body: 'libNtve_gf__StoryModeOnOffForPlayerGroup(${1:playergroup lp_players}, ${2:bool lp_onOff})'
+	'void libNtve_gf__StoryModeHideUI':
+		prefix: 'libNtve_gf__StoryModeHideUI'
+		body: 'libNtve_gf__StoryModeHideUI(${1:playergroup lp_players})'
+	'void libNtve_gf__StoryModeRestoreUI':
+		prefix: 'libNtve_gf__StoryModeRestoreUI'
+		body: 'libNtve_gf__StoryModeRestoreUI(${1:playergroup lp_players})'
+	'void libNtve_gf_StoryMode':
+		prefix: 'libNtve_gf_StoryMode'
+		body: 'libNtve_gf_StoryMode(${1:playergroup lp_players}, ${2:bool lp_onOff})'
+	'bool libNtve_gf_PlayerInStoryMode':
+		prefix: 'libNtve_gf_PlayerInStoryMode'
+		body: 'libNtve_gf_PlayerInStoryMode(${1:int lp_player})'
+	'void libNtve_gf_SetUpgradeLevelForPlayer':
+		prefix: 'libNtve_gf_SetUpgradeLevelForPlayer'
+		body: 'libNtve_gf_SetUpgradeLevelForPlayer(${1:int lp_p}, ${2:string lp_upgrade}, ${3:int lp_levels})'
+	'void libNtve_gf_StopTimer':
+		prefix: 'libNtve_gf_StopTimer'
+		body: 'libNtve_gf_StopTimer(${1:timer lp_timer})'
+	'void libNtve_gf_SendTransmissionSimple':
+		prefix: 'libNtve_gf_SendTransmissionSimple'
+		body: 'libNtve_gf_SendTransmissionSimple(${1:transmissionsource lp_Source}, ${2:int lp_Target}, ${3:soundlink lp_Sound}, ${4:fixed lp_Duration}, ${5:int lp_DurationType}, ${6:bool lp_WaitUntilDone})'
+	'void libNtve_gf_UIErrorMessage':
+		prefix: 'libNtve_gf_UIErrorMessage'
+		body: 'libNtve_gf_UIErrorMessage(${1:playergroup lp_players}, ${2:text lp_message}, ${3:soundlink lp_sound})'
+	'int libNtve_gf__BB_PortraitBorderWidth':
+		prefix: 'libNtve_gf__BB_PortraitBorderWidth'
+		body: 'libNtve_gf__BB_PortraitBorderWidth(${1:int lp_barID})'
+	'int libNtve_gf__BB_PortraitBorderHeight':
+		prefix: 'libNtve_gf__BB_PortraitBorderHeight'
+		body: 'libNtve_gf__BB_PortraitBorderHeight(${1:int lp_barID})'
+	'int libNtve_gf__BB_PortraitWidth':
+		prefix: 'libNtve_gf__BB_PortraitWidth'
+		body: 'libNtve_gf__BB_PortraitWidth(${1:int lp_barID})'
+	'int libNtve_gf__BB_PortraitHeight':
+		prefix: 'libNtve_gf__BB_PortraitHeight'
+		body: 'libNtve_gf__BB_PortraitHeight(${1:int lp_barID})'
+	'int libNtve_gf__BB_TitleBarWidth':
+		prefix: 'libNtve_gf__BB_TitleBarWidth'
+		body: 'libNtve_gf__BB_TitleBarWidth(${1:int lp_barID})'
+	'int libNtve_gf__BB_TitleBarHeight':
+		prefix: 'libNtve_gf__BB_TitleBarHeight'
+		body: 'libNtve_gf__BB_TitleBarHeight(${1:int lp_barID})'
+	'int libNtve_gf__BB_HPBorderWidth':
+		prefix: 'libNtve_gf__BB_HPBorderWidth'
+		body: 'libNtve_gf__BB_HPBorderWidth(${1:int lp_barID})'
+	'int libNtve_gf__BB_HPBorderHeight':
+		prefix: 'libNtve_gf__BB_HPBorderHeight'
+		body: 'libNtve_gf__BB_HPBorderHeight(${1:int lp_barID})'
+	'int libNtve_gf__BB_HPBarWidth':
+		prefix: 'libNtve_gf__BB_HPBarWidth'
+		body: 'libNtve_gf__BB_HPBarWidth(${1:int lp_barID})'
+	'int libNtve_gf__BB_HPBarHeight':
+		prefix: 'libNtve_gf__BB_HPBarHeight'
+		body: 'libNtve_gf__BB_HPBarHeight(${1:int lp_barID})'
+	'int libNtve_gf__BB_HPBarCurrentWidth':
+		prefix: 'libNtve_gf__BB_HPBarCurrentWidth'
+		body: 'libNtve_gf__BB_HPBarCurrentWidth(${1:int lp_barID})'
+	'text libNtve_gf__BB_HPBarFormatLabel':
+		prefix: 'libNtve_gf__BB_HPBarFormatLabel'
+		body: 'libNtve_gf__BB_HPBarFormatLabel(${1:int lp_barID})'
+	'void libNtve_gf__BB_HPBarChange':
+		prefix: 'libNtve_gf__BB_HPBarChange'
+		body: 'libNtve_gf__BB_HPBarChange(${1:int lp_barID})'
+	'void libNtve_gf_DisplayBossBar':
+		prefix: 'libNtve_gf_DisplayBossBar'
+		body: 'libNtve_gf_DisplayBossBar(${1:int lp_bossBarID}, ${2:string lp_portrait}, ${3:text lp_title}, ${4:int lp_max}, ${5:playergroup lp_players})'
+	'void libNtve_gf_SetBossBarMaximumValue':
+		prefix: 'libNtve_gf_SetBossBarMaximumValue'
+		body: 'libNtve_gf_SetBossBarMaximumValue(${1:int lp_bossBarID}, ${2:int lp_max}, ${3:bool lp_refresh})'
+	'void libNtve_gf_SetBossBarCurrentValue':
+		prefix: 'libNtve_gf_SetBossBarCurrentValue'
+		body: 'libNtve_gf_SetBossBarCurrentValue(${1:int lp_bossBarID}, ${2:int lp_current}, ${3:bool lp_refresh})'
+	'void libNtve_gf_SetBossBarBoss':
+		prefix: 'libNtve_gf_SetBossBarBoss'
+		body: 'libNtve_gf_SetBossBarBoss(${1:int lp_bossBarID}, ${2:unit lp_boss}, ${3:bool lp_refresh})'
+	'void libNtve_gf_SetBossBarRace':
+		prefix: 'libNtve_gf_SetBossBarRace'
+		body: 'libNtve_gf_SetBossBarRace(${1:int lp_bossBarID}, ${2:int lp_race}, ${3:bool lp_refresh})'
+	'void libNtve_gf_MoveBossBar':
+		prefix: 'libNtve_gf_MoveBossBar'
+		body: 'libNtve_gf_MoveBossBar(${1:int lp_bossBarID}, ${2:int lp_anchor}, ${3:int lp_offsetX}, ${4:int lp_offsetY})'
+	'void libNtve_gf_ShowHideBossBar':
+		prefix: 'libNtve_gf_ShowHideBossBar'
+		body: 'libNtve_gf_ShowHideBossBar(${1:bool lp_showHide}, ${2:int lp_bossBarID})'
+	'void libNtve_gf_RefreshBossBar':
+		prefix: 'libNtve_gf_RefreshBossBar'
+		body: 'libNtve_gf_RefreshBossBar(${1:int lp_bossBarID})'
+	'void libNtve_gf__StoreGameUIVisibleStates':
+		prefix: 'libNtve_gf__StoreGameUIVisibleStates'
+		body: 'libNtve_gf__StoreGameUIVisibleStates(${1:bool lp_storeRestore}, ${2:playergroup lp_players}, ${3:int lp_index})'
+	'void libNtve_gf_HideGameUI':
+		prefix: 'libNtve_gf_HideGameUI'
+		body: 'libNtve_gf_HideGameUI(${1:bool lp_showHide}, ${2:playergroup lp_players})'
+	'void libNtve_gf_AddRemoveUIFrameTypeForGlobalFilterList':
+		prefix: 'libNtve_gf_AddRemoveUIFrameTypeForGlobalFilterList'
+		body: 'libNtve_gf_AddRemoveUIFrameTypeForGlobalFilterList(${1:bool lp_addRemove}, ${2:int lp_frameType})'
+	'bool libNtve_gf_UIFrameFlagCheck':
+		prefix: 'libNtve_gf_UIFrameFlagCheck'
+		body: 'libNtve_gf_UIFrameFlagCheck(${1:int lp_uIFrame}, ${2:int lp_flag})'
+	'text libNtve_gf_FormatTipTitle':
+		prefix: 'libNtve_gf_FormatTipTitle'
+		body: 'libNtve_gf_FormatTipTitle(${1:text lp_title}, ${2:int lp_type})'
+	'void libNtve_gf_CreateUnitsWithDefaultFacing':
+		prefix: 'libNtve_gf_CreateUnitsWithDefaultFacing'
+		body: 'libNtve_gf_CreateUnitsWithDefaultFacing(${1:int lp_count}, ${2:string lp_type}, ${3:int lp_style}, ${4:int lp_player}, ${5:point lp_p})'
+	'void libNtve_gf_CreateUnitsAtPoint2':
+		prefix: 'libNtve_gf_CreateUnitsAtPoint2'
+		body: 'libNtve_gf_CreateUnitsAtPoint2(${1:int lp_count}, ${2:string lp_type}, ${3:int lp_flags}, ${4:int lp_player}, ${5:point lp_p})'
+	'unitgroup libNtve_gf_UnitCreateFacingPoint':
+		prefix: 'libNtve_gf_UnitCreateFacingPoint'
+		body: 'libNtve_gf_UnitCreateFacingPoint(${1:int lp_count}, ${2:string lp_type}, ${3:int lp_flags}, ${4:int lp_player}, ${5:point lp_pos}, ${6:point lp_facing})'
+	'void libNtve_gf_ReplaceUnit':
+		prefix: 'libNtve_gf_ReplaceUnit'
+		body: 'libNtve_gf_ReplaceUnit(${1:unit lp_unit}, ${2:string lp_unitType}, ${3:int lp_options})'
+	'unit libNtve_gf_LastReplacedUnit':
+		prefix: 'libNtve_gf_LastReplacedUnit'
+		body: 'libNtve_gf_LastReplacedUnit()'
+	'void libNtve_gf_RescueUnit':
+		prefix: 'libNtve_gf_RescueUnit'
+		body: 'libNtve_gf_RescueUnit(${1:unit lp_unit}, ${2:int lp_player}, ${3:bool lp_changeColor})'
+	'void libNtve_gf_RescueUnit2':
+		prefix: 'libNtve_gf_RescueUnit2'
+		body: 'libNtve_gf_RescueUnit2(${1:unitgroup lp_unit}, ${2:int lp_player}, ${3:bool lp_changeColor})'
+	'bool libNtve_gf_UnitGroupIsDead':
+		prefix: 'libNtve_gf_UnitGroupIsDead'
+		body: 'libNtve_gf_UnitGroupIsDead(${1:unitgroup lp_units})'
+	'void libNtve_gf_MakeUnitFacePoint':
+		prefix: 'libNtve_gf_MakeUnitFacePoint'
+		body: 'libNtve_gf_MakeUnitFacePoint(${1:unit lp_unit}, ${2:point lp_point}, ${3:fixed lp_duration})'
+	'void libNtve_gf_PauseUnit':
+		prefix: 'libNtve_gf_PauseUnit'
+		body: 'libNtve_gf_PauseUnit(${1:unit lp_unit}, ${2:bool lp_pauseUnpause})'
+	'void libNtve_gf_ShowHideUnit':
+		prefix: 'libNtve_gf_ShowHideUnit'
+		body: 'libNtve_gf_ShowHideUnit(${1:unit lp_unit}, ${2:bool lp_showHide})'
+	'void libNtve_gf_ShareVisionofUnit':
+		prefix: 'libNtve_gf_ShareVisionofUnit'
+		body: 'libNtve_gf_ShareVisionofUnit(${1:unit lp_unit}, ${2:bool lp_shareUnshare}, ${3:int lp_player})'
+	'bool libNtve_gf_UnitIsPaused':
+		prefix: 'libNtve_gf_UnitIsPaused'
+		body: 'libNtve_gf_UnitIsPaused(${1:unit lp_u})'
+	'bool libNtve_gf_UnitIsHidden':
+		prefix: 'libNtve_gf_UnitIsHidden'
+		body: 'libNtve_gf_UnitIsHidden(${1:unit lp_u})'
+	'bool libNtve_gf_UnitIsVisibleToPlayer':
+		prefix: 'libNtve_gf_UnitIsVisibleToPlayer'
+		body: 'libNtve_gf_UnitIsVisibleToPlayer(${1:unit lp_unit}, ${2:int lp_player})'
+	'bool libNtve_gf_UnitInRegion':
+		prefix: 'libNtve_gf_UnitInRegion'
+		body: 'libNtve_gf_UnitInRegion(${1:unit lp_u}, ${2:region lp_regioin})'
+	'unit libNtve_gf_KillingUnit':
+		prefix: 'libNtve_gf_KillingUnit'
+		body: 'libNtve_gf_KillingUnit()'
+	'int libNtve_gf_KillingPlayer':
+		prefix: 'libNtve_gf_KillingPlayer'
+		body: 'libNtve_gf_KillingPlayer()'
+	'unit libNtve_gf_AcquiredTarget':
+		prefix: 'libNtve_gf_AcquiredTarget'
+		body: 'libNtve_gf_AcquiredTarget()'
+	'void libNtve_gf_MakeUnitInvulnerable':
+		prefix: 'libNtve_gf_MakeUnitInvulnerable'
+		body: 'libNtve_gf_MakeUnitInvulnerable(${1:unit lp_unit}, ${2:bool lp_option})'
+	'void libNtve_gf_MakeUnitUncommandable':
+		prefix: 'libNtve_gf_MakeUnitUncommandable'
+		body: 'libNtve_gf_MakeUnitUncommandable(${1:unit lp_unit}, ${2:bool lp_option})'
+	'bool libNtve_gf_UnitIsInvulnerable':
+		prefix: 'libNtve_gf_UnitIsInvulnerable'
+		body: 'libNtve_gf_UnitIsInvulnerable(${1:unit lp_u})'
+	'int libNtve_gf_UnitGetPropertyKills':
+		prefix: 'libNtve_gf_UnitGetPropertyKills'
+		body: 'libNtve_gf_UnitGetPropertyKills(${1:unit lp_u}, ${2:bool lp_current})'
+	'int libNtve_gf_UnitGetPropertyResources':
+		prefix: 'libNtve_gf_UnitGetPropertyResources'
+		body: 'libNtve_gf_UnitGetPropertyResources(${1:unit lp_u}, ${2:bool lp_current})'
+	'bool libNtve_gf_UnitMoverExists':
+		prefix: 'libNtve_gf_UnitMoverExists'
+		body: 'libNtve_gf_UnitMoverExists(${1:string lp_unitType}, ${2:string lp_mover})'
+	'void libNtve_gf_UnitSetVariation':
+		prefix: 'libNtve_gf_UnitSetVariation'
+		body: 'libNtve_gf_UnitSetVariation(${1:unit lp_unit}, ${2:string lp_model}, ${3:int lp_percent}, ${4:string lp_textures})'
+	'void libNtve_gf_ChangeUnitDamage':
+		prefix: 'libNtve_gf_ChangeUnitDamage'
+		body: 'libNtve_gf_ChangeUnitDamage(${1:unit lp_unit}, ${2:int lp_takeDeal}, ${3:int lp_option})'
+	'unitfilter libNtve_gf_ConvertTargetFilterStringToUnitFilter':
+		prefix: 'libNtve_gf_ConvertTargetFilterStringToUnitFilter'
+		body: 'libNtve_gf_ConvertTargetFilterStringToUnitFilter(${1:string lp_targetFilterString})'
+	'bool libNtve_gf_UnitIsInsideTransport':
+		prefix: 'libNtve_gf_UnitIsInsideTransport'
+		body: 'libNtve_gf_UnitIsInsideTransport(${1:unit lp_u})'
+	'abilcmd libNtve_gf_EventItemAbilityOrUnitAbility':
+		prefix: 'libNtve_gf_EventItemAbilityOrUnitAbility'
+		body: 'libNtve_gf_EventItemAbilityOrUnitAbility()'
+	'bool libNtve_gf_UnitCanAttackUnit':
+		prefix: 'libNtve_gf_UnitCanAttackUnit'
+		body: 'libNtve_gf_UnitCanAttackUnit(${1:unit lp_u}, ${2:unit lp_s})'
+	'bool libNtve_gf_UnitIsUnderConstruction':
+		prefix: 'libNtve_gf_UnitIsUnderConstruction'
+		body: 'libNtve_gf_UnitIsUnderConstruction(${1:unit lp_u})'
+	'string libNtve_gf_TriggeringProgressAbility':
+		prefix: 'libNtve_gf_TriggeringProgressAbility'
+		body: 'libNtve_gf_TriggeringProgressAbility()'
+	'string libNtve_gf_TriggeringProgressEffect':
+		prefix: 'libNtve_gf_TriggeringProgressEffect'
+		body: 'libNtve_gf_TriggeringProgressEffect()'
+	'string libNtve_gf_TriggeringProgressUnitType':
+		prefix: 'libNtve_gf_TriggeringProgressUnitType'
+		body: 'libNtve_gf_TriggeringProgressUnitType()'
+	'string libNtve_gf_TriggeringProgressUpgrade':
+		prefix: 'libNtve_gf_TriggeringProgressUpgrade'
+		body: 'libNtve_gf_TriggeringProgressUpgrade()'
+	'string libNtve_gf_QueuedBehaviorTypeInTrainingQueueSlot':
+		prefix: 'libNtve_gf_QueuedBehaviorTypeInTrainingQueueSlot'
+		body: 'libNtve_gf_QueuedBehaviorTypeInTrainingQueueSlot(${1:unit lp_unit}, ${2:int lp_slot}, ${3:int lp_item})'
+	'string libNtve_gf_QueuedUnitTypeInTrainingQueueSlot':
+		prefix: 'libNtve_gf_QueuedUnitTypeInTrainingQueueSlot'
+		body: 'libNtve_gf_QueuedUnitTypeInTrainingQueueSlot(${1:unit lp_unit}, ${2:int lp_slot}, ${3:int lp_item})'
+	'string libNtve_gf_QueuedUpgradeTypeInTrainingQueueSlot':
+		prefix: 'libNtve_gf_QueuedUpgradeTypeInTrainingQueueSlot'
+		body: 'libNtve_gf_QueuedUpgradeTypeInTrainingQueueSlot(${1:unit lp_unit}, ${2:int lp_slot}, ${3:int lp_item})'
+	'void libNtve_gf_UnitBehaviorRemoveChargeRegen':
+		prefix: 'libNtve_gf_UnitBehaviorRemoveChargeRegen'
+		body: 'libNtve_gf_UnitBehaviorRemoveChargeRegen(${1:unit lp_inUnit}, ${2:string lp_inBehavior}, ${3:string lp_inCharge})'
+	'void libNtve_gf_UnitAbilityRemoveChargeRegen':
+		prefix: 'libNtve_gf_UnitAbilityRemoveChargeRegen'
+		body: 'libNtve_gf_UnitAbilityRemoveChargeRegen(${1:unit lp_inUnit}, ${2:string lp_inAbil}, ${3:string lp_inCharge})'
+	'void libNtve_gf_UnitRemoveChargeRegen':
+		prefix: 'libNtve_gf_UnitRemoveChargeRegen'
+		body: 'libNtve_gf_UnitRemoveChargeRegen(${1:unit lp_inUnit}, ${2:string lp_inCharge})'
+	'void libNtve_gf_UnitBehaviorRemoveChargeUsed':
+		prefix: 'libNtve_gf_UnitBehaviorRemoveChargeUsed'
+		body: 'libNtve_gf_UnitBehaviorRemoveChargeUsed(${1:unit lp_inUnit}, ${2:string lp_inBehavior}, ${3:string lp_inCharge})'
+	'void libNtve_gf_UnitAbilityRemoveChargeUsed':
+		prefix: 'libNtve_gf_UnitAbilityRemoveChargeUsed'
+		body: 'libNtve_gf_UnitAbilityRemoveChargeUsed(${1:unit lp_inUnit}, ${2:string lp_inAbil}, ${3:string lp_inCharge})'
+	'void libNtve_gf_UnitRemoveChargeUsed':
+		prefix: 'libNtve_gf_UnitRemoveChargeUsed'
+		body: 'libNtve_gf_UnitRemoveChargeUsed(${1:unit lp_inUnit}, ${2:string lp_inCharge})'
+	'void libNtve_gf_UnitBehaviorRemoveCooldown':
+		prefix: 'libNtve_gf_UnitBehaviorRemoveCooldown'
+		body: 'libNtve_gf_UnitBehaviorRemoveCooldown(${1:unit lp_inUnit}, ${2:string lp_inBehavior}, ${3:string lp_inCooldown})'
+	'void libNtve_gf_UnitAbilityRemoveCooldown':
+		prefix: 'libNtve_gf_UnitAbilityRemoveCooldown'
+		body: 'libNtve_gf_UnitAbilityRemoveCooldown(${1:unit lp_inUnit}, ${2:string lp_inAbil}, ${3:string lp_inCooldown})'
+	'void libNtve_gf_UnitRemoveCooldown':
+		prefix: 'libNtve_gf_UnitRemoveCooldown'
+		body: 'libNtve_gf_UnitRemoveCooldown(${1:unit lp_inUnit}, ${2:string lp_inCooldown})'
+	'unitgroup libNtve_gf_ConvertUnitToUnitGroup':
+		prefix: 'libNtve_gf_ConvertUnitToUnitGroup'
+		body: 'libNtve_gf_ConvertUnitToUnitGroup(${1:unit lp_unit})'
+	'unitgroup libNtve_gf_UnitsInRegionWithAllianceToPlayerMatchingCondition':
+		prefix: 'libNtve_gf_UnitsInRegionWithAllianceToPlayerMatchingCondition'
+		body: 'libNtve_gf_UnitsInRegionWithAllianceToPlayerMatchingCondition(${1:string lp_type}, ${2:string lp_type2}, ${3:string lp_type22}, ${4:int lp_player}, ${5:int lp_alliance}, ${6:region lp_reg}, ${7:unitfilter lp_unitFilter}, ${8:int lp_count})'
+	'unitgroup libNtve_gf_UnitsInUnitGroupWithCustomValue':
+		prefix: 'libNtve_gf_UnitsInUnitGroupWithCustomValue'
+		body: 'libNtve_gf_UnitsInUnitGroupWithCustomValue(${1:unitgroup lp_group}, ${2:int lp_index}, ${3:fixed lp_value})'
+	'void libNtve_gf_AddUnitGroupToUnitGroup':
+		prefix: 'libNtve_gf_AddUnitGroupToUnitGroup'
+		body: 'libNtve_gf_AddUnitGroupToUnitGroup(${1:unitgroup lp_sourceUnitGroup}, ${2:unitgroup lp_targetUnitGroup})'
+	'void libNtve_gf_RemoveUnitGroupFromUnitGroup':
+		prefix: 'libNtve_gf_RemoveUnitGroupFromUnitGroup'
+		body: 'libNtve_gf_RemoveUnitGroupFromUnitGroup(${1:unitgroup lp_sourceUnitGroup}, ${2:unitgroup lp_targetUnitGroup})'
+	'unit libNtve_gf_ClosestUnitToPoint':
+		prefix: 'libNtve_gf_ClosestUnitToPoint'
+		body: 'libNtve_gf_ClosestUnitToPoint(${1:point lp_point}, ${2:unitgroup lp_group})'
+	'point libNtve_gf_CenterOfUnitGroup':
+		prefix: 'libNtve_gf_CenterOfUnitGroup'
+		body: 'libNtve_gf_CenterOfUnitGroup(${1:unitgroup lp_unitGroup})'
+	'void libNtve_gf_ShowHidePlacementModels':
+		prefix: 'libNtve_gf_ShowHidePlacementModels'
+		body: 'libNtve_gf_ShowHidePlacementModels(${1:bool lp_show})'
 	'void AISetDifficulty':
 		prefix: 'AISetDifficulty'
 		body: 'AISetDifficulty(${1:int player}, ${2:int index}, ${3:bool state})'
@@ -9455,9 +11948,9 @@
 	'void AIStart':
 		prefix: 'AIStart'
 		body: 'AIStart(${1:int player}, ${2:bool isCampaign}, ${3:int apm})'
-	'void AISetCompNameToDiff':
-		prefix: 'AISetCompNameToDiff'
-		body: 'AISetCompNameToDiff(${1:int player}, ${2:int difficulty})'
+	'void AIForceActive':
+		prefix: 'AIForceActive'
+		body: 'AIForceActive()'
 	'void AIDisableAllScouting':
 		prefix: 'AIDisableAllScouting'
 		body: 'AIDisableAllScouting()'
@@ -9545,6 +12038,15 @@
 	'bool AICanPathToAnyKnownEnemyStructure':
 		prefix: 'AICanPathToAnyKnownEnemyStructure'
 		body: 'AICanPathToAnyKnownEnemyStructure(${1:int player}, ${2:point loc}, ${3:bool onlyDropoffs})'
+	'void AIAddTeamRepresentative':
+		prefix: 'AIAddTeamRepresentative'
+		body: 'AIAddTeamRepresentative(${1:int inPlayer})'
+	'void AITrackUnitDanger':
+		prefix: 'AITrackUnitDanger'
+		body: 'AITrackUnitDanger(${1:unit inUnit})'
+	'point AIPositionAlongPath':
+		prefix: 'AIPositionAlongPath'
+		body: 'AIPositionAlongPath(${1:int inPlayer}, ${2:point startLoc}, ${3:point destLoc}, ${4:fixed distance}, ${5:bool useDangerMap}, ${6:bool ignoreEnemyBuildings})'
 	'int AIGetTotalStartLocs':
 		prefix: 'AIGetTotalStartLocs'
 		body: 'AIGetTotalStartLocs()'
@@ -9665,6 +12167,9 @@
 	'bool AIHasNearbyAlliedDetector':
 		prefix: 'AIHasNearbyAlliedDetector'
 		body: 'AIHasNearbyAlliedDetector(${1:int player}, ${2:point loc}, ${3:fixed staticRange}, ${4:fixed mobileRange})'
+	'point AIGetDirection':
+		prefix: 'AIGetDirection'
+		body: 'AIGetDirection(${1:point from}, ${2:point to})'
 	'void AISetCoopFlag':
 		prefix: 'AISetCoopFlag'
 		body: 'AISetCoopFlag(${1:int player}, ${2:int index}, ${3:bool state})'
@@ -9758,6 +12263,9 @@
 	'void AISetWantsToUpgrade':
 		prefix: 'AISetWantsToUpgrade'
 		body: 'AISetWantsToUpgrade(${1:unit u})'
+	'void AISetUnitAvoidEnemyGates':
+		prefix: 'AISetUnitAvoidEnemyGates'
+		body: 'AISetUnitAvoidEnemyGates(${1:unit u}, ${2:bool enable})'
 	'void AISetUnitForceMover':
 		prefix: 'AISetUnitForceMover'
 		body: 'AISetUnitForceMover(${1:unit u}, ${2:bool enable})'
@@ -10331,6 +12839,9 @@
 	'wavetarget AIWaveTargetGuardHomeUnit':
 		prefix: 'AIWaveTargetGuardHomeUnit'
 		body: 'AIWaveTargetGuardHomeUnit(${1:unit u})'
+	'wavetarget AIWaveTargetGatherMelee':
+		prefix: 'AIWaveTargetGatherMelee'
+		body: 'AIWaveTargetGatherMelee(${1:int player})'
 	'point AIWaveTargetGatherOPoint':
 		prefix: 'AIWaveTargetGatherOPoint'
 		body: 'AIWaveTargetGatherOPoint(${1:int player}, ${2:int town})'
@@ -10460,6 +12971,9 @@
 	'int AILastAttackStartEval':
 		prefix: 'AILastAttackStartEval'
 		body: 'AILastAttackStartEval(${1:wave w})'
+	'void AIDefaultMeleeSplitArmyToDefend':
+		prefix: 'AIDefaultMeleeSplitArmyToDefend'
+		body: 'AIDefaultMeleeSplitArmyToDefend(${1:int player}, ${2:wave attack}, ${3:int indexDefense})'
 	'void AIAttackWaveAddUnits':
 		prefix: 'AIAttackWaveAddUnits'
 		body: 'AIAttackWaveAddUnits(${1:int difficulty}, ${2:int count}, ${3:string unitType})'
@@ -10550,6 +13064,9 @@
 	'void AISetSpecificRebuildCount':
 		prefix: 'AISetSpecificRebuildCount'
 		body: 'AISetSpecificRebuildCount(${1:int count}, ${2:string unitType}, ${3:int player})'
+	'void AISetBullyRebuildDelay':
+		prefix: 'AISetBullyRebuildDelay'
+		body: 'AISetBullyRebuildDelay(${1:fixed minDelay}, ${2:fixed maxDelay}, ${3:int player})'
 	'void AISetBullyAttackWavePercent':
 		prefix: 'AISetBullyAttackWavePercent'
 		body: 'AISetBullyAttackWavePercent(${1:int percent}, ${2:int player})'
@@ -10574,3 +13091,135 @@
 	'string AIGetBullyType':
 		prefix: 'AIGetBullyType'
 		body: 'AIGetBullyType(${1:unit u})'
+	'void AILaneWaypointClearAll':
+		prefix: 'AILaneWaypointClearAll'
+		body: 'AILaneWaypointClearAll()'
+	'void AILaneWaypointAdd':
+		prefix: 'AILaneWaypointAdd'
+		body: 'AILaneWaypointAdd(${1:int lane}, ${2:point waypoint})'
+	'int AILaneWaypointGetClosestLane':
+		prefix: 'AILaneWaypointGetClosestLane'
+		body: 'AILaneWaypointGetClosestLane(${1:point testPoint})'
+	'point AILaneWaypointGetWaypointPosWithOffset':
+		prefix: 'AILaneWaypointGetWaypointPosWithOffset'
+		body: 'AILaneWaypointGetWaypointPosWithOffset(${1:int lane}, ${2:int waypoint}, ${3:fixed offset})'
+	'fixed AILaneWaypointConvertPointToWaydist':
+		prefix: 'AILaneWaypointConvertPointToWaydist'
+		body: 'AILaneWaypointConvertPointToWaydist(${1:int lane}, ${2:int closestWaypoint}, ${3:int secondWaypoint}, ${4:point closestPoint})'
+	'point AILaneWaypointConvertWaydistOffsetToPoint':
+		prefix: 'AILaneWaypointConvertWaydistOffsetToPoint'
+		body: 'AILaneWaypointConvertWaydistOffsetToPoint(${1:int lane}, ${2:fixed waydist}, ${3:fixed offset})'
+	'void AILaneWaypointCalcClosestDataForLane':
+		prefix: 'AILaneWaypointCalcClosestDataForLane'
+		body: 'AILaneWaypointCalcClosestDataForLane(${1:int testLane}, ${2:point testPoint})'
+	'int AILaneWaypointGetCalcDataClosestWaypointIndex':
+		prefix: 'AILaneWaypointGetCalcDataClosestWaypointIndex'
+		body: 'AILaneWaypointGetCalcDataClosestWaypointIndex()'
+	'int AILaneWaypointGetCalcDataSecondWaypointIndex':
+		prefix: 'AILaneWaypointGetCalcDataSecondWaypointIndex'
+		body: 'AILaneWaypointGetCalcDataSecondWaypointIndex()'
+	'point AILaneWaypointGetCalcDataClosestPoint':
+		prefix: 'AILaneWaypointGetCalcDataClosestPoint'
+		body: 'AILaneWaypointGetCalcDataClosestPoint()'
+	'fixed AILaneWaypointGetCalcDataClosestDist':
+		prefix: 'AILaneWaypointGetCalcDataClosestDist'
+		body: 'AILaneWaypointGetCalcDataClosestDist()'
+	'void libLbty_gf_PingPlay':
+		prefix: 'libLbty_gf_PingPlay'
+		body: 'libLbty_gf_PingPlay(${1:int lp_pingType}, ${2:int lp_player}, ${3:point lp_pingLocation}, ${4:int lp_gameUser}, ${5:string lp_pingTargetType}, ${6:point lp_pingTargetPosition}, ${7:int lp_pingTargetOwner})'
+	'void libLbty_gf_PingPlayUnit':
+		prefix: 'libLbty_gf_PingPlayUnit'
+		body: 'libLbty_gf_PingPlayUnit(${1:string lp_pingTargetType}, ${2:point lp_pingTargetPosition}, ${3:int lp_pingTargetOwner}, ${4:int lp_player}, ${5:int lp_gameUser})'
+	'void libLbty_gf_PingBeaconAdd':
+		prefix: 'libLbty_gf_PingBeaconAdd'
+		body: 'libLbty_gf_PingBeaconAdd(${1:string lp_beaconEffect}, ${2:point lp_location}, ${3:int lp_player})'
+	'void libLbty_gf_PingMinimapButtonUpdate':
+		prefix: 'libLbty_gf_PingMinimapButtonUpdate'
+		body: 'libLbty_gf_PingMinimapButtonUpdate()'
+	'void libLbty_gf_EnableDisablePingPanel':
+		prefix: 'libLbty_gf_EnableDisablePingPanel'
+		body: 'libLbty_gf_EnableDisablePingPanel(${1:bool lp_enableDisable}, ${2:playergroup lp_players})'
+	'void libLbty_gf_MeleeSurrender_AIWantToSurrender':
+		prefix: 'libLbty_gf_MeleeSurrender_AIWantToSurrender'
+		body: 'libLbty_gf_MeleeSurrender_AIWantToSurrender(${1:int lp_player})'
+	'void libLbty_gf_MeleeSurrender_UpdateDialogs':
+		prefix: 'libLbty_gf_MeleeSurrender_UpdateDialogs'
+		body: 'libLbty_gf_MeleeSurrender_UpdateDialogs()'
+	'point libLbty_gf_ValidatedPoint':
+		prefix: 'libLbty_gf_ValidatedPoint'
+		body: 'libLbty_gf_ValidatedPoint(${1:point lp_point})'
+	'void libLbty_gf_PlayAnnouncerNumberSound':
+		prefix: 'libLbty_gf_PlayAnnouncerNumberSound'
+		body: 'libLbty_gf_PlayAnnouncerNumberSound(${1:int lp_number}, ${2:playergroup lp_players}, ${3:fixed lp_volume})'
+	'void libLbty_gf_PlayTransmissionCueSound':
+		prefix: 'libLbty_gf_PlayTransmissionCueSound'
+		body: 'libLbty_gf_PlayTransmissionCueSound(${1:playergroup lp_playerGroup})'
+	'void libLbty_gf_SetAllSoundChannelVolumesStandardTiming':
+		prefix: 'libLbty_gf_SetAllSoundChannelVolumesStandardTiming'
+		body: 'libLbty_gf_SetAllSoundChannelVolumesStandardTiming(${1:int lp_mode}, ${2:playergroup lp_players})'
+	'void libLbty_gf_OrderWorkerstoGatherNearbyResources':
+		prefix: 'libLbty_gf_OrderWorkerstoGatherNearbyResources'
+		body: 'libLbty_gf_OrderWorkerstoGatherNearbyResources(${1:region lp_region}, ${2:int lp_player})'
+	'void libLbty_gf_OrderTransporttoUnloadAllthenDespawn':
+		prefix: 'libLbty_gf_OrderTransporttoUnloadAllthenDespawn'
+		body: 'libLbty_gf_OrderTransporttoUnloadAllthenDespawn(${1:unit lp_transport}, ${2:point lp_targetPoint}, ${3:point lp_despawnPoint})'
+	'void libLbty_gf_AutoRevealRegion':
+		prefix: 'libLbty_gf_AutoRevealRegion'
+		body: 'libLbty_gf_AutoRevealRegion(${1:region lp_visibilityRegion}, ${2:region lp_triggeringRegion}, ${3:int lp_player})'
+	'int libHots_gf_DifficultyValueInt2':
+		prefix: 'libHots_gf_DifficultyValueInt2'
+		body: 'libHots_gf_DifficultyValueInt2(${1:int lp_easy}, ${2:int lp_normal}, ${3:int lp_hard})'
+	'fixed libHots_gf_DifficultyValueFixed2':
+		prefix: 'libHots_gf_DifficultyValueFixed2'
+		body: 'libHots_gf_DifficultyValueFixed2(${1:fixed lp_easy}, ${2:fixed lp_normal}, ${3:fixed lp_hard})'
+	'string libHots_gf_DifficultyValueSwarmUnitType':
+		prefix: 'libHots_gf_DifficultyValueSwarmUnitType'
+		body: 'libHots_gf_DifficultyValueSwarmUnitType(${1:string lp_easy}, ${2:string lp_normal}, ${3:string lp_hard})'
+	'bool libHots_gf_DifficultyValueSwarmBoolean':
+		prefix: 'libHots_gf_DifficultyValueSwarmBoolean'
+		body: 'libHots_gf_DifficultyValueSwarmBoolean(${1:bool lp_easy}, ${2:bool lp_normal}, ${3:bool lp_hard})'
+	'string libHots_gf__UnitDataName':
+		prefix: 'libHots_gf__UnitDataName'
+		body: 'libHots_gf__UnitDataName(${1:int lp_type}, ${2:unit lp_unit}, ${3:int lp_index})'
+	'void libHots_gf_StoreActorForUnit':
+		prefix: 'libHots_gf_StoreActorForUnit'
+		body: 'libHots_gf_StoreActorForUnit(${1:unit lp_unit}, ${2:int lp_index}, ${3:actor lp_actor})'
+	'actor libHots_gf_ActorForUnit':
+		prefix: 'libHots_gf_ActorForUnit'
+		body: 'libHots_gf_ActorForUnit(${1:unit lp_unit}, ${2:int lp_index})'
+	'void libHots_gf_StoreTextTagForUnit':
+		prefix: 'libHots_gf_StoreTextTagForUnit'
+		body: 'libHots_gf_StoreTextTagForUnit(${1:unit lp_unit}, ${2:int lp_index}, ${3:int lp_textTag})'
+	'int libHots_gf_TextTagForUnit':
+		prefix: 'libHots_gf_TextTagForUnit'
+		body: 'libHots_gf_TextTagForUnit(${1:unit lp_unit}, ${2:int lp_index})'
+	'void libHots_gf_StorePointForUnit':
+		prefix: 'libHots_gf_StorePointForUnit'
+		body: 'libHots_gf_StorePointForUnit(${1:unit lp_unit}, ${2:int lp_index}, ${3:point lp_point})'
+	'point libHots_gf_PointStoredForUnit':
+		prefix: 'libHots_gf_PointStoredForUnit'
+		body: 'libHots_gf_PointStoredForUnit(${1:unit lp_unit}, ${2:int lp_index})'
+	'void libHots_gf_StorePingForUnit':
+		prefix: 'libHots_gf_StorePingForUnit'
+		body: 'libHots_gf_StorePingForUnit(${1:unit lp_unit}, ${2:int lp_index}, ${3:int lp_ping})'
+	'int libHots_gf_PingStoredForUnit':
+		prefix: 'libHots_gf_PingStoredForUnit'
+		body: 'libHots_gf_PingStoredForUnit(${1:unit lp_unit}, ${2:int lp_index})'
+	'void libHots_gf_PlaySoundLinkasMusic':
+		prefix: 'libHots_gf_PlaySoundLinkasMusic'
+		body: 'libHots_gf_PlaySoundLinkasMusic(${1:soundlink lp_soundLink}, ${2:bool lp_loopForever}, ${3:bool lp_unpauseSountrackAfter})'
+	'void libHots_gf_StopSoundLinkCurrentlyPlayingasMusic':
+		prefix: 'libHots_gf_StopSoundLinkCurrentlyPlayingasMusic'
+		body: 'libHots_gf_StopSoundLinkCurrentlyPlayingasMusic()'
+	'int libLotv_gf_DifficultyValueInt2':
+		prefix: 'libLotv_gf_DifficultyValueInt2'
+		body: 'libLotv_gf_DifficultyValueInt2(${1:int lp_casual}, ${2:int lp_normal}, ${3:int lp_hard}, ${4:int lp_brutal})'
+	'fixed libLotv_gf_DifficultyValueFixed2':
+		prefix: 'libLotv_gf_DifficultyValueFixed2'
+		body: 'libLotv_gf_DifficultyValueFixed2(${1:fixed lp_casual}, ${2:fixed lp_normal}, ${3:fixed lp_hard}, ${4:fixed lp_brutal})'
+	'string libLotv_gf_DifficultyValueVoidUnitType':
+		prefix: 'libLotv_gf_DifficultyValueVoidUnitType'
+		body: 'libLotv_gf_DifficultyValueVoidUnitType(${1:string lp_casual}, ${2:string lp_normal}, ${3:string lp_hard}, ${4:string lp_brutal})'
+	'bool libLotv_gf_DifficultyValueVoidBoolean':
+		prefix: 'libLotv_gf_DifficultyValueVoidBoolean'
+		body: 'libLotv_gf_DifficultyValueVoidBoolean(${1:bool lp_casual}, ${2:bool lp_normal}, ${3:bool lp_hard}, ${4:bool lp_brutal})'
