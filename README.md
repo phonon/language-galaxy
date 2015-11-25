@@ -11,3 +11,4 @@ Blizzard files used for constant and function grammar and snippet matching are:
 - LibertyLib_h.galaxy
 - SwarmLib_h.galaxy
 - VoidLib_h.galaxy
+- GameData.galaxy
