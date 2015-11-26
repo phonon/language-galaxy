@@ -32,11 +32,7 @@
 		'name': 'keyword.control.galaxy'
 	}
 	{
-		'match': '\\b(abilcmd|actor|actorscope|bank|bool|byte|camerainfo|char|
-					  color|fixed|int|marker|order|playergroup|
-					  point|revealer|region|soundlink|string|text|timer|
-					  transmissionsource|trigger|unit|unitfilter|unitgroup|
-					  unitref|void|waveinfo|wavetarget)\\b'
+		'match': '\\b(abilcmd|actor|actorscope|bank|bool|byte|camerainfo|char|color|fixed|int|marker|order|playergroup|point|revealer|region|soundlink|string|text|timer|transmissionsource|trigger|unit|unitfilter|unitgroup|unitref|void|waveinfo|wavetarget)\\b'
 		'name': 'storage.type.builtin.galaxy'
 	}
 	{
